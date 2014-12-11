@@ -1,0 +1,66 @@
+
+xcpr parmode 2D
+o2p 48.5
+pl1 -2
+gpz2 11
+1 BC_mod no
+gpnam2 SINE.100
+2 ABSF2 -2.000
+gpnam1 SINE.100
+1 ABSF2 -1000.000
+gpz1 31
+d19 0.00015
+p16 1000
+1 ABSF1 1000.000
+p12 2000
+o4p 3.8
+2 ABSF1 12.000
+2 BC_mod qpol
+ns 16
+2 td  2048
+d1 0.5
+1 REVERSE FALSE
+1 sw 12
+1 FnMODE States-TPPI
+pl18 -2
+o1 1880.6
+spoal1 0.5
+2 FT_mod fsc
+1 PH_mod pk
+2 ssb 16
+ds 32
+pl16 9.9642732825306
+p1 7
+o3p 119
+1 sr  0
+p22 76.4
+p27 7
+pcpd3 167.98752324396
+1 FT_mod no
+1 phc0 90
+2 stsi 0
+2 PH_mod pk
+1 si 2048
+2 si 16384
+1 mc2 States-TPPI
+spoffs1 0
+pulprog cosydfesgpph_15Ndec.wl
+pl3 -2.9
+1 phc1 -180
+d0 0
+1 td  1024
+1 sf  500.13
+spnam1 Gauss_5_256.pk
+2 REVERSE FALSE
+1 ssb 16
+d8 0.15
+d12 2e-005
+sp1 35.077439286435
+2 sr  0
+p2 14
+cpdprg3 garp4
+p0 7
+d16 0.0002
+getprosol 1H 7 -2
+pl27 -2
+p27 7

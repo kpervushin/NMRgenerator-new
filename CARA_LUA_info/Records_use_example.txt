@@ -1,0 +1,46 @@
+Rochus Keller [rkeller@nmr.ch]
+
+Dear Konstantin
+ 
+As discussed I send you some examples on how to use records in CARA. I briefly checked with the latest release that it still works ;-)
+ 
+I created a new repository with an empty Project "Test" and executed:
+ 
+p = cara:getProject("Test")
+r = cara:createRecord()
+p:setAttr("Persons", r )
+person = cara:createRecord()
+person:setAttr("Name","Keller")
+r:setAttr(person:getId(),person)
+person = cara:createRecord()
+person:setAttr("Name","Masse")
+r:setAttr(person:getId(),person)
+ 
+Then I saved, closed and re-opened the repository. Then I executed:
+ 
+p = cara:getProject("Test")
+r = p:getAttr("Persons")
+values = r:getAttrs()
+for key,value in pairs(values) do print( key.." = "..value:getAttr("Name") ) end
+ 
+This renders the following text on the terminal:
+3 = Masse
+2 = Keller
+ 
+Then I execute and save/close/re-open the repository again:
+ 
+person = cara:createRecord()
+person:setAttr("Name","Pervushin")
+r:setAttr("Boss", person)
+ 
+Then I print again the sub-records of Persons:
+Boss = Pervushin
+3 = Masse
+2 = Keller
+ 
+As you see, I can create persistent record trees and access the records by name, number or using getAttrs(). I attached the repository, so you can reproduce it and have a look at the XML.
+ 
+Hope this helps.
+ 
+Cheers
+Rochus
