@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.8.4.2' modified='Wed 10. Dec 09:42:49 2014' author='K.Pervushin' 
+<repository version='37' sub='0' creator='CARA 1.8.4.2' modified='Thu 11. Dec 13:07:45 2014' author='K.Pervushin' 
 template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Start1.2.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -687,9 +687,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HD1' type='H1' num='1' mean='0.770' dev='1.120' x='0' y='5' group='HD'/>
 <atom name='HD2' type='H1' num='1' mean='0.750' dev='1.160' x='2' y='5' group='HD'/>
 <atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='HG' type='H1' num='1' mean='1.520' dev='1.320' x='0' y='3' />
 <atom name='CG' type='C13' num='1' mean='26.700' dev='5.160' x='1' y='3' />
 <atom name='CD2' type='C13' num='1' mean='24.120' dev='7.120' x='2' y='4' />
+<atom name='HG' type='H1' num='1' mean='1.520' dev='1.320' x='0' y='3' />
 <atom name='CD1' type='C13' num='1' mean='24.590' dev='6.960' x='0' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
@@ -710,13 +710,13 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HD1' to='CD1'/>
 <bond from='HD2' to='CD2'/>
 <bond from='O' to='C'/>
-<bond from='HG' to='CG'/>
 <bond from='CG' to='CB'/>
+<bond from='CG' to='HG'/>
 <bond from='CG' to='CD2'/>
 <bond from='CG' to='CD1'/>
-<bond from='CG' to='HG'/>
 <bond from='CD2' to='HD2'/>
 <bond from='CD2' to='CG'/>
+<bond from='HG' to='CG'/>
 <bond from='CD1' to='HD1'/>
 <bond from='CD1' to='CG'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
@@ -773,8 +773,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HA' type='H1' num='1' mean='4.190' dev='2.240' x='2' y='0' />
 <atom name='HD1' type='H1' num='1' mean='0.700' dev='1.200' x='1' y='5' />
 <atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CD1' type='C13' num='1' mean='13.460' dev='7.080' x='1' y='4' />
 <atom name='HG2' type='H1' num='1' mean='0.800' dev='1.080' x='3' y='4' />
+<atom name='CD1' type='C13' num='1' mean='13.460' dev='7.080' x='1' y='4' />
 <atom name='CG1' type='C13' num='1' mean='27.660' dev='8.160' x='1' y='3' />
 <atom name='CG2' type='C13' num='1' mean='17.510' dev='6.320' x='3' y='3' />
 <atom name='HG12' type='H1' num='1' mean='1.290' dev='1.560' x='0' y='3' group='HG1'/>
@@ -796,9 +796,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HA' to='CA'/>
 <bond from='HD1' to='CD1'/>
 <bond from='O' to='C'/>
+<bond from='HG2' to='CG2'/>
 <bond from='CD1' to='HD1'/>
 <bond from='CD1' to='CG1'/>
-<bond from='HG2' to='CG2'/>
 <bond from='CG1' to='CB'/>
 <bond from='CG1' to='CD1'/>
 <bond from='CG1' to='HG12'/>
@@ -914,15 +914,15 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HD2' type='H1' num='1' mean='1.610' dev='1.000' x='0' y='4' group='HD'/>
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='CG' type='C13' num='1' mean='24.890' dev='5.040' x='1' y='3' />
+<atom name='HE2' type='H1' num='1' mean='2.920' dev='0.840' x='0' y='5' group='HE'/>
 <atom name='HG2' type='H1' num='1' mean='1.380' dev='1.080' x='0' y='3' group='HG'/>
 <atom name='HG3' type='H1' num='1' mean='1.360' dev='1.160' x='2' y='3' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='28.860' dev='5.120' x='1' y='4' />
-<atom name='HD3' type='H1' num='1' mean='1.600' dev='0.960' x='2' y='4' group='HD'/>
-<atom name='HE2' type='H1' num='1' mean='2.920' dev='0.840' x='0' y='5' group='HE'/>
 <atom name='HE3' type='H1' num='1' mean='2.920' dev='0.840' x='2' y='5' group='HE'/>
-<atom name='NZ' type='N15' num='1' mean='70.050' dev='191.040' x='1' y='6' />
 <atom name='HZ' type='H1' num='1' mean='7.500' dev='1.680' x='1' y='7' />
+<atom name='HD3' type='H1' num='1' mean='1.600' dev='0.960' x='2' y='4' group='HD'/>
 <atom name='CE' type='C13' num='1' mean='41.820' dev='3.720' x='1' y='5' />
+<atom name='NZ' type='N15' num='1' mean='70.050' dev='191.040' x='1' y='6' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -945,92 +945,22 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='HE2' to='CE'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
 <bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
 <bond from='CD' to='CE'/>
-<bond from='HD3' to='CD'/>
-<bond from='HE2' to='CE'/>
 <bond from='HE3' to='CE'/>
-<bond from='NZ' to='HZ'/>
-<bond from='NZ' to='CE'/>
 <bond from='HZ' to='NZ'/>
-<bond from='CE' to='HE2'/>
+<bond from='HD3' to='CD'/>
 <bond from='CE' to='CD'/>
+<bond from='CE' to='HE2'/>
 <bond from='CE' to='HE3'/>
 <bond from='CE' to='NZ'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Tyrosine' short='TYR' letter='Y' systype='8' >
-<group name='HB' x='0' y='0'/>
-<group name='HD' x='0' y='0'/>
-<group name='HE' x='0' y='0'/>
-<atom name='N' type='N15' num='1' mean='120.800' dev='18.080' x='1' y='1' />
-<atom name='C' type='C13' num='1' mean='175.410' dev='8.120' x='3' y='1' />
-<atom name='H' type='H1' num='1' mean='8.340' dev='3.000' x='1' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.910' dev='1.520' x='1' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.880' dev='1.520' x='3' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='58.070' dev='10.480' x='2' y='1' />
-<atom name='CB' type='C13' num='1' mean='39.280' dev='8.680' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.630' dev='2.280' x='2' y='0' />
-<atom name='HD1' type='H1' num='1' mean='6.950' dev='1.200' x='0' y='4' group='HD'/>
-<atom name='HD2' type='H1' num='1' mean='6.950' dev='1.240' x='4' y='4' group='HD'/>
-<atom name='HE1' type='H1' num='1' mean='6.710' dev='0.960' x='0' y='5' group='HE'/>
-<atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CG' type='C13' num='1' mean='128.970' dev='11.360' x='2' y='3' />
-<atom name='CD2' type='C13' num='1' mean='132.460' dev='6.840' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='132.650' dev='5.200' x='1' y='4' />
-<atom name='HE2' type='H1' num='1' mean='6.720' dev='0.960' x='4' y='5' group='HE'/>
-<atom name='HH' type='H1' num='1' mean='9.020' dev='6.120' x='3' y='8' />
-<atom name='OH' type='O' num='1' x='2' y='7' />
-<atom name='CE2' type='C13' num='1' mean='117.850' dev='7.000' x='3' y='5' />
-<atom name='CZ' type='C13' num='1' mean='156.470' dev='9.080' x='2' y='6' />
-<atom name='CE1' type='C13' num='1' mean='117.820' dev='5.960' x='1' y='5' />
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='HE1' to='CE1'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='CD2'/>
-<bond from='CG' to='CD1'/>
-<bond from='CD2' to='HD2'/>
-<bond from='CD2' to='CG'/>
-<bond from='CD2' to='CE2'/>
-<bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
-<bond from='CD1' to='CE1'/>
-<bond from='HE2' to='CE2'/>
-<bond from='HH' to='OH'/>
-<bond from='OH' to='HH'/>
-<bond from='OH' to='CZ'/>
-<bond from='CE2' to='CZ'/>
-<bond from='CE2' to='CD2'/>
-<bond from='CE2' to='HE2'/>
-<bond from='CZ' to='OH'/>
-<bond from='CZ' to='CE2'/>
-<bond from='CZ' to='CE1'/>
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CZ'/>
-<bond from='CE1' to='CD1'/>
+<bond from='NZ' to='HZ'/>
+<bond from='NZ' to='CE'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1049,11 +979,11 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HE1' type='H1' num='1' mean='8.040' dev='2.200' x='0' y='6' />
 <atom name='NE2' type='N15' num='1' mean='175.540' dev='83.680' x='3' y='5' />
 <atom name='ND1' type='N15' num='1' mean='193.420' dev='135.960' x='1' y='4' />
+<atom name='CE1' type='C13' num='1' mean='136.800' dev='9.120' x='1' y='5' />
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='CG' type='C13' num='1' mean='130.840' dev='13.240' x='2' y='3' />
 <atom name='CD2' type='C13' num='1' mean='119.590' dev='10.920' x='3' y='4' />
 <atom name='HE2' type='H1' num='1' mean='9.950' dev='10.960' x='4' y='6' />
-<atom name='CE1' type='C13' num='1' mean='136.800' dev='9.120' x='1' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1076,9 +1006,12 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='NE2' to='CE1'/>
 <bond from='NE2' to='CD2'/>
 <bond from='NE2' to='HE2'/>
+<bond from='ND1' to='CE1'/>
 <bond from='ND1' to='HD1'/>
 <bond from='ND1' to='CG'/>
-<bond from='ND1' to='CE1'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='NE2'/>
+<bond from='CE1' to='ND1'/>
 <bond from='O' to='C'/>
 <bond from='CG' to='CB'/>
 <bond from='CG' to='ND1'/>
@@ -1087,16 +1020,13 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CD2' to='NE2'/>
 <bond from='CD2' to='CG'/>
 <bond from='HE2' to='NE2'/>
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='NE2'/>
-<bond from='CE1' to='ND1'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Glutamine' short='GLN' letter='Q' systype='22' >
 <group name='HB' x='0' y='0'/>
-<group name='HG' x='0' y='0'/>
 <group name='HE2' x='0' y='0'/>
+<group name='HG' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='119.820' dev='15.120' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='176.340' dev='7.960' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.220' dev='2.400' x='0' y='0' />
@@ -1108,12 +1038,12 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='NE2' type='N15' num='1' mean='111.870' dev='8.040' x='1' y='5' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='CG' type='C13' num='1' mean='33.710' dev='4.880' x='1' y='3' />
-<atom name='HG2' type='H1' num='1' mean='2.320' dev='1.160' x='0' y='3' group='HG'/>
-<atom name='HG3' type='H1' num='1' mean='2.300' dev='1.160' x='2' y='3' group='HG'/>
-<atom name='CD' type='C13' num='1' mean='179.720' dev='4.520' x='1' y='4' />
 <atom name='HE21' type='H1' num='1' mean='7.200' dev='1.920' x='0' y='6' group='HE2'/>
 <atom name='HE22' type='H1' num='1' mean='7.040' dev='1.880' x='2' y='6' group='HE2'/>
 <atom name='OE1' type='O' num='1' x='0' y='4' />
+<atom name='HG2' type='H1' num='1' mean='2.320' dev='1.160' x='0' y='3' group='HG'/>
+<atom name='HG3' type='H1' num='1' mean='2.300' dev='1.160' x='2' y='3' group='HG'/>
+<atom name='CD' type='C13' num='1' mean='179.720' dev='4.520' x='1' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1138,14 +1068,14 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
-<bond from='HG2' to='CG'/>
-<bond from='HG3' to='CG'/>
-<bond from='CD' to='NE2'/>
-<bond from='CD' to='CG'/>
-<bond from='CD' to='OE1'/>
 <bond from='HE21' to='NE2'/>
 <bond from='HE22' to='NE2'/>
 <bond from='OE1' to='CD'/>
+<bond from='HG2' to='CG'/>
+<bond from='HG3' to='CG'/>
+<bond from='CD' to='OE1'/>
+<bond from='CD' to='NE2'/>
+<bond from='CD' to='CG'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1164,8 +1094,6 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='CG' type='C13' num='1' mean='110.210' dev='7.360' x='2' y='3' />
 <atom name='CD2' type='C13' num='1' mean='127.460' dev='5.440' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='126.420' dev='7.880' x='1' y='4' />
-<atom name='HE3' type='H1' num='1' mean='7.350' dev='1.600' x='5' y='4' />
 <atom name='CE2' type='C13' num='1' mean='137.670' dev='26.560' x='2' y='5' />
 <atom name='NE1' type='N15' num='1' mean='129.500' dev='9.480' x='1' y='5' />
 <atom name='HZ2' type='H1' num='1' mean='7.290' dev='1.320' x='1' y='7' />
@@ -1175,6 +1103,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='CH2' type='C13' num='1' mean='123.600' dev='6.680' x='3' y='7' />
 <atom name='CE3' type='C13' num='1' mean='120.590' dev='9.360' x='4' y='5' />
 <atom name='HH2' type='H1' num='1' mean='7.000' dev='1.680' x='3' y='8' />
+<atom name='CD1' type='C13' num='1' mean='126.420' dev='7.880' x='1' y='4' />
+<atom name='HE3' type='H1' num='1' mean='7.350' dev='1.600' x='5' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1197,18 +1127,14 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='CB'/>
 <bond from='CG' to='CD2'/>
 <bond from='CG' to='CD1'/>
-<bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
 <bond from='CD2' to='CE3'/>
-<bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
-<bond from='CD1' to='NE1'/>
-<bond from='HE3' to='CE3'/>
-<bond from='CE2' to='CD2'/>
+<bond from='CD2' to='CG'/>
 <bond from='CE2' to='NE1'/>
 <bond from='CE2' to='CZ2'/>
-<bond from='NE1' to='HE1'/>
+<bond from='CE2' to='CD2'/>
 <bond from='NE1' to='CE2'/>
+<bond from='NE1' to='HE1'/>
 <bond from='NE1' to='CD1'/>
 <bond from='HZ2' to='CZ2'/>
 <bond from='CZ2' to='CE2'/>
@@ -1221,10 +1147,14 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CH2' to='CZ2'/>
 <bond from='CH2' to='CZ3'/>
 <bond from='CH2' to='HH2'/>
-<bond from='CE3' to='CD2'/>
 <bond from='CE3' to='CZ3'/>
+<bond from='CE3' to='CD2'/>
 <bond from='CE3' to='HE3'/>
 <bond from='HH2' to='CH2'/>
+<bond from='CD1' to='NE1'/>
+<bond from='CD1' to='HD1'/>
+<bond from='CD1' to='CG'/>
+<bond from='HE3' to='CE3'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1262,13 +1192,13 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CB' to='CG'/>
 <bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='ND2'/>
 <bond from='CG' to='OD1'/>
+<bond from='CG' to='CB'/>
 <bond from='HD22' to='ND2'/>
-<bond from='ND2' to='CG'/>
 <bond from='ND2' to='HD22'/>
 <bond from='ND2' to='HD21'/>
+<bond from='ND2' to='CG'/>
 <bond from='HD21' to='ND2'/>
 <bond from='OD1' to='CG'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
@@ -1305,9 +1235,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CB' to='CG'/>
 <bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='OD1'/>
 <bond from='CG' to='OD2'/>
+<bond from='CG' to='CB'/>
 <bond from='OD1' to='CG'/>
 <bond from='OD2' to='CG'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
@@ -1326,10 +1256,10 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HA' type='H1' num='1' mean='4.250' dev='1.680' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='CG' type='C13' num='1' mean='36.040' dev='5.480' x='1' y='3' />
+<atom name='OE1' type='O' num='1' x='0' y='5' />
 <atom name='HG2' type='H1' num='1' mean='2.300' dev='0.880' x='0' y='3' group='HG'/>
 <atom name='HG3' type='H1' num='1' mean='2.280' dev='0.880' x='2' y='3' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='182.320' dev='7.680' x='1' y='4' />
-<atom name='OE1' type='O' num='1' x='0' y='5' />
 <atom name='OE2' type='O' num='1' x='2' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
@@ -1352,12 +1282,12 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='OE1' to='CD'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
-<bond from='CD' to='CG'/>
 <bond from='CD' to='OE1'/>
 <bond from='CD' to='OE2'/>
-<bond from='OE1' to='CD'/>
+<bond from='CD' to='CG'/>
 <bond from='OE2' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
@@ -1377,15 +1307,15 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HD1' type='H1' num='1' mean='7.060' dev='1.360' x='0' y='4' group='HD'/>
 <atom name='HD2' type='H1' num='1' mean='7.070' dev='1.320' x='4' y='4' group='HD'/>
 <atom name='HE1' type='H1' num='1' mean='7.100' dev='1.280' x='0' y='5' group='HE'/>
+<atom name='CE1' type='C13' num='1' mean='130.570' dev='6.160' x='1' y='5' />
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='CG' type='C13' num='1' mean='136.780' dev='13.440' x='2' y='3' />
 <atom name='CD2' type='C13' num='1' mean='131.450' dev='5.080' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='131.440' dev='5.360' x='1' y='4' />
 <atom name='HE2' type='H1' num='1' mean='7.110' dev='1.280' x='4' y='5' group='HE'/>
-<atom name='HZ' type='H1' num='1' mean='7.030' dev='1.720' x='2' y='7' />
 <atom name='CE2' type='C13' num='1' mean='130.670' dev='4.120' x='3' y='5' />
+<atom name='CD1' type='C13' num='1' mean='131.440' dev='5.360' x='1' y='4' />
 <atom name='CZ' type='C13' num='1' mean='129.190' dev='7.120' x='2' y='6' />
-<atom name='CE1' type='C13' num='1' mean='130.570' dev='6.160' x='1' y='5' />
+<atom name='HZ' type='H1' num='1' mean='7.030' dev='1.720' x='2' y='7' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1405,27 +1335,27 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HD1' to='CD1'/>
 <bond from='HD2' to='CD2'/>
 <bond from='HE1' to='CE1'/>
+<bond from='CE1' to='CZ'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='CD1'/>
 <bond from='O' to='C'/>
 <bond from='CG' to='CB'/>
 <bond from='CG' to='CD2'/>
 <bond from='CG' to='CD1'/>
+<bond from='CD2' to='CE2'/>
 <bond from='CD2' to='HD2'/>
 <bond from='CD2' to='CG'/>
-<bond from='CD2' to='CE2'/>
-<bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
-<bond from='CD1' to='CE1'/>
 <bond from='HE2' to='CE2'/>
-<bond from='HZ' to='CZ'/>
 <bond from='CE2' to='CZ'/>
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='HE2'/>
+<bond from='CD1' to='CE1'/>
+<bond from='CD1' to='HD1'/>
+<bond from='CD1' to='CG'/>
 <bond from='CZ' to='CE2'/>
 <bond from='CZ' to='CE1'/>
 <bond from='CZ' to='HZ'/>
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CZ'/>
-<bond from='CE1' to='CD1'/>
+<bond from='HZ' to='CZ'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1449,7 +1379,6 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HG2' type='H1' num='1' mean='1.580' dev='1.080' x='0' y='3' group='HG'/>
 <atom name='HG3' type='H1' num='1' mean='1.570' dev='1.120' x='2' y='3' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='43.130' dev='4.120' x='1' y='4' />
-<atom name='HD3' type='H1' num='1' mean='3.120' dev='0.960' x='0' y='4' group='HD'/>
 <atom name='HE' type='H1' num='1' mean='7.340' dev='2.240' x='0' y='5' />
 <atom name='CZ' type='C13' num='1' mean='159.190' dev='3.800' x='1' y='6' />
 <atom name='NH2' type='N15' num='1' mean='73.880' dev='26.920' x='1' y='7' />
@@ -1459,6 +1388,7 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HH22' type='H1' num='1' mean='6.750' dev='1.560' x='1' y='8' group='HH2'/>
 <atom name='HH12' type='H1' num='1' mean='6.760' dev='1.400' x='2' y='7' group='HH1'/>
 <atom name='HH11' type='H1' num='1' mean='6.820' dev='1.600' x='3' y='6' group='HH1'/>
+<atom name='HD3' type='H1' num='1' mean='3.120' dev='0.960' x='0' y='4' group='HD'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1483,11 +1413,10 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='CD'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
+<bond from='CD' to='NE'/>
 <bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
-<bond from='CD' to='NE'/>
-<bond from='HD3' to='CD'/>
 <bond from='HE' to='NE'/>
 <bond from='CZ' to='NH2'/>
 <bond from='CZ' to='NE'/>
@@ -1495,9 +1424,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='NH2' to='CZ'/>
 <bond from='NH2' to='HH21'/>
 <bond from='NH2' to='HH22'/>
-<bond from='NE' to='HE'/>
 <bond from='NE' to='CZ'/>
 <bond from='NE' to='CD'/>
+<bond from='NE' to='HE'/>
 <bond from='NH1' to='CZ'/>
 <bond from='NH1' to='HH12'/>
 <bond from='NH1' to='HH11'/>
@@ -1505,6 +1434,7 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HH22' to='NH2'/>
 <bond from='HH12' to='NH1'/>
 <bond from='HH11' to='NH1'/>
+<bond from='HD3' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1525,8 +1455,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='HG2' type='H1' num='1' mean='2.440' dev='1.400' x='0' y='3' group='HG'/>
 <atom name='HG3' type='H1' num='1' mean='2.400' dev='1.560' x='2' y='3' group='HG'/>
 <atom name='HE' type='H1' num='1' mean='1.880' dev='1.600' x='1' y='6' />
-<atom name='CE' type='C13' num='1' mean='17.340' dev='12.280' x='1' y='5' />
 <atom name='SD' type='S' num='1' x='1' y='4' />
+<atom name='CE' type='C13' num='1' mean='17.340' dev='12.280' x='1' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1544,17 +1474,17 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CB' to='CG'/>
 <bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
+<bond from='CG' to='SD'/>
 <bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
-<bond from='CG' to='SD'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
 <bond from='HE' to='CE'/>
-<bond from='CE' to='HE'/>
-<bond from='CE' to='SD'/>
 <bond from='SD' to='CG'/>
 <bond from='SD' to='CE'/>
+<bond from='CE' to='SD'/>
+<bond from='CE' to='HE'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1582,15 +1512,85 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='CB' to='SG'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CA'/>
-<bond from='CB' to='SG'/>
 <bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HG' to='SG'/>
 <bond from='SG' to='CB'/>
 <bond from='SG' to='HG'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Tyrosine' short='TYR' letter='Y' systype='8' >
+<group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
+<group name='HE' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.800' dev='18.080' x='1' y='1' />
+<atom name='C' type='C13' num='1' mean='175.410' dev='8.120' x='3' y='1' />
+<atom name='H' type='H1' num='1' mean='8.340' dev='3.000' x='1' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.910' dev='1.520' x='1' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.880' dev='1.520' x='3' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='58.070' dev='10.480' x='2' y='1' />
+<atom name='CB' type='C13' num='1' mean='39.280' dev='8.680' x='2' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.630' dev='2.280' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='6.950' dev='1.200' x='0' y='4' group='HD'/>
+<atom name='HD2' type='H1' num='1' mean='6.950' dev='1.240' x='4' y='4' group='HD'/>
+<atom name='HE1' type='H1' num='1' mean='6.710' dev='0.960' x='0' y='5' group='HE'/>
+<atom name='CE1' type='C13' num='1' mean='117.820' dev='5.960' x='1' y='5' />
+<atom name='O' type='O' num='1' x='3' y='0' />
+<atom name='CG' type='C13' num='1' mean='128.970' dev='11.360' x='2' y='3' />
+<atom name='CD2' type='C13' num='1' mean='132.460' dev='6.840' x='3' y='4' />
+<atom name='HE2' type='H1' num='1' mean='6.720' dev='0.960' x='4' y='5' group='HE'/>
+<atom name='CE2' type='C13' num='1' mean='117.850' dev='7.000' x='3' y='5' />
+<atom name='CD1' type='C13' num='1' mean='132.650' dev='5.200' x='1' y='4' />
+<atom name='CZ' type='C13' num='1' mean='156.470' dev='9.080' x='2' y='6' />
+<atom name='OH' type='O' num='1' x='2' y='7' />
+<atom name='HH' type='H1' num='1' mean='9.020' dev='6.120' x='3' y='8' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HD2' to='CD2'/>
+<bond from='HE1' to='CE1'/>
+<bond from='CE1' to='CZ'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='CD1'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='CD2'/>
+<bond from='CG' to='CD1'/>
+<bond from='CD2' to='CE2'/>
+<bond from='CD2' to='HD2'/>
+<bond from='CD2' to='CG'/>
+<bond from='HE2' to='CE2'/>
+<bond from='CE2' to='CZ'/>
+<bond from='CE2' to='CD2'/>
+<bond from='CE2' to='HE2'/>
+<bond from='CD1' to='CE1'/>
+<bond from='CD1' to='HD1'/>
+<bond from='CD1' to='CG'/>
+<bond from='CZ' to='OH'/>
+<bond from='CZ' to='CE2'/>
+<bond from='CZ' to='CE1'/>
+<bond from='OH' to='CZ'/>
+<bond from='OH' to='HH'/>
+<bond from='HH' to='OH'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1685,7 +1685,7 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 --function Draw1Dspectrum(t.SpectrumName)
 --function Multiple1Doverlay(selected_OIDs)
 --function RMSDinPpmRange(buffer, ppmStart, ppmEnd)
---function MeanInPpmRange(buffer, ppmStart, ppmEnd)
+--function MeanInPpmRange(buffer, ppmStart, ppmEnd) --
 
 number_of_opened_AttributeEditors=0 -- this is used to tail multiple started AEs
 number_of_opened_ContentManagers=0 -- this is used to tail multiple started CMs
@@ -7297,7 +7297,7 @@ create records from File menu
 <fld name='o1' type='String'> 2821</fld>
 <fld name='pl1' type='String'> 5</fld>
 <fld name='p1' type='Char'>9</fld>
-<fld name='Help URL' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=61&amp;t=198</fld>
+<fld name='Help URL' type='String'>https://github.com/kpervushin/NMRgenerator-new/wiki</fld>
 <fld name='SR' type='String'> 8.1</fld>
 </obj>
 <obj oid='46'>
