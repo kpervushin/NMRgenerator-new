@@ -2730,7 +2730,7 @@ if(xmlfile) then
 	
 	
 	print("Location to open: "..get_cur_browser().." "..url) 
-	os.execute(get_cur_browser().." "..url.." &")
+	os.execute(get_cur_browser().." "..url) --.." &")
 	--print(get_cur_browser().." "..url.." &")
 end--if(xmlfile)
 	end --function open_in_browser(xmlfile, filetype) --filetype="file:///" or "http://"
