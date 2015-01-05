@@ -623,7 +623,7 @@ number_of_opened_ContentManagers=number_of_opened_ContentManagers+1
 	--main_szy=max_h-80.;
 	
 	main_display_window_scrollview[number_of_opened_ContentManagers]:showNormal();
-	main_display_window_scrollview[number_of_opened_ContentManagers]:setBgColor("light grey");
+	main_display_window_scrollview[number_of_opened_ContentManagers]:setBgColor("grey");
 	main_display_window_scrollview[number_of_opened_ContentManagers]:setCaption("Content manager:    "..record_type.."          ");
 	main_display_window_scrollview[number_of_opened_ContentManagers]:resize(main_szx,main_szy);
 	
@@ -3078,7 +3078,7 @@ local steps_to_tail=50 -- to tail if many started
 at_main_display_window[number_of_opened_AttributeEditors]=gui.createWidget();    --this is the highest level window
 	--at_main_display_window[number_of_opened_AttributeEditors]:showFullScreen();
 	at_main_display_window[number_of_opened_AttributeEditors]:showNormal();
-	at_main_display_window[number_of_opened_AttributeEditors]:setBgColor("light grey");
+	at_main_display_window[number_of_opened_AttributeEditors]:setBgColor("grey");
 	at_main_display_window[number_of_opened_AttributeEditors]:setCaption("Edit Attributes:    Type  "..curr_type..",    OID: "..curr_record:getId().."  ");
 	at_main_display_window[number_of_opened_AttributeEditors]:resize(at_main_szx,at_main_szy);
 	at_main_display_window[number_of_opened_AttributeEditors]:move(at_main_szx/4+number_of_opened_AttributeEditors*steps_to_tail,175+number_of_opened_AttributeEditors*steps_to_tail);
@@ -3191,7 +3191,7 @@ at_main_display_window[number_of_opened_AttributeEditors]:getData().attr_body=At
 attr_window_menu_bar[number_of_opened_AttributeEditors]=gui.createWidget(at_main_display_window[number_of_opened_AttributeEditors]);
 	attr_window_menu_bar[number_of_opened_AttributeEditors]:move(0,0);
     attr_window_menu_bar[number_of_opened_AttributeEditors]:resize(at_main_szx,at_bar_w);
-	attr_window_menu_bar[number_of_opened_AttributeEditors]:setBgColor("light grey");
+	attr_window_menu_bar[number_of_opened_AttributeEditors]:setBgColor("grey");
 	attr_window_menu_bar[number_of_opened_AttributeEditors]:show();
 
 		attr_file_menu_button1[number_of_opened_AttributeEditors]=gui.createPushButton(attr_window_menu_bar[number_of_opened_AttributeEditors]);
@@ -3301,7 +3301,7 @@ end --if(curr_type=="Macro")
 	attr_file_menu_button[number_of_opened_AttributeEditors]=gui.createPushButton(attr_window_menu_bar[number_of_opened_AttributeEditors]);
 	attr_file_menu_button[number_of_opened_AttributeEditors]:resize(push_button_w,at_bar_w-4);
 	attr_file_menu_button[number_of_opened_AttributeEditors]:move(2,2);
-	attr_file_menu_button[number_of_opened_AttributeEditors]:setBgColor("light grey");
+	attr_file_menu_button[number_of_opened_AttributeEditors]:setBgColor("grey");
 --	attr_file_menu_button[number_of_opened_AttributeEditors]:setFlat(true);
 	attr_file_menu_button[number_of_opened_AttributeEditors]:setText("File");
  --	attr_file_menu_button[number_of_opened_AttributeEditors]:setFont(base_font,base_font_size,0,0);
