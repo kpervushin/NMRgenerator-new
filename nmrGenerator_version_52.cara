@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.8.4.2' modified='Thu 5. Feb 09:14:05 2015' author='K.Pervushin' 
+<repository version='37' sub='0' creator='CARA 1.8.4.2' modified='Thu 5. Feb 13:21:05 2015' author='K.Pervushin' 
 template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Start1.2.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -558,566 +558,6 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <systype id='19' name='PRO' mdl='PRO' nterm='' cterm='' gensys='' class=''/>
 <systype id='20' name='THR' mdl='THR' nterm='' cterm='' gensys='' class=''/>
 <systype id='22' name='long' mdl='LYS' nterm='' cterm='' gensys='' class=''/>
-<residue-type name='Histidine' short='HIS' letter='H' systype='8' >
-<group name='HB' x='0' y='0'/>
-<atom name='CE1' type='C13' num='1' mean='136.800' dev='9.120' x='1' y='5' />
-<atom name='N' type='N15' num='1' mean='119.400' dev='17.160' x='1' y='1' />
-<atom name='C' type='C13' num='1' mean='175.260' dev='8.280' x='3' y='1' />
-<atom name='H' type='H1' num='1' mean='8.250' dev='2.760' x='1' y='0' />
-<atom name='HB2' type='H1' num='1' mean='3.100' dev='1.560' x='1' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='3.080' dev='1.560' x='3' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='56.460' dev='10.000' x='2' y='1' />
-<atom name='CB' type='C13' num='1' mean='30.220' dev='8.640' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.620' dev='1.880' x='2' y='0' />
-<atom name='HD1' type='H1' num='1' mean='8.970' dev='11.640' x='0' y='3' />
-<atom name='HD2' type='H1' num='1' mean='7.070' dev='1.920' x='4' y='4' />
-<atom name='HE1' type='H1' num='1' mean='8.040' dev='2.200' x='0' y='6' />
-<atom name='NE2' type='N15' num='1' mean='175.540' dev='83.680' x='3' y='5' />
-<atom name='ND1' type='N15' num='1' mean='193.420' dev='135.960' x='1' y='4' />
-<atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CG' type='C13' num='1' mean='130.840' dev='13.240' x='2' y='3' />
-<atom name='CD2' type='C13' num='1' mean='119.590' dev='10.920' x='3' y='4' />
-<atom name='HE2' type='H1' num='1' mean='9.950' dev='10.960' x='4' y='6' />
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='NE2'/>
-<bond from='CE1' to='ND1'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='HD1' to='ND1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='HE1' to='CE1'/>
-<bond from='NE2' to='CD2'/>
-<bond from='NE2' to='HE2'/>
-<bond from='NE2' to='CE1'/>
-<bond from='ND1' to='HD1'/>
-<bond from='ND1' to='CG'/>
-<bond from='ND1' to='CE1'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='ND1'/>
-<bond from='CG' to='CD2'/>
-<bond from='CD2' to='HD2'/>
-<bond from='CD2' to='NE2'/>
-<bond from='CD2' to='CG'/>
-<bond from='HE2' to='NE2'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Glutamine' short='GLN' letter='Q' systype='22' >
-<group name='HB' x='0' y='0'/>
-<group name='HG' x='0' y='0'/>
-<group name='HE2' x='0' y='0'/>
-<atom name='HE21' type='H1' num='1' mean='7.200' dev='1.920' x='0' y='6' group='HE2'/>
-<atom name='HE22' type='H1' num='1' mean='7.040' dev='1.880' x='2' y='6' group='HE2'/>
-<atom name='OE1' type='O' num='1' x='0' y='4' />
-<atom name='N' type='N15' num='1' mean='119.820' dev='15.120' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='176.340' dev='7.960' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.220' dev='2.400' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.050' dev='1.040' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.030' dev='1.160' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='56.550' dev='8.760' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='29.180' dev='7.680' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.280' dev='1.760' x='1' y='0' />
-<atom name='NE2' type='N15' num='1' mean='111.870' dev='8.040' x='1' y='5' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='33.710' dev='4.880' x='1' y='3' />
-<atom name='HG2' type='H1' num='1' mean='2.320' dev='1.160' x='0' y='3' group='HG'/>
-<atom name='HG3' type='H1' num='1' mean='2.300' dev='1.160' x='2' y='3' group='HG'/>
-<atom name='CD' type='C13' num='1' mean='179.720' dev='4.520' x='1' y='4' />
-<bond from='HE21' to='NE2'/>
-<bond from='HE22' to='NE2'/>
-<bond from='OE1' to='CD'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='NE2' to='CD'/>
-<bond from='NE2' to='HE21'/>
-<bond from='NE2' to='HE22'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='HG2'/>
-<bond from='CG' to='HG3'/>
-<bond from='CG' to='CD'/>
-<bond from='HG2' to='CG'/>
-<bond from='HG3' to='CG'/>
-<bond from='CD' to='NE2'/>
-<bond from='CD' to='CG'/>
-<bond from='CD' to='OE1'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Tryptophan' short='TRP' letter='W' systype='8' >
-<group name='HB' x='0' y='0'/>
-<atom name='CE2' type='C13' num='1' mean='137.670' dev='26.560' x='2' y='5' />
-<atom name='NE1' type='N15' num='1' mean='129.500' dev='9.480' x='1' y='5' />
-<atom name='HZ2' type='H1' num='1' mean='7.290' dev='1.320' x='1' y='7' />
-<atom name='CZ2' type='C13' num='1' mean='114.170' dev='5.680' x='2' y='6' />
-<atom name='CZ3' type='C13' num='1' mean='121.340' dev='7.680' x='4' y='6' />
-<atom name='HZ3' type='H1' num='1' mean='6.870' dev='1.760' x='5' y='7' />
-<atom name='CH2' type='C13' num='1' mean='123.600' dev='6.680' x='3' y='7' />
-<atom name='CE3' type='C13' num='1' mean='120.590' dev='9.360' x='4' y='5' />
-<atom name='HH2' type='H1' num='1' mean='7.000' dev='1.680' x='3' y='8' />
-<atom name='N' type='N15' num='1' mean='121.620' dev='17.920' x='1' y='1' />
-<atom name='C' type='C13' num='1' mean='176.130' dev='7.920' x='3' y='1' />
-<atom name='H' type='H1' num='1' mean='8.290' dev='3.240' x='1' y='0' />
-<atom name='HB2' type='H1' num='1' mean='3.210' dev='1.440' x='1' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='3.150' dev='1.480' x='3' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='57.650' dev='10.520' x='2' y='1' />
-<atom name='CB' type='C13' num='1' mean='29.990' dev='8.240' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.710' dev='2.160' x='2' y='0' />
-<atom name='HD1' type='H1' num='1' mean='7.160' dev='1.360' x='0' y='3' />
-<atom name='HE1' type='H1' num='1' mean='10.110' dev='2.280' x='0' y='6' />
-<atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CG' type='C13' num='1' mean='110.210' dev='7.360' x='2' y='3' />
-<atom name='CD2' type='C13' num='1' mean='127.460' dev='5.440' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='126.420' dev='7.880' x='1' y='4' />
-<atom name='HE3' type='H1' num='1' mean='7.350' dev='1.600' x='5' y='4' />
-<bond from='CE2' to='CD2'/>
-<bond from='CE2' to='NE1'/>
-<bond from='CE2' to='CZ2'/>
-<bond from='NE1' to='HE1'/>
-<bond from='NE1' to='CD1'/>
-<bond from='NE1' to='CE2'/>
-<bond from='HZ2' to='CZ2'/>
-<bond from='CZ2' to='CE2'/>
-<bond from='CZ2' to='HZ2'/>
-<bond from='CZ2' to='CH2'/>
-<bond from='CZ3' to='HZ3'/>
-<bond from='CZ3' to='CH2'/>
-<bond from='CZ3' to='CE3'/>
-<bond from='HZ3' to='CZ3'/>
-<bond from='CH2' to='CZ2'/>
-<bond from='CH2' to='CZ3'/>
-<bond from='CH2' to='HH2'/>
-<bond from='CE3' to='CD2'/>
-<bond from='CE3' to='HE3'/>
-<bond from='CE3' to='CZ3'/>
-<bond from='HH2' to='CH2'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HE1' to='NE1'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='CD2'/>
-<bond from='CG' to='CD1'/>
-<bond from='CD2' to='CG'/>
-<bond from='CD2' to='CE2'/>
-<bond from='CD2' to='CE3'/>
-<bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
-<bond from='CD1' to='NE1'/>
-<bond from='HE3' to='CE3'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Asparagine' short='ASN' letter='N' systype='8' >
-<group name='HB' x='0' y='0'/>
-<group name='HD2' x='0' y='0'/>
-<atom name='HD22' type='H1' num='1' mean='7.160' dev='2.040' x='2' y='5' group='HD2'/>
-<atom name='ND2' type='N15' num='1' mean='112.870' dev='9.960' x='1' y='4' />
-<atom name='HD21' type='H1' num='1' mean='7.320' dev='2.040' x='0' y='5' group='HD2'/>
-<atom name='OD1' type='O' num='1' x='0' y='3' />
-<atom name='N' type='N15' num='1' mean='119.040' dev='16.880' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='175.340' dev='7.360' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.360' dev='2.520' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.810' dev='1.320' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.770' dev='1.360' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='53.500' dev='7.880' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='38.630' dev='7.080' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.680' dev='1.480' x='1' y='0' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='176.800' dev='5.440' x='1' y='3' />
-<bond from='HD22' to='ND2'/>
-<bond from='ND2' to='CG'/>
-<bond from='ND2' to='HD22'/>
-<bond from='ND2' to='HD21'/>
-<bond from='HD21' to='ND2'/>
-<bond from='OD1' to='CG'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='ND2'/>
-<bond from='CG' to='OD1'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Aspartate' short='ASP' letter='D' systype='8' >
-<group name='HB' x='0' y='0'/>
-<atom name='OD1' type='O' num='1' x='0' y='4' />
-<atom name='OD2' type='O' num='1' x='2' y='4' />
-<atom name='N' type='N15' num='1' mean='120.790' dev='16.120' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='176.420' dev='7.200' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.330' dev='2.280' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.730' dev='1.120' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.680' dev='1.160' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='54.620' dev='8.360' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='40.820' dev='6.640' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.610' dev='1.280' x='1' y='0' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='179.210' dev='6.200' x='1' y='3' />
-<bond from='OD1' to='CG'/>
-<bond from='OD2' to='CG'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='OD1'/>
-<bond from='CG' to='OD2'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Glutamate' short='GLU' letter='E' systype='22' >
-<group name='HB' x='0' y='0'/>
-<group name='HG' x='0' y='0'/>
-<atom name='OE1' type='O' num='1' x='0' y='5' />
-<atom name='OE2' type='O' num='1' x='2' y='5' />
-<atom name='N' type='N15' num='1' mean='120.720' dev='14.760' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='176.990' dev='8.200' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.340' dev='2.440' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.040' dev='0.880' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.020' dev='0.880' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='57.440' dev='8.560' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='30.010' dev='7.200' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.250' dev='1.680' x='1' y='0' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='36.040' dev='5.480' x='1' y='3' />
-<atom name='HG2' type='H1' num='1' mean='2.300' dev='0.880' x='0' y='3' group='HG'/>
-<atom name='HG3' type='H1' num='1' mean='2.280' dev='0.880' x='2' y='3' group='HG'/>
-<atom name='CD' type='C13' num='1' mean='182.320' dev='7.680' x='1' y='4' />
-<bond from='OE1' to='CD'/>
-<bond from='OE2' to='CD'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='HG2'/>
-<bond from='CG' to='HG3'/>
-<bond from='CG' to='CD'/>
-<bond from='HG2' to='CG'/>
-<bond from='HG3' to='CG'/>
-<bond from='CD' to='CG'/>
-<bond from='CD' to='OE1'/>
-<bond from='CD' to='OE2'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Phenylalanine' short='PHE' letter='F' systype='8' >
-<group name='HB' x='0' y='0'/>
-<group name='HD' x='0' y='0'/>
-<group name='HE' x='0' y='0'/>
-<atom name='CZ' type='C13' num='1' mean='129.190' dev='7.120' x='2' y='6' />
-<atom name='CE1' type='C13' num='1' mean='130.570' dev='6.160' x='1' y='5' />
-<atom name='CE2' type='C13' num='1' mean='130.670' dev='4.120' x='3' y='5' />
-<atom name='N' type='N15' num='1' mean='120.700' dev='17.040' x='1' y='1' />
-<atom name='C' type='C13' num='1' mean='175.540' dev='8.080' x='3' y='1' />
-<atom name='H' type='H1' num='1' mean='8.390' dev='2.880' x='1' y='0' />
-<atom name='HB2' type='H1' num='1' mean='3.000' dev='1.520' x='1' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.960' dev='1.520' x='3' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='58.210' dev='10.720' x='2' y='1' />
-<atom name='CB' type='C13' num='1' mean='39.930' dev='8.360' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.620' dev='2.360' x='2' y='0' />
-<atom name='HD1' type='H1' num='1' mean='7.060' dev='1.360' x='0' y='4' group='HD'/>
-<atom name='HD2' type='H1' num='1' mean='7.070' dev='1.320' x='4' y='4' group='HD'/>
-<atom name='HE1' type='H1' num='1' mean='7.100' dev='1.280' x='0' y='5' group='HE'/>
-<atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CG' type='C13' num='1' mean='136.780' dev='13.440' x='2' y='3' />
-<atom name='CD2' type='C13' num='1' mean='131.450' dev='5.080' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='131.440' dev='5.360' x='1' y='4' />
-<atom name='HE2' type='H1' num='1' mean='7.110' dev='1.280' x='4' y='5' group='HE'/>
-<atom name='HZ' type='H1' num='1' mean='7.030' dev='1.720' x='2' y='7' />
-<bond from='CZ' to='HZ'/>
-<bond from='CZ' to='CE1'/>
-<bond from='CZ' to='CE2'/>
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CD1'/>
-<bond from='CE1' to='CZ'/>
-<bond from='CE2' to='CD2'/>
-<bond from='CE2' to='HE2'/>
-<bond from='CE2' to='CZ'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='HE1' to='CE1'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='CD2'/>
-<bond from='CG' to='CD1'/>
-<bond from='CD2' to='HD2'/>
-<bond from='CD2' to='CG'/>
-<bond from='CD2' to='CE2'/>
-<bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
-<bond from='CD1' to='CE1'/>
-<bond from='HE2' to='CE2'/>
-<bond from='HZ' to='CZ'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Arginine' short='ARG' letter='R' systype='22' >
-<group name='HH2' x='0' y='0'/>
-<group name='HH1' x='0' y='0'/>
-<group name='HB' x='0' y='0'/>
-<group name='HD' x='0' y='0'/>
-<group name='HG' x='0' y='0'/>
-<atom name='CZ' type='C13' num='1' mean='159.190' dev='3.800' x='1' y='6' />
-<atom name='NH2' type='N15' num='1' mean='73.880' dev='26.920' x='1' y='7' />
-<atom name='NE' type='N15' num='1' mean='92.640' dev='59.400' x='1' y='5' />
-<atom name='NH1' type='N15' num='1' mean='73.380' dev='24.960' x='2' y='6' />
-<atom name='HH21' type='H1' num='1' mean='6.800' dev='1.640' x='0' y='7' group='HH2'/>
-<atom name='HH22' type='H1' num='1' mean='6.750' dev='1.560' x='1' y='8' group='HH2'/>
-<atom name='HH12' type='H1' num='1' mean='6.760' dev='1.400' x='2' y='7' group='HH1'/>
-<atom name='HH11' type='H1' num='1' mean='6.820' dev='1.600' x='3' y='6' group='HH1'/>
-<atom name='N' type='N15' num='1' mean='120.730' dev='15.360' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='176.480' dev='8.360' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.240' dev='2.400' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='1.800' dev='1.080' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='1.780' dev='1.120' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='56.840' dev='9.560' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='30.610' dev='7.320' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.290' dev='1.800' x='1' y='0' />
-<atom name='HD2' type='H1' num='1' mean='3.130' dev='0.920' x='2' y='4' group='HD'/>
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='27.260' dev='5.400' x='1' y='3' />
-<atom name='HG2' type='H1' num='1' mean='1.580' dev='1.080' x='0' y='3' group='HG'/>
-<atom name='HG3' type='H1' num='1' mean='1.570' dev='1.120' x='2' y='3' group='HG'/>
-<atom name='CD' type='C13' num='1' mean='43.130' dev='4.120' x='1' y='4' />
-<atom name='HD3' type='H1' num='1' mean='3.120' dev='0.960' x='0' y='4' group='HD'/>
-<atom name='HE' type='H1' num='1' mean='7.340' dev='2.240' x='0' y='5' />
-<bond from='CZ' to='NH2'/>
-<bond from='CZ' to='NE'/>
-<bond from='CZ' to='NH1'/>
-<bond from='NH2' to='CZ'/>
-<bond from='NH2' to='HH21'/>
-<bond from='NH2' to='HH22'/>
-<bond from='NE' to='CD'/>
-<bond from='NE' to='HE'/>
-<bond from='NE' to='CZ'/>
-<bond from='NH1' to='CZ'/>
-<bond from='NH1' to='HH12'/>
-<bond from='NH1' to='HH11'/>
-<bond from='HH21' to='NH2'/>
-<bond from='HH22' to='NH2'/>
-<bond from='HH12' to='NH1'/>
-<bond from='HH11' to='NH1'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='HD2' to='CD'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='HG2'/>
-<bond from='CG' to='HG3'/>
-<bond from='CG' to='CD'/>
-<bond from='HG2' to='CG'/>
-<bond from='HG3' to='CG'/>
-<bond from='CD' to='HD2'/>
-<bond from='CD' to='CG'/>
-<bond from='CD' to='HD3'/>
-<bond from='CD' to='NE'/>
-<bond from='HD3' to='CD'/>
-<bond from='HE' to='NE'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Methionine' short='MET' letter='M' systype='22' >
-<group name='H' x='0' y='0'/>
-<group name='HB' x='0' y='0'/>
-<group name='HG' x='0' y='0'/>
-<atom name='SD' type='S' num='1' x='1' y='4' />
-<atom name='N' type='N15' num='1' mean='120.040' dev='14.640' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='176.330' dev='8.320' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.250' dev='2.400' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.040' dev='1.360' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.000' dev='1.440' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='56.210' dev='9.080' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='33.020' dev='9.080' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.390' dev='1.920' x='1' y='0' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='CG' type='C13' num='1' mean='32.050' dev='5.360' x='1' y='3' />
-<atom name='HG2' type='H1' num='1' mean='2.440' dev='1.400' x='0' y='3' group='HG'/>
-<atom name='HG3' type='H1' num='1' mean='2.400' dev='1.560' x='2' y='3' group='HG'/>
-<atom name='HE' type='H1' num='1' mean='1.880' dev='1.600' x='1' y='6' />
-<atom name='CE' type='C13' num='1' mean='17.340' dev='12.280' x='1' y='5' />
-<bond from='SD' to='CG'/>
-<bond from='SD' to='CE'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
-<bond from='O' to='C'/>
-<bond from='CG' to='CB'/>
-<bond from='CG' to='HG2'/>
-<bond from='CG' to='HG3'/>
-<bond from='CG' to='SD'/>
-<bond from='HG2' to='CG'/>
-<bond from='HG3' to='CG'/>
-<bond from='HE' to='CE'/>
-<bond from='CE' to='HE'/>
-<bond from='CE' to='SD'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
-<residue-type name='Cysteine' short='CYS' letter='C' systype='8' >
-<group name='HB' x='0' y='0'/>
-<atom name='SG' type='S' num='1' x='1' y='3' />
-<atom name='N' type='N15' num='1' mean='119.860' dev='18.560' x='0' y='1' />
-<atom name='C' type='C13' num='1' mean='174.760' dev='8.200' x='2' y='1' />
-<atom name='H' type='H1' num='1' mean='8.410' dev='2.680' x='0' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.960' dev='1.800' x='0' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.930' dev='1.960' x='2' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='57.560' dev='13.800' x='1' y='1' />
-<atom name='CB' type='C13' num='1' mean='34.300' dev='26.720' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.700' dev='2.240' x='1' y='0' />
-<atom name='O' type='O' num='1' x='2' y='0' />
-<atom name='HG' type='H1' num='1' mean='2.480' dev='8.880' x='1' y='4' />
-<bond from='SG' to='CB'/>
-<bond from='SG' to='HG'/>
-<bond from='N' to='H'/>
-<bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
-<bond from='C' to='O'/>
-<bond from='H' to='N'/>
-<bond from='HB2' to='CB'/>
-<bond from='HB3' to='CB'/>
-<bond from='CA' to='N'/>
-<bond from='CA' to='C'/>
-<bond from='CA' to='CB'/>
-<bond from='CA' to='HA'/>
-<bond from='CB' to='HB2'/>
-<bond from='CB' to='HB3'/>
-<bond from='CB' to='CA'/>
-<bond from='CB' to='SG'/>
-<bond from='HA' to='CA'/>
-<bond from='O' to='C'/>
-<bond from='HG' to='SG'/>
-<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
-<fld name='SDmult' type='String'>4.0</fld>
-</residue-type>
 <residue-type name='BBresidue' short='BB' letter='B' systype='8' >
 <group name='HB' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='118.000' dev='35.000' x='1' y='1' />
@@ -1272,9 +712,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='O' to='C'/>
 <bond from='HG' to='CG'/>
 <bond from='CG' to='CB'/>
-<bond from='CG' to='HG'/>
 <bond from='CG' to='CD2'/>
 <bond from='CG' to='CD1'/>
+<bond from='CG' to='HG'/>
 <bond from='CD2' to='HD2'/>
 <bond from='CD2' to='CG'/>
 <bond from='CD1' to='HD1'/>
@@ -1385,9 +825,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='CG' type='C13' num='1' mean='27.200' dev='4.760' x='2' y='3' />
 <atom name='HG2' type='H1' num='1' mean='1.940' dev='1.360' x='1' y='4' group='HG'/>
+<atom name='HD3' type='H1' num='1' mean='3.620' dev='1.560' x='0' y='3' group='HD'/>
 <atom name='HG3' type='H1' num='1' mean='1.910' dev='1.400' x='2' y='4' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='50.330' dev='4.760' x='1' y='2' />
-<atom name='HD3' type='H1' num='1' mean='3.620' dev='1.560' x='0' y='3' group='HD'/>
 <bond from='N' to='CA'/>
 <bond from='N' to='CD'/>
 <bond from='C' to='CA'/>
@@ -1410,12 +850,12 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
 <bond from='HG2' to='CG'/>
+<bond from='HD3' to='CD'/>
 <bond from='HG3' to='CG'/>
 <bond from='CD' to='N'/>
 <bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
-<bond from='HD3' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1475,14 +915,14 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='CG' type='C13' num='1' mean='24.890' dev='5.040' x='1' y='3' />
 <atom name='HG2' type='H1' num='1' mean='1.380' dev='1.080' x='0' y='3' group='HG'/>
+<atom name='HD3' type='H1' num='1' mean='1.600' dev='0.960' x='2' y='4' group='HD'/>
 <atom name='HG3' type='H1' num='1' mean='1.360' dev='1.160' x='2' y='3' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='28.860' dev='5.120' x='1' y='4' />
-<atom name='HD3' type='H1' num='1' mean='1.600' dev='0.960' x='2' y='4' group='HD'/>
-<atom name='HE2' type='H1' num='1' mean='2.920' dev='0.840' x='0' y='5' group='HE'/>
-<atom name='HE3' type='H1' num='1' mean='2.920' dev='0.840' x='2' y='5' group='HE'/>
 <atom name='HZ' type='H1' num='1' mean='7.500' dev='1.680' x='1' y='7' />
+<atom name='HE2' type='H1' num='1' mean='2.920' dev='0.840' x='0' y='5' group='HE'/>
 <atom name='CE' type='C13' num='1' mean='41.820' dev='3.720' x='1' y='5' />
 <atom name='NZ' type='N15' num='1' mean='70.050' dev='191.040' x='1' y='6' />
+<atom name='HE3' type='H1' num='1' mean='2.920' dev='0.840' x='2' y='5' group='HE'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1506,59 +946,48 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
 <bond from='HG2' to='CG'/>
+<bond from='HD3' to='CD'/>
 <bond from='HG3' to='CG'/>
 <bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
 <bond from='CD' to='CE'/>
-<bond from='HD3' to='CD'/>
-<bond from='HE2' to='CE'/>
-<bond from='HE3' to='CE'/>
 <bond from='HZ' to='NZ'/>
-<bond from='CE' to='CD'/>
+<bond from='HE2' to='CE'/>
 <bond from='CE' to='HE2'/>
-<bond from='CE' to='HE3'/>
+<bond from='CE' to='CD'/>
 <bond from='CE' to='NZ'/>
+<bond from='CE' to='HE3'/>
 <bond from='NZ' to='HZ'/>
 <bond from='NZ' to='CE'/>
+<bond from='HE3' to='CE'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
-<residue-type name='Tyrosine' short='TYR' letter='Y' systype='8' >
+<residue-type name='Phenylalanine' short='PHE' letter='F' systype='8' >
 <group name='HB' x='0' y='0'/>
 <group name='HD' x='0' y='0'/>
 <group name='HE' x='0' y='0'/>
-<atom name='HH' type='H1' num='1' mean='9.020' dev='6.120' x='3' y='8' />
-<atom name='CZ' type='C13' num='1' mean='156.470' dev='9.080' x='2' y='6' />
-<atom name='CE1' type='C13' num='1' mean='117.820' dev='5.960' x='1' y='5' />
-<atom name='CE2' type='C13' num='1' mean='117.850' dev='7.000' x='3' y='5' />
-<atom name='N' type='N15' num='1' mean='120.800' dev='18.080' x='1' y='1' />
-<atom name='C' type='C13' num='1' mean='175.410' dev='8.120' x='3' y='1' />
-<atom name='H' type='H1' num='1' mean='8.340' dev='3.000' x='1' y='0' />
-<atom name='HB2' type='H1' num='1' mean='2.910' dev='1.520' x='1' y='2' group='HB'/>
-<atom name='HB3' type='H1' num='1' mean='2.880' dev='1.520' x='3' y='2' group='HB'/>
-<atom name='CA' type='C13' num='1' mean='58.070' dev='10.480' x='2' y='1' />
-<atom name='CB' type='C13' num='1' mean='39.280' dev='8.680' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.630' dev='2.280' x='2' y='0' />
-<atom name='HD1' type='H1' num='1' mean='6.950' dev='1.200' x='0' y='4' group='HD'/>
-<atom name='HD2' type='H1' num='1' mean='6.950' dev='1.240' x='4' y='4' group='HD'/>
-<atom name='HE1' type='H1' num='1' mean='6.710' dev='0.960' x='0' y='5' group='HE'/>
+<atom name='N' type='N15' num='1' mean='120.700' dev='17.040' x='1' y='1' />
+<atom name='C' type='C13' num='1' mean='175.540' dev='8.080' x='3' y='1' />
+<atom name='H' type='H1' num='1' mean='8.390' dev='2.880' x='1' y='0' />
+<atom name='HB2' type='H1' num='1' mean='3.000' dev='1.520' x='1' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.960' dev='1.520' x='3' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='58.210' dev='10.720' x='2' y='1' />
+<atom name='CB' type='C13' num='1' mean='39.930' dev='8.360' x='2' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.620' dev='2.360' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='7.060' dev='1.360' x='0' y='4' group='HD'/>
+<atom name='HD2' type='H1' num='1' mean='7.070' dev='1.320' x='4' y='4' group='HD'/>
+<atom name='HE1' type='H1' num='1' mean='7.100' dev='1.280' x='0' y='5' group='HE'/>
 <atom name='O' type='O' num='1' x='3' y='0' />
-<atom name='CG' type='C13' num='1' mean='128.970' dev='11.360' x='2' y='3' />
-<atom name='CD2' type='C13' num='1' mean='132.460' dev='6.840' x='3' y='4' />
-<atom name='CD1' type='C13' num='1' mean='132.650' dev='5.200' x='1' y='4' />
-<atom name='HE2' type='H1' num='1' mean='6.720' dev='0.960' x='4' y='5' group='HE'/>
-<atom name='OH' type='O' num='1' x='2' y='7' />
-<bond from='HH' to='OH'/>
-<bond from='CZ' to='OH'/>
-<bond from='CZ' to='CE1'/>
-<bond from='CZ' to='CE2'/>
-<bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CD1'/>
-<bond from='CE1' to='CZ'/>
-<bond from='CE2' to='CD2'/>
-<bond from='CE2' to='HE2'/>
-<bond from='CE2' to='CZ'/>
+<atom name='CG' type='C13' num='1' mean='136.780' dev='13.440' x='2' y='3' />
+<atom name='CD2' type='C13' num='1' mean='131.450' dev='5.080' x='3' y='4' />
+<atom name='CD1' type='C13' num='1' mean='131.440' dev='5.360' x='1' y='4' />
+<atom name='HZ' type='H1' num='1' mean='7.030' dev='1.720' x='2' y='7' />
+<atom name='HE2' type='H1' num='1' mean='7.110' dev='1.280' x='4' y='5' group='HE'/>
+<atom name='CZ' type='C13' num='1' mean='129.190' dev='7.120' x='2' y='6' />
+<atom name='CE1' type='C13' num='1' mean='130.570' dev='6.160' x='1' y='5' />
+<atom name='CE2' type='C13' num='1' mean='130.670' dev='4.120' x='3' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
 <bond from='C' to='CA'/>
@@ -1586,11 +1015,582 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
 <bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CG'/>
 <bond from='CD1' to='CE1'/>
+<bond from='CD1' to='CG'/>
+<bond from='HZ' to='CZ'/>
 <bond from='HE2' to='CE2'/>
-<bond from='OH' to='HH'/>
+<bond from='CZ' to='HZ'/>
+<bond from='CZ' to='CE1'/>
+<bond from='CZ' to='CE2'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='CZ'/>
+<bond from='CE1' to='CD1'/>
+<bond from='CE2' to='CZ'/>
+<bond from='CE2' to='CD2'/>
+<bond from='CE2' to='HE2'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Arginine' short='ARG' letter='R' systype='22' >
+<group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
+<group name='HG' x='0' y='0'/>
+<group name='HH1' x='0' y='0'/>
+<group name='HH2' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.730' dev='15.360' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='176.480' dev='8.360' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.240' dev='2.400' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='1.800' dev='1.080' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='1.780' dev='1.120' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='56.840' dev='9.560' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='30.610' dev='7.320' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.290' dev='1.800' x='1' y='0' />
+<atom name='HD2' type='H1' num='1' mean='3.130' dev='0.920' x='2' y='4' group='HD'/>
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='27.260' dev='5.400' x='1' y='3' />
+<atom name='HG2' type='H1' num='1' mean='1.580' dev='1.080' x='0' y='3' group='HG'/>
+<atom name='HD3' type='H1' num='1' mean='3.120' dev='0.960' x='0' y='4' group='HD'/>
+<atom name='HG3' type='H1' num='1' mean='1.570' dev='1.120' x='2' y='3' group='HG'/>
+<atom name='CD' type='C13' num='1' mean='43.130' dev='4.120' x='1' y='4' />
+<atom name='HE' type='H1' num='1' mean='7.340' dev='2.240' x='0' y='5' />
+<atom name='CZ' type='C13' num='1' mean='159.190' dev='3.800' x='1' y='6' />
+<atom name='NH2' type='N15' num='1' mean='73.880' dev='26.920' x='1' y='7' />
+<atom name='NE' type='N15' num='1' mean='92.640' dev='59.400' x='1' y='5' />
+<atom name='NH1' type='N15' num='1' mean='73.380' dev='24.960' x='2' y='6' />
+<atom name='HH21' type='H1' num='1' mean='6.800' dev='1.640' x='0' y='7' group='HH2'/>
+<atom name='HH22' type='H1' num='1' mean='6.750' dev='1.560' x='1' y='8' group='HH2'/>
+<atom name='HH12' type='H1' num='1' mean='6.760' dev='1.400' x='2' y='7' group='HH1'/>
+<atom name='HH11' type='H1' num='1' mean='6.820' dev='1.600' x='3' y='6' group='HH1'/>
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='HD2' to='CD'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='HG2'/>
+<bond from='CG' to='HG3'/>
+<bond from='CG' to='CD'/>
+<bond from='HG2' to='CG'/>
+<bond from='HD3' to='CD'/>
+<bond from='HG3' to='CG'/>
+<bond from='CD' to='HD2'/>
+<bond from='CD' to='CG'/>
+<bond from='CD' to='NE'/>
+<bond from='CD' to='HD3'/>
+<bond from='HE' to='NE'/>
+<bond from='CZ' to='NH2'/>
+<bond from='CZ' to='NE'/>
+<bond from='CZ' to='NH1'/>
+<bond from='NH2' to='CZ'/>
+<bond from='NH2' to='HH21'/>
+<bond from='NH2' to='HH22'/>
+<bond from='NE' to='HE'/>
+<bond from='NE' to='CZ'/>
+<bond from='NE' to='CD'/>
+<bond from='NH1' to='CZ'/>
+<bond from='NH1' to='HH12'/>
+<bond from='NH1' to='HH11'/>
+<bond from='HH21' to='NH2'/>
+<bond from='HH22' to='NH2'/>
+<bond from='HH12' to='NH1'/>
+<bond from='HH11' to='NH1'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Methionine' short='MET' letter='M' systype='22' >
+<group name='H' x='0' y='0'/>
+<group name='HB' x='0' y='0'/>
+<group name='HG' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.040' dev='14.640' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='176.330' dev='8.320' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.250' dev='2.400' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.040' dev='1.360' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.000' dev='1.440' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='56.210' dev='9.080' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='33.020' dev='9.080' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.390' dev='1.920' x='1' y='0' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='32.050' dev='5.360' x='1' y='3' />
+<atom name='HG2' type='H1' num='1' mean='2.440' dev='1.400' x='0' y='3' group='HG'/>
+<atom name='HG3' type='H1' num='1' mean='2.400' dev='1.560' x='2' y='3' group='HG'/>
+<atom name='HE' type='H1' num='1' mean='1.880' dev='1.600' x='1' y='6' />
+<atom name='CE' type='C13' num='1' mean='17.340' dev='12.280' x='1' y='5' />
+<atom name='SD' type='S' num='1' x='1' y='4' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='HG2'/>
+<bond from='CG' to='HG3'/>
+<bond from='CG' to='SD'/>
+<bond from='HG2' to='CG'/>
+<bond from='HG3' to='CG'/>
+<bond from='HE' to='CE'/>
+<bond from='CE' to='HE'/>
+<bond from='CE' to='SD'/>
+<bond from='SD' to='CG'/>
+<bond from='SD' to='CE'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Cysteine' short='CYS' letter='C' systype='8' >
+<group name='HB' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='119.860' dev='18.560' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='174.760' dev='8.200' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.410' dev='2.680' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.960' dev='1.800' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.930' dev='1.960' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='57.560' dev='13.800' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='34.300' dev='26.720' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.700' dev='2.240' x='1' y='0' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='HG' type='H1' num='1' mean='2.480' dev='8.880' x='1' y='4' />
+<atom name='SG' type='S' num='1' x='1' y='3' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='SG'/>
+<bond from='HA' to='CA'/>
+<bond from='O' to='C'/>
+<bond from='HG' to='SG'/>
+<bond from='SG' to='CB'/>
+<bond from='SG' to='HG'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Tyrosine' short='TYR' letter='Y' systype='8' >
+<group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
+<group name='HE' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.800' dev='18.080' x='1' y='1' />
+<atom name='C' type='C13' num='1' mean='175.410' dev='8.120' x='3' y='1' />
+<atom name='H' type='H1' num='1' mean='8.340' dev='3.000' x='1' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.910' dev='1.520' x='1' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.880' dev='1.520' x='3' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='58.070' dev='10.480' x='2' y='1' />
+<atom name='CB' type='C13' num='1' mean='39.280' dev='8.680' x='2' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.630' dev='2.280' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='6.950' dev='1.200' x='0' y='4' group='HD'/>
+<atom name='HD2' type='H1' num='1' mean='6.950' dev='1.240' x='4' y='4' group='HD'/>
+<atom name='HE1' type='H1' num='1' mean='6.710' dev='0.960' x='0' y='5' group='HE'/>
+<atom name='O' type='O' num='1' x='3' y='0' />
+<atom name='CG' type='C13' num='1' mean='128.970' dev='11.360' x='2' y='3' />
+<atom name='CD2' type='C13' num='1' mean='132.460' dev='6.840' x='3' y='4' />
+<atom name='CD1' type='C13' num='1' mean='132.650' dev='5.200' x='1' y='4' />
+<atom name='HE2' type='H1' num='1' mean='6.720' dev='0.960' x='4' y='5' group='HE'/>
+<atom name='CZ' type='C13' num='1' mean='156.470' dev='9.080' x='2' y='6' />
+<atom name='CE1' type='C13' num='1' mean='117.820' dev='5.960' x='1' y='5' />
+<atom name='CE2' type='C13' num='1' mean='117.850' dev='7.000' x='3' y='5' />
+<atom name='HH' type='H1' num='1' mean='9.020' dev='6.120' x='3' y='8' />
+<atom name='OH' type='O' num='1' x='2' y='7' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HD2' to='CD2'/>
+<bond from='HE1' to='CE1'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='CD2'/>
+<bond from='CG' to='CD1'/>
+<bond from='CD2' to='HD2'/>
+<bond from='CD2' to='CG'/>
+<bond from='CD2' to='CE2'/>
+<bond from='CD1' to='HD1'/>
+<bond from='CD1' to='CE1'/>
+<bond from='CD1' to='CG'/>
+<bond from='HE2' to='CE2'/>
+<bond from='CZ' to='CE1'/>
+<bond from='CZ' to='CE2'/>
+<bond from='CZ' to='OH'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='CZ'/>
+<bond from='CE1' to='CD1'/>
+<bond from='CE2' to='CZ'/>
+<bond from='CE2' to='CD2'/>
+<bond from='CE2' to='HE2'/>
+<bond from='HH' to='OH'/>
 <bond from='OH' to='CZ'/>
+<bond from='OH' to='HH'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Histidine' short='HIS' letter='H' systype='8' >
+<group name='HB' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='119.400' dev='17.160' x='1' y='1' />
+<atom name='C' type='C13' num='1' mean='175.260' dev='8.280' x='3' y='1' />
+<atom name='H' type='H1' num='1' mean='8.250' dev='2.760' x='1' y='0' />
+<atom name='HB2' type='H1' num='1' mean='3.100' dev='1.560' x='1' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='3.080' dev='1.560' x='3' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='56.460' dev='10.000' x='2' y='1' />
+<atom name='CB' type='C13' num='1' mean='30.220' dev='8.640' x='2' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.620' dev='1.880' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='8.970' dev='11.640' x='0' y='3' />
+<atom name='HD2' type='H1' num='1' mean='7.070' dev='1.920' x='4' y='4' />
+<atom name='HE1' type='H1' num='1' mean='8.040' dev='2.200' x='0' y='6' />
+<atom name='NE2' type='N15' num='1' mean='175.540' dev='83.680' x='3' y='5' />
+<atom name='ND1' type='N15' num='1' mean='193.420' dev='135.960' x='1' y='4' />
+<atom name='O' type='O' num='1' x='3' y='0' />
+<atom name='CG' type='C13' num='1' mean='130.840' dev='13.240' x='2' y='3' />
+<atom name='CD2' type='C13' num='1' mean='119.590' dev='10.920' x='3' y='4' />
+<atom name='HE2' type='H1' num='1' mean='9.950' dev='10.960' x='4' y='6' />
+<atom name='CE1' type='C13' num='1' mean='136.800' dev='9.120' x='1' y='5' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='ND1'/>
+<bond from='HD2' to='CD2'/>
+<bond from='HE1' to='CE1'/>
+<bond from='NE2' to='CE1'/>
+<bond from='NE2' to='CD2'/>
+<bond from='NE2' to='HE2'/>
+<bond from='ND1' to='HD1'/>
+<bond from='ND1' to='CE1'/>
+<bond from='ND1' to='CG'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='ND1'/>
+<bond from='CG' to='CD2'/>
+<bond from='CD2' to='HD2'/>
+<bond from='CD2' to='NE2'/>
+<bond from='CD2' to='CG'/>
+<bond from='HE2' to='NE2'/>
+<bond from='CE1' to='HE1'/>
+<bond from='CE1' to='NE2'/>
+<bond from='CE1' to='ND1'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Glutamine' short='GLN' letter='Q' systype='22' >
+<group name='HB' x='0' y='0'/>
+<group name='HG' x='0' y='0'/>
+<group name='HE2' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='119.820' dev='15.120' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='176.340' dev='7.960' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.220' dev='2.400' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.050' dev='1.040' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.030' dev='1.160' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='56.550' dev='8.760' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='29.180' dev='7.680' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.280' dev='1.760' x='1' y='0' />
+<atom name='NE2' type='N15' num='1' mean='111.870' dev='8.040' x='1' y='5' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='33.710' dev='4.880' x='1' y='3' />
+<atom name='HG2' type='H1' num='1' mean='2.320' dev='1.160' x='0' y='3' group='HG'/>
+<atom name='HG3' type='H1' num='1' mean='2.300' dev='1.160' x='2' y='3' group='HG'/>
+<atom name='CD' type='C13' num='1' mean='179.720' dev='4.520' x='1' y='4' />
+<atom name='HE21' type='H1' num='1' mean='7.200' dev='1.920' x='0' y='6' group='HE2'/>
+<atom name='HE22' type='H1' num='1' mean='7.040' dev='1.880' x='2' y='6' group='HE2'/>
+<atom name='OE1' type='O' num='1' x='0' y='4' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='NE2' to='CD'/>
+<bond from='NE2' to='HE21'/>
+<bond from='NE2' to='HE22'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='HG2'/>
+<bond from='CG' to='HG3'/>
+<bond from='CG' to='CD'/>
+<bond from='HG2' to='CG'/>
+<bond from='HG3' to='CG'/>
+<bond from='CD' to='NE2'/>
+<bond from='CD' to='CG'/>
+<bond from='CD' to='OE1'/>
+<bond from='HE21' to='NE2'/>
+<bond from='HE22' to='NE2'/>
+<bond from='OE1' to='CD'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Tryptophan' short='TRP' letter='W' systype='8' >
+<group name='HB' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='121.620' dev='17.920' x='1' y='1' />
+<atom name='C' type='C13' num='1' mean='176.130' dev='7.920' x='3' y='1' />
+<atom name='H' type='H1' num='1' mean='8.290' dev='3.240' x='1' y='0' />
+<atom name='HB2' type='H1' num='1' mean='3.210' dev='1.440' x='1' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='3.150' dev='1.480' x='3' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='57.650' dev='10.520' x='2' y='1' />
+<atom name='CB' type='C13' num='1' mean='29.990' dev='8.240' x='2' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.710' dev='2.160' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='7.160' dev='1.360' x='0' y='3' />
+<atom name='HE1' type='H1' num='1' mean='10.110' dev='2.280' x='0' y='6' />
+<atom name='O' type='O' num='1' x='3' y='0' />
+<atom name='CG' type='C13' num='1' mean='110.210' dev='7.360' x='2' y='3' />
+<atom name='CD2' type='C13' num='1' mean='127.460' dev='5.440' x='3' y='4' />
+<atom name='CD1' type='C13' num='1' mean='126.420' dev='7.880' x='1' y='4' />
+<atom name='HE3' type='H1' num='1' mean='7.350' dev='1.600' x='5' y='4' />
+<atom name='CE2' type='C13' num='1' mean='137.670' dev='26.560' x='2' y='5' />
+<atom name='HH2' type='H1' num='1' mean='7.000' dev='1.680' x='3' y='8' />
+<atom name='NE1' type='N15' num='1' mean='129.500' dev='9.480' x='1' y='5' />
+<atom name='HZ2' type='H1' num='1' mean='7.290' dev='1.320' x='1' y='7' />
+<atom name='CZ2' type='C13' num='1' mean='114.170' dev='5.680' x='2' y='6' />
+<atom name='CZ3' type='C13' num='1' mean='121.340' dev='7.680' x='4' y='6' />
+<atom name='HZ3' type='H1' num='1' mean='6.870' dev='1.760' x='5' y='7' />
+<atom name='CH2' type='C13' num='1' mean='123.600' dev='6.680' x='3' y='7' />
+<atom name='CE3' type='C13' num='1' mean='120.590' dev='9.360' x='4' y='5' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HE1' to='NE1'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='CD2'/>
+<bond from='CG' to='CD1'/>
+<bond from='CD2' to='CG'/>
+<bond from='CD2' to='CE2'/>
+<bond from='CD2' to='CE3'/>
+<bond from='CD1' to='HD1'/>
+<bond from='CD1' to='CG'/>
+<bond from='CD1' to='NE1'/>
+<bond from='HE3' to='CE3'/>
+<bond from='CE2' to='CD2'/>
+<bond from='CE2' to='NE1'/>
+<bond from='CE2' to='CZ2'/>
+<bond from='HH2' to='CH2'/>
+<bond from='NE1' to='HE1'/>
+<bond from='NE1' to='CE2'/>
+<bond from='NE1' to='CD1'/>
+<bond from='HZ2' to='CZ2'/>
+<bond from='CZ2' to='CE2'/>
+<bond from='CZ2' to='HZ2'/>
+<bond from='CZ2' to='CH2'/>
+<bond from='CZ3' to='HZ3'/>
+<bond from='CZ3' to='CH2'/>
+<bond from='CZ3' to='CE3'/>
+<bond from='HZ3' to='CZ3'/>
+<bond from='CH2' to='HH2'/>
+<bond from='CH2' to='CZ2'/>
+<bond from='CH2' to='CZ3'/>
+<bond from='CE3' to='CD2'/>
+<bond from='CE3' to='HE3'/>
+<bond from='CE3' to='CZ3'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Asparagine' short='ASN' letter='N' systype='8' >
+<group name='HB' x='0' y='0'/>
+<group name='HD2' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='119.040' dev='16.880' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='175.340' dev='7.360' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.360' dev='2.520' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.810' dev='1.320' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.770' dev='1.360' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='53.500' dev='7.880' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='38.630' dev='7.080' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.680' dev='1.480' x='1' y='0' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='176.800' dev='5.440' x='1' y='3' />
+<atom name='HD22' type='H1' num='1' mean='7.160' dev='2.040' x='2' y='5' group='HD2'/>
+<atom name='ND2' type='N15' num='1' mean='112.870' dev='9.960' x='1' y='4' />
+<atom name='HD21' type='H1' num='1' mean='7.320' dev='2.040' x='0' y='5' group='HD2'/>
+<atom name='OD1' type='O' num='1' x='0' y='3' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='ND2'/>
+<bond from='CG' to='OD1'/>
+<bond from='HD22' to='ND2'/>
+<bond from='ND2' to='CG'/>
+<bond from='ND2' to='HD22'/>
+<bond from='ND2' to='HD21'/>
+<bond from='HD21' to='ND2'/>
+<bond from='OD1' to='CG'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Aspartate' short='ASP' letter='D' systype='8' >
+<group name='HB' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.790' dev='16.120' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='176.420' dev='7.200' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.330' dev='2.280' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.730' dev='1.120' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.680' dev='1.160' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='54.620' dev='8.360' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='40.820' dev='6.640' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.610' dev='1.280' x='1' y='0' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='179.210' dev='6.200' x='1' y='3' />
+<atom name='OD1' type='O' num='1' x='0' y='4' />
+<atom name='OD2' type='O' num='1' x='2' y='4' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='OD1'/>
+<bond from='CG' to='OD2'/>
+<bond from='OD1' to='CG'/>
+<bond from='OD2' to='CG'/>
+<fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
+<fld name='SDmult' type='String'>4.0</fld>
+</residue-type>
+<residue-type name='Glutamate' short='GLU' letter='E' systype='22' >
+<group name='HB' x='0' y='0'/>
+<group name='HG' x='0' y='0'/>
+<atom name='N' type='N15' num='1' mean='120.720' dev='14.760' x='0' y='1' />
+<atom name='C' type='C13' num='1' mean='176.990' dev='8.200' x='2' y='1' />
+<atom name='H' type='H1' num='1' mean='8.340' dev='2.440' x='0' y='0' />
+<atom name='HB2' type='H1' num='1' mean='2.040' dev='0.880' x='0' y='2' group='HB'/>
+<atom name='HB3' type='H1' num='1' mean='2.020' dev='0.880' x='2' y='2' group='HB'/>
+<atom name='CA' type='C13' num='1' mean='57.440' dev='8.560' x='1' y='1' />
+<atom name='CB' type='C13' num='1' mean='30.010' dev='7.200' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.250' dev='1.680' x='1' y='0' />
+<atom name='O' type='O' num='1' x='2' y='0' />
+<atom name='CG' type='C13' num='1' mean='36.040' dev='5.480' x='1' y='3' />
+<atom name='HG2' type='H1' num='1' mean='2.300' dev='0.880' x='0' y='3' group='HG'/>
+<atom name='HG3' type='H1' num='1' mean='2.280' dev='0.880' x='2' y='3' group='HG'/>
+<atom name='CD' type='C13' num='1' mean='182.320' dev='7.680' x='1' y='4' />
+<atom name='OE1' type='O' num='1' x='0' y='5' />
+<atom name='OE2' type='O' num='1' x='2' y='5' />
+<bond from='N' to='H'/>
+<bond from='N' to='CA'/>
+<bond from='C' to='CA'/>
+<bond from='C' to='O'/>
+<bond from='H' to='N'/>
+<bond from='HB2' to='CB'/>
+<bond from='HB3' to='CB'/>
+<bond from='CA' to='N'/>
+<bond from='CA' to='C'/>
+<bond from='CA' to='CB'/>
+<bond from='CA' to='HA'/>
+<bond from='CB' to='HB2'/>
+<bond from='CB' to='HB3'/>
+<bond from='CB' to='CA'/>
+<bond from='CB' to='CG'/>
+<bond from='HA' to='CA'/>
+<bond from='O' to='C'/>
+<bond from='CG' to='CB'/>
+<bond from='CG' to='HG2'/>
+<bond from='CG' to='HG3'/>
+<bond from='CG' to='CD'/>
+<bond from='HG2' to='CG'/>
+<bond from='HG3' to='CG'/>
+<bond from='CD' to='CG'/>
+<bond from='CD' to='OE1'/>
+<bond from='CD' to='OE2'/>
+<bond from='OE1' to='CD'/>
+<bond from='OE2' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1628,14 +1628,14 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 </spectrum>
 <spinbase>
 </spinbase>
+<fld name='Sample' type='OID'>42</fld>
+<fld name='Script' type='OID'>50</fld>
+<fld name='Spectrometer' type='OID'>39</fld>
 <fld name='Macro' type='OID'>33</fld>
 <fld name='Pulse Program' type='OID'>36</fld>
 <fld name='Current Settings' type='OID'>44</fld>
 <fld name='Composite Pulse Decoupling' type='OID'>46</fld>
 <fld name='Wave Form' type='OID'>48</fld>
-<fld name='Sample' type='OID'>42</fld>
-<fld name='Script' type='OID'>50</fld>
-<fld name='Spectrometer' type='OID'>39</fld>
 </project>
 <script name='pre'>
 <code lang='Lua'>local d = 1 -- A, immersion depth
@@ -2658,7 +2658,7 @@ object_attributes ={
 ["attr4"]="Dimension",
 ["attr5"]="Group",
 ["attr6"]="Ref Sample",
-["attr7"]="Type (CARA)",
+["attr7"]="Exp (CARA)",
 ["attr8"]="1D Spectrum",
 ["attr9"]="URL reference",
 ["linked as"]="macro",
@@ -2749,7 +2749,7 @@ object_attributes ={
 ["attr2"]="Location",
 ["attr3"]="Contact Person",
 ["attr4"]="Datum",
-["attr5"]="Spec Type",
+["attr5"]="Description",
 ["attr6"]="Memo",
 ["attr7"]="URL reference",
 ["linked as"]="spectrometer",
@@ -2774,6 +2774,11 @@ object_attributes ={
 --for key, value in pairs( object_attributes["Spectrometer"] ) do
 --print(key.." = "..value)
 --end
+
+--print(object_attributes["Macro"]["attr7"])
+
+
+
 
 list_of_components_of_experiment ={
 [4]="Script",
@@ -3774,6 +3779,7 @@ local dom_elements={}
 local dom_elements1={}
 
 local accumulator="&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n"
+accumulator=accumulator.."&lt;?xml-stylesheet type=\"text/xsl\" href=\"ngxml.xsl\"?&gt;\n"
 local tmpt=""
 if(items4DomXML) then 
 
@@ -5365,7 +5371,7 @@ local attr_text=curr_record:getAttr(object_attributes[curr_type]["attr"..i])
 				if("Datum"==object_attributes[curr_type]["attr"..i]) then
 				Attribute[number_of_opened_AttributeEditors*100+i]:addItem(date_stamp());
 				else
-						if("Type (CARA)"==object_attributes[curr_type]["attr"..i]) then
+						if(object_attributes["Macro"]["attr7"]==object_attributes[curr_type]["attr"..i]) then
 							local sptypes=cara:getSpectrumTypes()
 								for key,value in pairs(sptypes) do
 									Attribute[number_of_opened_AttributeEditors*100+i]:addItem(key);
@@ -5378,7 +5384,7 @@ local attr_text=curr_record:getAttr(object_attributes[curr_type]["attr"..i])
 								Attribute[number_of_opened_AttributeEditors*100+i]:addItem(value);
 								end
 							end --for key
-						end --if("Type (CARA)"
+						end --if(object_attributes["Macro"]["attr7"]
 				end --if("Datum
 		if(i&gt;0) then Attribute[number_of_opened_AttributeEditors*100+i]:setEditable(true); end;
 		Attribute[number_of_opened_AttributeEditors*100+i]:show();
@@ -6715,7 +6721,7 @@ convertWindows2LinuxSpecPathsInCara()
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>www</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>3D N15-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-TOCSY</fld>
 </obj>
 <obj oid='3'>
 <fld name='Macro Name' type='String'>zgpr</fld>
@@ -6739,7 +6745,7 @@ convertWindows2LinuxSpecPathsInCara()
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>zzz</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>HnCACB</fld>
+<fld name='Exp (CARA)' type='String'>HnCACB</fld>
 </obj>
 <obj oid='4'>
 <fld name='5' type='OID'>5</fld>
@@ -6781,6 +6787,7 @@ oo oo oo
 <fld name='9' type='OID'>9</fld>
 </obj>
 <obj oid='8'>
+<fld name='Description' type='String'>---</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>16.23.07</fld>
 <fld name='Body' type='String'>my 700</fld>
@@ -6789,9 +6796,9 @@ oo oo oo
 <fld name='Spec Name' type='String'>Avance 700</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>K.Dolittle</fld>
-<fld name='Spec Type' type='String'>---</fld>
 </obj>
 <obj oid='9'>
+<fld name='Description' type='String'>---</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>11.13.07</fld>
 <fld name='Body' type='String'>MY sepectr 600</fld>
@@ -6800,7 +6807,6 @@ oo oo oo
 <fld name='Spec Name' type='String'>Avance 600</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>K.Domore</fld>
-<fld name='Spec Type' type='String'>---</fld>
 </obj>
 <obj oid='10'>
 <fld name='11' type='OID'>11</fld>
@@ -6816,12 +6822,12 @@ oo oo oo
 <fld name='13' type='OID'>13</fld>
 </obj>
 <obj oid='13'>
+<fld name='Sample' type='String'>mmjcm</fld>
+<fld name='Spectrometer' type='String'>Avance 600</fld>
 <fld name='Datum' type='String'>11.20.07</fld>
 <fld name='NMR experiment' type='String'>watergate</fld>
 <fld name='Output TopSpin macro' type='String'>my.mac</fld>
 <fld name='Current Directory' type='String'>---</fld>
-<fld name='Sample' type='String'>mmjcm</fld>
-<fld name='Spectrometer' type='String'>Avance 600</fld>
 </obj>
 <obj oid='14'>
 <fld name='15' type='OID'>15</fld>
@@ -6881,7 +6887,7 @@ oo oo oo
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>www</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>2D TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>2D TOCSY</fld>
 <fld name='watergate' type='String'>watergate_v1</fld>
 </obj>
 <obj oid='21'>
@@ -6903,7 +6909,7 @@ oo oo oo
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>www</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>3D N15-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-TOCSY</fld>
 <fld name='watergate gg' type='String'>watergate gg_v1</fld>
 </obj>
 <obj oid='22'>
@@ -6925,7 +6931,7 @@ oo oo oo
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>www</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>3D N15-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-TOCSY</fld>
 </obj>
 <obj oid='23'>
 <fld name='Macro Name' type='String'>zgpr_v1</fld>
@@ -6945,7 +6951,7 @@ oo oo oo
 <fld name='Class (CARA)' type='String'>---</fld>
 <fld name='Memo' type='String'>zzz</fld>
 <fld name='URL reference' type='String'>---</fld>
-<fld name='Type (CARA)' type='String'>HCcH-TOCSYali</fld>
+<fld name='Exp (CARA)' type='String'>HCcH-TOCSYali</fld>
 </obj>
 <obj oid='24'>
 <fld name='Type' type='String'>Composite Pulse Decoupling</fld>
@@ -7217,7 +7223,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>https://sites.google.com/site/nmrgenerator/trosy-pfg</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 <fld name='1D Spectrum' type='String'>---</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
@@ -7273,7 +7279,7 @@ p22 =1000 --(watergate)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>useful for o1 adjustment</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'> 1D 1H</fld>
+<fld name='Exp (CARA)' type='String'> 1D 1H</fld>
 </obj>
 <obj oid='36'>
 <fld name='210' type='OID'>210</fld>
@@ -7398,6 +7404,7 @@ p22 =1000 --(watergate)
 <fld name='173' type='OID'>173</fld>
 </obj>
 <obj oid='41'>
+<fld name='Description' type='String'>Avance I, Installed 2005</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -7447,7 +7454,6 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 600 @ SBS NTU</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>Dr. Ye Hong (c/o Prof. Yoon)</fld>
-<fld name='Spec Type' type='String'>Avance I, Installed 2005</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
@@ -7512,7 +7518,10 @@ J_HaHb = {Hz=6., range={min=3., max=12.}} -- Hz
 <fld name='45' type='OID'>45</fld>
 </obj>
 <obj oid='45'>
-<fld name='Macro' type='String'>gradient calibration</fld>
+<fld name='Sample' type='String'>CRLR_amylin</fld>
+<fld name='Script' type='String'>compute_all.m</fld>
+<fld name='Spectrometer' type='String'>Avance 700 @ SBS NTU</fld>
+<fld name='Macro' type='String'>cosy_dqf_excitation_sculpting_15Ndecoupling-tst</fld>
 <fld name='Pulse Program' type='String'>hncacbgp3d</fld>
 <fld name='Current Settings' type='String'>Avance 700 @ SBS NTU</fld>
 <fld name='Composite Pulse Decoupling' type='String'>garp</fld>
@@ -7520,7 +7529,7 @@ J_HaHb = {Hz=6., range={min=3., max=12.}} -- Hz
 <fld name='Type' type='String'>Current Settings</fld>
 <fld name='Datum' type='String'>11.20.07</fld>
 <fld name='Body' type='Memo'>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Macro&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Macro Name&lt;nmrname&gt;gradient calibration&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Author(s)&lt;nmrauthor&gt;K.Pervushin&lt;/nmrauthor&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;28-2-2008&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Dimension&lt;nmrother&gt;1D&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Group&lt;nmrother&gt;calibration&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Type (CARA)&lt;nmrtype&gt;1D 1H&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;URL reference&lt;nmrurl&gt;http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=68&amp;t=289&lt;/nmrurl&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;exp_environment = {
+&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Macro&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Macro Name&lt;nmrname&gt;gradient calibration&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Author(s)&lt;nmrauthor&gt;K.Pervushin&lt;/nmrauthor&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;28-2-2008&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Dimension&lt;nmrother&gt;1D&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Group&lt;nmrother&gt;calibration&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Exp (CARA)&lt;nmrtype&gt;1D 1H&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;URL reference&lt;nmrurl&gt;http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=68&amp;t=289&lt;/nmrurl&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;exp_environment = {
 d1=1.,
 
 ["pulprog"]= "gradient_calibration.pk",
@@ -7567,9 +7576,6 @@ p22 =1000 --(watergate)
 <fld name='p1' type='Char'>9</fld>
 <fld name='Help URL' type='String'>https://sites.google.com/site/nmrgenerator/home</fld>
 <fld name='SR' type='String'> 8.1</fld>
-<fld name='Sample' type='String'>CRLR_amylin</fld>
-<fld name='Script' type='String'>compute_all.m</fld>
-<fld name='Spectrometer' type='String'>Avance 700 @ SBS NTU</fld>
 </obj>
 <obj oid='46'>
 <fld name='47' type='OID'>47</fld>
@@ -7955,6 +7961,7 @@ p22 =1000 --(watergate)
 <fld name='Wave Name' type='String'>Gauss_5_256.pk</fld>
 </obj>
 <obj oid='55'>
+<fld name='Description' type='String'>Avance I, Installed 2005</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8004,11 +8011,11 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 700 @ SBS NTU</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>Dr. Ye Hong (c/o Prof. Yoon)</fld>
-<fld name='Spec Type' type='String'>Avance I, Installed 2005</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
 <obj oid='56'>
+<fld name='Description' type='String'>Avance I, Installed 2003</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8057,11 +8064,11 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 900 @ Utrecht1</fld>
 <fld name='Location' type='String'>Utrecht, Netherlands</fld>
 <fld name='Contact Person' type='String'>Dr. Reiner Weinberg (c/o Rolf Boelens)</fld>
-<fld name='Spec Type' type='String'>Avance I, Installed 2003</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
 <obj oid='57'>
+<fld name='Description' type='String'>Avance I, Installed 2003</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8111,11 +8118,11 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 900 @ Utrecht</fld>
 <fld name='Location' type='String'>Utrecht, Netherlands</fld>
 <fld name='Contact Person' type='String'>Dr. Reiner Weinberg (c/o Rolf Boelens)</fld>
-<fld name='Spec Type' type='String'>Avance I, Installed 2003</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
 <obj oid='58'>
+<fld name='Description' type='String'>Avance I, Run on PC</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8173,11 +8180,11 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 400 @ SBS NTU</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>Dr. Ye Hong (c/o Prof. Yoon)</fld>
-<fld name='Spec Type' type='String'>Avance I, Run on PC</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
 <obj oid='59'>
+<fld name='Description' type='String'>Avance, 13C is on f3, 15N is on f2</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8226,11 +8233,11 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 600 @ Biozentrum Basel</fld>
 <fld name='Location' type='String'>Biozentrum Basel</fld>
 <fld name='Contact Person' type='String'>Dr. Jurgen Sass (c/o Prof. Stephan Grzesiek)</fld>
-<fld name='Spec Type' type='String'>Avance, 13C is on f3, 15N is on f2</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
 <obj oid='60'>
+<fld name='Description' type='String'>Avance I, 13C is on f3, 15N is on f2</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -8279,7 +8286,6 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='Spec Name' type='String'>Avance 800 @ Biozentrum Basel</fld>
 <fld name='Location' type='String'>Biozentrum Basel</fld>
 <fld name='Contact Person' type='String'>Dr. Jurgen Sass (c/o Prof. Stephan Grzesiek)</fld>
-<fld name='Spec Type' type='String'>Avance I, 13C is on f3, 15N is on f2</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
@@ -8417,7 +8423,7 @@ p22 =1000, --(watergate)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for small proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=237</fld>
-<fld name='Type (CARA)' type='String'>2D TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>2D TOCSY</fld>
 </obj>
 <obj oid='63'>
 <fld name='Macro Name' type='String'>noesy_hsqc13C_pfg</fld>
@@ -8553,7 +8559,7 @@ p30= 250, --PFG 1H
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D C13ali-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D C13ali-NOESY</fld>
 </obj>
 <obj oid='64'>
 <fld name='Macro Name' type='String'>hmqc15N_watergate_sp</fld>
@@ -8647,7 +8653,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for large soluble proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=241&amp;p=637#p637</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='65'>
 <fld name='Macro Name' type='String'>HNCA</fld>
@@ -8809,7 +8815,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for small proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=226</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 <fld name='1D Spectrum' type='String'>1D</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 <fld name='SP Measures' type='String'>1:1D</fld>
@@ -8971,7 +8977,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for small proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='67'>
 <fld name='Macro Name' type='String'>HNOE_hsqc15N_pfg</fld>
@@ -9086,7 +9092,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>xfb in dimensions 23 to parse to two 2D</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='68'>
 <fld name='Macro Name' type='String'>hsqc13C</fld>
@@ -9184,7 +9190,7 @@ p24= 800, --(Gradient for 3rd z-filter)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>water suppression by spin lock</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=242</fld>
-<fld name='Type (CARA)' type='String'>hsqc13Cali</fld>
+<fld name='Exp (CARA)' type='String'>hsqc13Cali</fld>
 </obj>
 <obj oid='69'>
 <fld name='Macro Name' type='String'>hsqc13C_pep_pfg</fld>
@@ -9290,7 +9296,7 @@ p30= 250, --PFG 1H
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>water suppression by pfg</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=243</fld>
-<fld name='Type (CARA)' type='String'>hsqc13Cali</fld>
+<fld name='Exp (CARA)' type='String'>hsqc13Cali</fld>
 </obj>
 <obj oid='70'>
 <fld name='Macro Name' type='String'>hsqc15N_pfg_relaxation_dispersion_CPMG</fld>
@@ -9407,7 +9413,7 @@ end
 <fld name='Subgroup' type='String'>K.Pervushin (from orig L.Kay)</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='71'>
 <fld name='Macro Name' type='String'>hsqc15N_pfg_15N_T1rho_CPMG</fld>
@@ -9530,7 +9536,7 @@ end
 <fld name='Subgroup' type='String'>K.Pervushin (from orig L.Kay)</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='72'>
 <fld name='Macro Name' type='String'>hsqc15N_pep_pfg</fld>
@@ -9628,7 +9634,7 @@ gpz5  =-2,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>baseline smile in w1 dim</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=244</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='73'>
 <fld name='Macro Name' type='String'>hsqc15N_pfg_15N_T1</fld>
@@ -9761,7 +9767,7 @@ end
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='74'>
 <fld name='Macro Name' type='String'>hsqc15N_pfg_15N_T2</fld>
@@ -9893,7 +9899,7 @@ end
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='75'>
 <fld name='Macro Name' type='String'>noesy_excitation_sculpting</fld>
@@ -9988,7 +9994,7 @@ gpz2=11
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>better water suppression as in Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='76'>
 <fld name='Macro Name' type='String'>noesy_Hn_selective</fld>
@@ -10084,7 +10090,7 @@ p17 =1000, --(Crusher in MIX)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>Selective detection of Hn, good to suppress detergent signals</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='77'>
 <fld name='Macro Name' type='String'>noesy_watergate</fld>
@@ -10162,7 +10168,7 @@ gpz1 =80
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>water suppression: Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=228</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='78'>
 <fld name='Macro Name' type='String'>noesy_x1_filtered</fld>
@@ -10282,7 +10288,7 @@ gpz6=80
 <fld name='Subgroup' type='String'>NOT FINISHED YET</fld>
 <fld name='Memo' type='String'>ligand protein interactions</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='79'>
 <fld name='Macro Name' type='String'>noesy_time_shared_13C_and_15N_hsqc</fld>
@@ -10413,7 +10419,7 @@ p26 =1100, --(Gradient in WG)
 <fld name='Subgroup' type='String'>ETH</fld>
 <fld name='Memo' type='String'>J(Ca-N) are not decoupled</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D C13ali-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D C13ali-NOESY</fld>
 </obj>
 <obj oid='80'>
 <fld name='Macro Name' type='String'>tocsy_time_shared_13C_and_15N_hsqc</fld>
@@ -10546,7 +10552,7 @@ p26 =1100, --(Gradient in WG)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>J(Ca-N) are not decoupled</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D C13ali-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D C13ali-TOCSY</fld>
 </obj>
 <obj oid='81'>
 <fld name='Macro Name' type='String'>trosy_HNCA</fld>
@@ -10699,7 +10705,7 @@ gpz3 =88,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=57&amp;t=193</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='82'>
 <fld name='Type' type='String'>Composite Pulse Decoupling</fld>
@@ -21127,7 +21133,7 @@ gpz6 =27,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D N15-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-NOESY</fld>
 </obj>
 <obj oid='119'>
 <fld name='Macro Name' type='String'>roesy</fld>
@@ -21222,7 +21228,7 @@ p22 =1000, --(watergate)
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for small proteins</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>2D TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>2D TOCSY</fld>
 </obj>
 <obj oid='120'>
 <fld name='Macro Name' type='String'>roesy_hsqc15N</fld>
@@ -21395,7 +21401,7 @@ gpz6 =27,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D N15-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-NOESY</fld>
 </obj>
 <obj oid='121'>
 <fld name='Macro Name' type='String'>trosy_HNCA_hard_pulses</fld>
@@ -21530,7 +21536,7 @@ p25= 800, --(Gradient for 3rd z-filter)--acqu modes
 <fld name='Subgroup' type='String'>ETH</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by CPD</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=57&amp;t=193</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='122'>
 <fld name='Macro Name' type='String'>trosy_HNCACB</fld>
@@ -21683,7 +21689,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=231</fld>
-<fld name='Type (CARA)' type='String'>HnCACB</fld>
+<fld name='Exp (CARA)' type='String'>HnCACB</fld>
 </obj>
 <obj oid='123'>
 <fld name='Macro Name' type='String'>trosy_HNcaCO</fld>
@@ -21836,7 +21842,7 @@ gpz7 =30.13,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HN(CA)CO</fld>
+<fld name='Exp (CARA)' type='String'>HN(CA)CO</fld>
 </obj>
 <obj oid='124'>
 <fld name='Macro Name' type='String'>trosy_HNCO</fld>
@@ -21986,7 +21992,7 @@ gpz3 =88,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 </obj>
 <obj oid='125'>
 <fld name='Macro Name' type='String'>trosy_HNcoCA</fld>
@@ -22141,7 +22147,7 @@ gpz7 =30.13,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CA</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CA</fld>
 </obj>
 <obj oid='126'>
 <fld name='Macro Name' type='String'>tocsy_trosy</fld>
@@ -22274,7 +22280,7 @@ gpz5 = 16.2,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>Should be tested yet</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/</fld>
-<fld name='Type (CARA)' type='String'>3D N15-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-TOCSY</fld>
 </obj>
 <obj oid='127'>
 <fld name='Macro Name' type='String'>translational_diffusion_1H1D</fld>
@@ -22347,7 +22353,7 @@ p26 =1000 --(watergate)
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>Estimation of mol weight, requires reference sample</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'> 1D 1H</fld>
+<fld name='Exp (CARA)' type='String'> 1D 1H</fld>
 </obj>
 <obj oid='128'>
 <fld name='Macro Name' type='String'>translational_diffusion_hmqc15N</fld>
@@ -22448,7 +22454,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>Estimation of mol weight, watergate</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='129'>
 <fld name='Macro Name' type='String'>trosy-st2pt </fld>
@@ -22561,7 +22567,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for large proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=239</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 <fld name='SP Measures' type='String'>20. 0.57 0.36 0.24 30.5 20.0 26. </fld>
 </obj>
 <obj oid='130'>
@@ -22655,7 +22661,7 @@ p27 =800, --(Gradient )
 <fld name='Subgroup' type='String'>ETH</fld>
 <fld name='Memo' type='String'>Calibration of  15N and 13C  180 degpulse width </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='131'>
 <fld name='Macro Name' type='String'>zg_2H_1D</fld>
@@ -22680,7 +22686,7 @@ pl1= spectrometer[now].calibration_power_db_H2
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>observe of deuterium, do &apos;edasp&apos;</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'> 1D 1H</fld>
+<fld name='Exp (CARA)' type='String'> 1D 1H</fld>
 </obj>
 <obj oid='132'>
 <fld name='Macro Name' type='String'>zg_31P_1D</fld>
@@ -22716,7 +22722,7 @@ pl2 =-2 --db
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>observe with DUAL probe, do &apos;edasp&apos;</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'> 1D 1H</fld>
+<fld name='Exp (CARA)' type='String'> 1D 1H</fld>
 </obj>
 <obj oid='133'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -25291,7 +25297,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>distinguish labled from non labeled </fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=73&amp;t=253</fld>
-<fld name='Type (CARA)' type='String'>2D N15-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D N15-NOESY</fld>
 </obj>
 <obj oid='148'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -25826,7 +25832,7 @@ gpz3 =8.1,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>dipsi mix - windowless</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D N15-TOCSY</fld>
+<fld name='Exp (CARA)' type='String'>3D N15-TOCSY</fld>
 </obj>
 <obj oid='153'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -26407,7 +26413,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker, tested, OK but no 2H decoupling</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; </fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/</fld>
-<fld name='Type (CARA)' type='String'>HBHA(CBCACO)NH</fld>
+<fld name='Exp (CARA)' type='String'>HBHA(CBCACO)NH</fld>
 </obj>
 <obj oid='158'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -26838,7 +26844,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker, tested, OK with 2H decoupling</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/</fld>
-<fld name='Type (CARA)' type='String'>HBHA(CBCACO)NH</fld>
+<fld name='Exp (CARA)' type='String'>HBHA(CBCACO)NH</fld>
 </obj>
 <obj oid='160'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -27239,7 +27245,7 @@ p30= 250, --PFG 1H
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>select components of 1H multiplets in HCH groups</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>hsqc13Cali</fld>
+<fld name='Exp (CARA)' type='String'>hsqc13Cali</fld>
 </obj>
 <obj oid='163'>
 <fld name='Macro Name' type='String'>hsqc13C_select_right_component of 1H-C-1H</fld>
@@ -27343,7 +27349,7 @@ p30= 250, --PFG 1H
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>select components of 1H multiplets in HCH groups</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>hsqc13Cali</fld>
+<fld name='Exp (CARA)' type='String'>hsqc13Cali</fld>
 </obj>
 <obj oid='164'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -27809,7 +27815,7 @@ gpz5  =-2,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>baseline smile in w1 dim</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=244</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 <fld name='PP Name' type='String'>hsqc15N_pfg.pk</fld>
 </obj>
 <obj oid='172'>
@@ -27915,10 +27921,11 @@ gpz10=80,
 <fld name='Subgroup' type='String'>bruker</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=240&amp;p=635#p635</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 <fld name='PP Name' type='String'>trosy_pfg.pk</fld>
 </obj>
 <obj oid='173'>
+<fld name='Description' type='String'>TopSpin 2.0</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
 <fld name='Datum' type='String'>19-2-2008</fld>
 <fld name='Body' type='Memo'>now="selected";
@@ -27980,7 +27987,6 @@ InternetBrowser ="start iexplore.exe";
 <fld name='Spec Name' type='String'>Datastation</fld>
 <fld name='Location' type='String'>localhost</fld>
 <fld name='Contact Person' type='String'>K.Pervushin</fld>
-<fld name='Spec Type' type='String'>TopSpin 2.0</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
 <fld name='Current Directory' type='String'>/opt/ts600/exp/stan/nmr/lists</fld>
 </obj>
@@ -28155,7 +28161,7 @@ end
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc13Cali</fld>
+<fld name='Exp (CARA)' type='String'>hsqc13Cali</fld>
 </obj>
 <obj oid='176'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -28617,7 +28623,7 @@ end
 <fld name='Subgroup' type='String'>from Daiwen Young</fld>
 <fld name='Memo' type='String'>stability issue: use long d1 </fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='182'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -29046,7 +29052,7 @@ gpz2=11
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>better water suppression as in Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='186'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -29327,7 +29333,7 @@ gpz2=11
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>better water suppression as in Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>2D NOESY</fld>
+<fld name='Exp (CARA)' type='String'>2D NOESY</fld>
 </obj>
 <obj oid='189'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -29579,7 +29585,7 @@ gpz2=11
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>better water suppression as in Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>E.COSY</fld>
+<fld name='Exp (CARA)' type='String'>E.COSY</fld>
 </obj>
 <obj oid='191'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -29838,7 +29844,7 @@ gpz2=11
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>better water suppression as in Watergate</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>E.COSY</fld>
+<fld name='Exp (CARA)' type='String'>E.COSY</fld>
 <fld name='1D Spectrum' type='String'>1Dprecipitated</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
@@ -30541,7 +30547,7 @@ gpz3 =88,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=57&amp;t=193</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='201'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -30990,7 +30996,7 @@ p20= 1000, --PFG 13C
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for fast structure determination</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Type (CARA)' type='String'>3D C13ali-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D C13ali-NOESY</fld>
 </obj>
 <obj oid='203'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -31662,7 +31668,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>HC aliphatics and HC aromatics</fld>
 <fld name='URL reference' type='String'>pls add in due time</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 <fld name='1D Spectrum' type='String'>1D_15N_rejected</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
@@ -31802,7 +31808,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>HC aliphatics and HC aromatics</fld>
 <fld name='URL reference' type='String'>pls add in due time</fld>
-<fld name='Type (CARA)' type='String'>3D C13ali-NOESY</fld>
+<fld name='Exp (CARA)' type='String'>3D C13ali-NOESY</fld>
 </obj>
 <obj oid='208'>
 <fld name='Macro Name' type='String'>trosy_for_noesy_mix</fld>
@@ -31913,7 +31919,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>optimize mixing time for NOESY</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=239</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='209'>
 <fld name='Macro Name' type='String'>mq-hCCH-tocsy</fld>
@@ -32045,7 +32051,7 @@ p29=300,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>HC aliphatics and HC aromatics</fld>
 <fld name='URL reference' type='String'>pls add in due time</fld>
-<fld name='Type (CARA)' type='String'>hCCH-TOCSYali</fld>
+<fld name='Exp (CARA)' type='String'>hCCH-TOCSYali</fld>
 </obj>
 <obj oid='211'>
 <fld name='Type' type='String'>Wave Form</fld>
@@ -36795,7 +36801,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 </obj>
 <obj oid='225'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -37207,7 +37213,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>!!!! PFG to be included!</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 </obj>
 <obj oid='227'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -38089,7 +38095,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>!!!! PFG to be included!</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 </obj>
 <obj oid='232'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -38769,7 +38775,7 @@ gpz4 =0,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins (spnam7 entry added)</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CA</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CA</fld>
 </obj>
 <obj oid='235'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -39471,7 +39477,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=226</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 <fld name='1D Spectrum' type='String'>1D</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
@@ -40166,7 +40172,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>for RDC measurements</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=240&amp;p=635#p635</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='241'>
 <fld name='Macro Name' type='String'>trosy_pfg_RDC</fld>
@@ -40273,7 +40279,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=240&amp;p=635#p635</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='242'>
 <fld name='Type' type='String'>Wave Form</fld>
@@ -41462,7 +41468,7 @@ gpz4 =0,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CA</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CA</fld>
 </obj>
 <obj oid='244'>
 <fld name='Type' type='String'>Composite Pulse Decoupling</fld>
@@ -41734,7 +41740,7 @@ gpz5=8.10,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 <fld name='1D Spectrum' type='String'>1D_15N_rejected</fld>
 <fld name='Ref Sample' type='String'>QFMF_full_SW</fld>
 </obj>
@@ -42135,7 +42141,7 @@ gpz10=-80,
 <fld name='Subgroup' type='String'>Bruker-derived</fld>
 <fld name='Memo' type='String'>suitable for membrane proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=240&amp;p=635#p635</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='250'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -42400,7 +42406,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for large proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=239</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='252'>
 <fld name='Macro Name' type='String'>hsqc15N</fld>
@@ -42509,7 +42515,7 @@ gpz10=80,
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for large proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=239</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='253'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -42720,7 +42726,7 @@ p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
 <fld name='Subgroup' type='String'>K.Pervushin</fld>
 <fld name='Memo' type='String'>suitable for large soluble proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=69&amp;t=241&amp;p=637#p637</fld>
-<fld name='Type (CARA)' type='String'>hsqc15N</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
 </obj>
 <obj oid='255'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -43347,7 +43353,7 @@ gpz4 =0,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CA</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CA</fld>
 </obj>
 <obj oid='261'>
 <fld name='Macro Name' type='String'>HNCACB</fld>
@@ -43508,7 +43514,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=231</fld>
-<fld name='Type (CARA)' type='String'>HnCACB</fld>
+<fld name='Exp (CARA)' type='String'>HnCACB</fld>
 </obj>
 <obj oid='262'>
 <fld name='Macro Name' type='String'>HNCaCO</fld>
@@ -43668,7 +43674,7 @@ gpz4 =0,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HN(CA)CO</fld>
+<fld name='Exp (CARA)' type='String'>HN(CA)CO</fld>
 </obj>
 <obj oid='263'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -44380,7 +44386,7 @@ gpz4 =0,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for medium proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CACB</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CACB</fld>
 </obj>
 <obj oid='266'>
 <fld name='Macro Name' type='String'>HNCO</fld>
@@ -44539,7 +44545,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>suitable for small proteins</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=233</fld>
-<fld name='Type (CARA)' type='String'>HnCO</fld>
+<fld name='Exp (CARA)' type='String'>HnCO</fld>
 </obj>
 <obj oid='267'>
 <fld name='Macro Name' type='String'>trosy_HNcoCA</fld>
@@ -44695,7 +44701,7 @@ gpz7 =30.13,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HN(CO)CA</fld>
+<fld name='Exp (CARA)' type='String'>HN(CO)CA</fld>
 </obj>
 <obj oid='268'>
 <fld name='Macro Name' type='String'>trosy_HNcaCO</fld>
@@ -44850,7 +44856,7 @@ gpz7 =30.13,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HN(CA)CO</fld>
+<fld name='Exp (CARA)' type='String'>HN(CA)CO</fld>
 </obj>
 <obj oid='269'>
 <fld name='Macro Name' type='String'>trosy_HNCACB</fld>
@@ -45003,7 +45009,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=231</fld>
-<fld name='Type (CARA)' type='String'>HnCACB</fld>
+<fld name='Exp (CARA)' type='String'>HnCACB</fld>
 </obj>
 <obj oid='270'>
 <fld name='Macro Name' type='String'>trosy_HNCA</fld>
@@ -45156,7 +45162,7 @@ gpz3 =88,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>---</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=57&amp;t=193</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='271'>
 <fld name='Macro Name' type='String'>trosy_HNCO</fld>
@@ -45306,7 +45312,7 @@ gpz3 =88,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>J(Ca-Co) are decoupled by selective pulses; 2H,1Ha decoupled</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
-<fld name='Type (CARA)' type='String'>HNCO</fld>
+<fld name='Exp (CARA)' type='String'>HNCO</fld>
 </obj>
 <obj oid='272'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -48149,7 +48155,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>---</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/</fld>
-<fld name='Type (CARA)' type='String'>HBHA(CBCACO)NH</fld>
+<fld name='Exp (CARA)' type='String'>HBHA(CBCACO)NH</fld>
 </obj>
 <obj oid='283'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -48613,7 +48619,7 @@ p24 =900, --(Z-Filter)
 <fld name='Subgroup' type='String'>Bruker, non-tested</fld>
 <fld name='Memo' type='String'>---</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/</fld>
-<fld name='Type (CARA)' type='String'>CBCAcoNH</fld>
+<fld name='Exp (CARA)' type='String'>CBCAcoNH</fld>
 </obj>
 <obj oid='285'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -49093,7 +49099,7 @@ gpz4 =90,
 <fld name='Subgroup' type='String'>Bruker</fld>
 <fld name='Memo' type='String'>---</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=226</fld>
-<fld name='Type (CARA)' type='String'>HNCA</fld>
+<fld name='Exp (CARA)' type='String'>HNCA</fld>
 </obj>
 <obj oid='288'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -50214,8 +50220,8 @@ gpz2=11
 </fld>
 <fld name='Dimension' type='String'>2D</fld>
 <fld name='Group' type='String'>backbone-to-sidechain</fld>
-<fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=58&amp;t=227</fld>
-<fld name='Type (CARA)' type='String'>E.COSY</fld>
+<fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
+<fld name='Exp (CARA)' type='String'>E.COSY</fld>
 <fld name='1D Spectrum' type='String'>1Dprecipitated</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
@@ -50265,12 +50271,11 @@ p22 =1000 --(watergate)
 <fld name='Dimension' type='String'>1D</fld>
 <fld name='Group' type='String'>calibration</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=68&amp;t=289</fld>
-<fld name='Type (CARA)' type='String'>1D 1H</fld>
+<fld name='Exp (CARA)' type='String'>1D 1H</fld>
 <fld name='1D Spectrum' type='String'>---</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
 </database>
-<fld name='#ext-delta#' type='Boolean'>true</fld>
 <fld name='Creation Date' type='Date'>2007-11-12</fld>
 <fld name='Description' type='Memo'>NMR generation/information system. For the usage information check 
 Link to be defined</fld>
@@ -50282,4 +50287,5 @@ A hub for setting up NMR experiments</fld>
 <fld name='OrigTemplateDate' type='Date'>2005-3-23</fld>
 <fld name='TemplateDate' type='Date'>2009-5-3</fld>
 <fld name='TemplateDesc' type='Memo'>User field - enter notes on repository changes</fld>
+<fld name='#ext-delta#' type='Boolean'>true</fld>
 </repository>

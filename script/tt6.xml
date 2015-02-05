@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ngxml.xsl"?>
+<nmritems> <nmrrecord><nmrattr>Type<nmrtype>Macro</nmrtype></nmrattr><nmrattr>Macro Name<nmrname>cosy_dqf_excitation_sculpting_15Ndecoupling-tst</nmrname></nmrattr><nmrattr>Author(s)<nmrauthor>Wei Lei</nmrauthor></nmrattr><nmrattr>Datum<nmrother>9-12-2014</nmrother></nmrattr><nmrattr>Dimension<nmrother>2D</nmrother></nmrattr><nmrattr>Group<nmrother>backbone-to-sidechain</nmrother></nmrattr><nmrattr>Ref Sample<nmrother>---</nmrother></nmrattr><nmrattr>Exp (CARA)<nmrother>E.COSY</nmrother></nmrattr><nmrattr>1D Spectrum<nmrother>1Dprecipitated</nmrother></nmrattr><nmrattr>URL reference<nmrurl>http://trosy.ntu.edu.sg/phpbb3</nmrurl></nmrattr><nmrattr>Body<nmrcode>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+p27=spectrometer[now].calibration_pulse90_f1,
+pl27=spectrometer[now].calibration_power_db_f1}
+
+-- all other needed parameters
+exp_environment = {
+["getprosol"]="1H",
+["pulprog"]= "cosydfesgpph_15Ndec.wl",
+["xcpr"]="parmode 2D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+p2=2*spectrometer[now].calibration_pulse90_f1,
+--pl1= calc_power_set(spectrometer[now].calibration_pulse90_f1,1.0,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+pl1= spectrometer[now].calibration_power_db_f1,
+pl3= spectrometer[now].calibration_power_db_f3,
+p22=2*spectrometer[now].calibration_pulse90_f3,
+
+p0=spectrometer[now].calibration_pulse90_f1,-- pulse 90 deg for 3-9-19 water gate
+p27=spectrometer[now].calibration_pulse90_f1,-- pulse 90 deg for 3-9-19 water gate
+pl18= spectrometer[now].calibration_power_db_f1, -- power for 3-9-19 water gate
+
+
+--set soft powers and pulses
+p12 = 2000, -- assume that watergate90 mks is ideal for 700
+["spnam1"]= "Gauss_5_256.pk", -- integral factor 0.5
+ sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg3"]= "garp4", 
+
+
+p16=1000., -- 1ms for gradient
+
+d0=0,
+d1=0.5,
+ns=16,
+ds=32,
+d8 =  0.150, --noesy_mixing_time
+d12=0.00002, --20 mks, for power switch
+d16=0.0002, --200 mks, for gradient recovery
+d19=spectrum.del_3_9_19, -- 0.000250, -- for 3-9-19 as suggested by bruker
+
+  ["1 sw"] = spectrum.H.sw,  
+  --set number of sampled points
+ ["1 td "]=(1024), --H direction
+ ["2 td "]=(2048), --H direction
+
+--acqu modes
+["1 FnMODE"]= "States-TPPI",
+--processing
+["1 mc2"]= "States-TPPI",
+["1 FT_mod"]= "no",
+["2 FT_mod"]= "fsc",
+
+["2 stsi"]= 0,
+["2 si"]= 16384, 
+["1 si"]= 2048, -- H dim
+["1 phc0"]= 90, -- N dim
+["1 phc1"]= -180, -- N dim 
+["1 sf "]=spectrometer[now].B_field, -- H dim  
+["1 sr "]=0, -- N dim
+["2 sr "]=0, -- N dim 
+["1 ssb"]=  16, -- n dim
+["2 ssb"]=  16, -- n dim
+["1 PH_mod"]=  "pk", -- n dim
+["2 PH_mod"]=  "pk", -- n dim 
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["2 BC_mod"]="qpol",
+["1 BC_mod"]="no",
+["2 ABSF1"]="12.000",
+["2 ABSF2"]="-2.000",
+["1 ABSF1"]="1000.000",
+["1 ABSF2"]="-1000.000",
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpz1 =31,
+gpz2=11
+}
+
+
+
+</nmrcode></nmrattr></nmrrecord></nmritems>
