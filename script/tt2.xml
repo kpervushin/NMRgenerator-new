@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmritems> <nmrrecord><nmrattr>Type<nmrtype>Macro</nmrtype></nmrattr><nmrattr>Macro Name<nmrname>gradient calibration</nmrname></nmrattr><nmrattr>Author(s)<nmrauthor>K.Pervushin</nmrauthor></nmrattr><nmrattr>Datum<nmrother>28-2-2008</nmrother></nmrattr><nmrattr>Dimension<nmrother>1D</nmrother></nmrattr><nmrattr>Group<nmrother>calibration</nmrother></nmrattr><nmrattr>Type (CARA)<nmrtype>1D 1H</nmrtype></nmrattr><nmrattr>URL reference<nmrurl>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=68&t=289</nmrurl></nmrattr><nmrattr>Body<nmrcode>exp_environment = {
+d1=1.,
+
+["pulprog"]= "gradient_calibration.pk",
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+["xcpr"]="parmode 1D",
+gpz2=3, -- 0% single water line in the middle, 3% split of water by 6765 Hz
+-- set hard pulses
+p1 = spectrometer[now].calibration_pulse90_f1,
+pl1= spectrometer[now].calibration_power_db_f1, 
+pl19 =60, --water presat (when used) 
+pcpd2 = pulses.Ccpd90,
+pl12 = calc_power_set(pulses.Ccpd90,1.0,spectrometer[now].calibration_pulse90_f2,spectrometer[now].calibration_power_db_f2),
+["cpdprg2"]="garp4",
+pcpd3 = pulses.Ncpd90,
+pl13 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg3"]="waltz16",
+
+ --set soft powers and pulses
+p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
+["spnam2"]= "Gauss_5_256.pk", -- integral factor 0.5
+ sp2= calc_power_set(pulses.watergate90,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal2 =0.5, -- have to check what's that
+ spoffs2=0,
+ ["wdw"]="QSINE",
+ ["ssb"]=2,
+
+ 
+
+
+
+
+p21 =1000, --(Crusher)
+p22 =1000 --(watergate)
+ }</nmrcode></nmrattr></nmrrecord></nmritems>
