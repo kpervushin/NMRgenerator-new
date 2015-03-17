@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.8.4.2' modified='Thu 5. Feb 13:21:05 2015' author='K.Pervushin' 
+<repository version='37' sub='0' creator='CARA 1.9.1b10' modified='Tue 17. Mar 16:27:26 2015' author='K.Pervushin' 
 template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Start1.2.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -712,9 +712,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='O' to='C'/>
 <bond from='HG' to='CG'/>
 <bond from='CG' to='CB'/>
+<bond from='CG' to='HG'/>
 <bond from='CG' to='CD2'/>
 <bond from='CG' to='CD1'/>
-<bond from='CG' to='HG'/>
 <bond from='CD2' to='HD2'/>
 <bond from='CD2' to='CG'/>
 <bond from='CD1' to='HD1'/>
@@ -954,8 +954,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CD' to='CE'/>
 <bond from='HZ' to='NZ'/>
 <bond from='HE2' to='CE'/>
-<bond from='CE' to='HE2'/>
 <bond from='CE' to='CD'/>
+<bond from='CE' to='HE2'/>
 <bond from='CE' to='NZ'/>
 <bond from='CE' to='HE3'/>
 <bond from='NZ' to='HZ'/>
@@ -1015,19 +1015,19 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
 <bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CE1'/>
 <bond from='CD1' to='CG'/>
+<bond from='CD1' to='CE1'/>
 <bond from='HZ' to='CZ'/>
 <bond from='HE2' to='CE2'/>
 <bond from='CZ' to='HZ'/>
 <bond from='CZ' to='CE1'/>
 <bond from='CZ' to='CE2'/>
 <bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CZ'/>
 <bond from='CE1' to='CD1'/>
-<bond from='CE2' to='CZ'/>
+<bond from='CE1' to='CZ'/>
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='HE2'/>
+<bond from='CE2' to='CZ'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>01-07-2005</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -1088,8 +1088,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HG3' to='CG'/>
 <bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
-<bond from='CD' to='NE'/>
 <bond from='CD' to='HD3'/>
+<bond from='CD' to='NE'/>
 <bond from='HE' to='NE'/>
 <bond from='CZ' to='NH2'/>
 <bond from='CZ' to='NE'/>
@@ -1097,9 +1097,9 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='NH2' to='CZ'/>
 <bond from='NH2' to='HH21'/>
 <bond from='NH2' to='HH22'/>
+<bond from='NE' to='CD'/>
 <bond from='NE' to='HE'/>
 <bond from='NE' to='CZ'/>
-<bond from='NE' to='CD'/>
 <bond from='NH1' to='CZ'/>
 <bond from='NH1' to='HH12'/>
 <bond from='NH1' to='HH11'/>
@@ -1248,18 +1248,18 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
 <bond from='CD1' to='HD1'/>
-<bond from='CD1' to='CE1'/>
 <bond from='CD1' to='CG'/>
+<bond from='CD1' to='CE1'/>
 <bond from='HE2' to='CE2'/>
 <bond from='CZ' to='CE1'/>
 <bond from='CZ' to='CE2'/>
 <bond from='CZ' to='OH'/>
 <bond from='CE1' to='HE1'/>
-<bond from='CE1' to='CZ'/>
 <bond from='CE1' to='CD1'/>
-<bond from='CE2' to='CZ'/>
+<bond from='CE1' to='CZ'/>
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='HE2'/>
+<bond from='CE2' to='CZ'/>
 <bond from='HH' to='OH'/>
 <bond from='OH' to='CZ'/>
 <bond from='OH' to='HH'/>
@@ -1305,12 +1305,12 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='HD1' to='ND1'/>
 <bond from='HD2' to='CD2'/>
 <bond from='HE1' to='CE1'/>
-<bond from='NE2' to='CE1'/>
 <bond from='NE2' to='CD2'/>
 <bond from='NE2' to='HE2'/>
+<bond from='NE2' to='CE1'/>
 <bond from='ND1' to='HD1'/>
-<bond from='ND1' to='CE1'/>
 <bond from='ND1' to='CG'/>
+<bond from='ND1' to='CE1'/>
 <bond from='O' to='C'/>
 <bond from='CG' to='CB'/>
 <bond from='CG' to='ND1'/>
@@ -1441,8 +1441,8 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <bond from='CE2' to='CZ2'/>
 <bond from='HH2' to='CH2'/>
 <bond from='NE1' to='HE1'/>
-<bond from='NE1' to='CE2'/>
 <bond from='NE1' to='CD1'/>
+<bond from='NE1' to='CE2'/>
 <bond from='HZ2' to='CZ2'/>
 <bond from='CZ2' to='CE2'/>
 <bond from='CZ2' to='HZ2'/>
@@ -1604,27 +1604,27 @@ template-by='K. Pervushin, ' orig-template-by='K. Pervushin' template-name='Star
 <project name='NMRgenerator' next='6' swf='1.000000' x='0.000000' y='0.000000' z='0.000000'>
 <sequence >
 </sequence>
-<spectrum type=' 1D 1H' id='1' name='1D' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1D.nmr' sample='0'>
+<spectrum type=' 1D 1H' id='1' name='1D' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1D.nmr' sample='0' relPath='SPECTRA/1D.nmr'>
 <level pmax='3528511.250000' pnoise='141291.421875' nmax='-986948.125000' nnoise='-7238.576660' thres='141291.421875' factor='1.000000'/>
-<cal dim='0' off='0.000000' width='0.000000' fold='A'/>
+<cal dim='0' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='14.744005' ppm2='-5.278816'  />
 </spectrum>
-<spectrum type=' 1D 1H' id='2' name='1D_15N_rejected' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1D_15N_rejected.nmr' sample='0'>
+<spectrum type=' 1D 1H' id='2' name='1D_15N_rejected' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1D_15N_rejected.nmr' sample='0' relPath='SPECTRA/1D_15N_rejected.nmr'>
 <level pmax='1679843.250000' pnoise='1426076.500000' nmax='-3518037.750000' nnoise='-575957.187500' thres='1426076.500000' factor='1.000000'/>
-<cal dim='0' off='0.000000' width='0.000000' fold='A'/>
+<cal dim='0' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='12.709988' ppm2='4.706726'  />
 </spectrum>
-<spectrum type=' 1D 1H' id='3' name='1Dprecipitated' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1Dprecipitated.nmr' sample='0'>
+<spectrum type=' 1D 1H' id='3' name='1Dprecipitated' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/1Dprecipitated.nmr' sample='0' relPath='SPECTRA/1Dprecipitated.nmr'>
 <level pmax='4951229.500000' pnoise='637097.875000' nmax='-2656746.250000' nnoise='-395334.968750' thres='637097.875000' factor='1.000000'/>
-<cal dim='0' off='0.000000' width='0.000000' fold='A'/>
+<cal dim='0' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='11.197268' ppm2='-0.608130'  />
 </spectrum>
-<spectrum type='2D TOCSY' id='4' name='TOCSY' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/TOCSY.nmr' sample='0'>
+<spectrum type='2D TOCSY' id='4' name='TOCSY' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/TOCSY.nmr' sample='0' relPath='SPECTRA/TOCSY.nmr'>
 <level pmax='4000945.000000' pnoise='3898.835205' nmax='-118994.078125' nnoise='-340.171661' thres='3898.835205' factor='1.000000'/>
-<cal dim='0' off='0.000000' width='0.000000' fold='A'/>
-<cal dim='1' off='0.000000' width='0.000000' fold='A'/>
+<cal dim='0' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='11.814331' ppm2='-2.181834'  />
+<cal dim='1' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='11.809444' ppm2='-2.176950'  />
 </spectrum>
-<spectrum type='2D NOESY' id='5' name='noesy' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/noesy.nmr' sample='0'>
+<spectrum type='2D NOESY' id='5' name='noesy' path='C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/noesy.nmr' sample='0' relPath='SPECTRA/noesy.nmr'>
 <level pmax='3490261.750000' pnoise='1812.076538' nmax='-404336.750000' nnoise='-366.768097' thres='1812.076538' factor='1.000000'/>
-<cal dim='0' off='0.000000' width='0.000000' fold='A'/>
-<cal dim='1' off='0.000000' width='0.000000' fold='A'/>
+<cal dim='0' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='11.816895' ppm2='-2.184399'  />
+<cal dim='1' off='0.000000' width='0.000000' fold='A' atom='H1' ppm1='11.802608' ppm2='-2.170115'  />
 </spectrum>
 <spinbase>
 </spinbase>
@@ -2202,7 +2202,104 @@ end -- function t.drawspec
 </code>
 <fld name='Creation Date' type='Date'>2014-12-1</fld>
 </script>
-<script name='nmr.lua'>
+<script name='w2l.lua'>
+<code lang='Lua'>winPath="C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/"
+linPath="/home/konstantin/NMRgenerator/SPECTRA/"
+
+function find_pattern(search_text, search_pattern)
+--retuns value in ["key"]="value"
+ret99=nil
+--print("ssss: "..search_text)
+if(search_text and search_pattern) then
+if(string.find(search_text,search_pattern)) then
+local x = string.gsub(search_text, "%s*.."..search_pattern.."..%s*=%s*\"([%w_.,-]+)", function (v)
+ret99=v
+--print("vvv: "..v)
+--return ret99
+end)
+end --if(string.find(search_text,search_pattern) then
+end --if(search_text and search_pattern) then
+return ret99
+end --function find_pattern(search_text, search_pattern)
+
+
+function convertWindows2LinuxSpecPathsInCara()
+--attmpt to convert from Win to Lin and from Lin to Win
+--local answ=dlg.getSymbol("Adjust *.cara", "Convert path to spectra", "Windows-&gt;Linux","Linux-&gt;Windows");
+--print(answ)
+local t={}
+local FileIn = dlg.getOpenFileName( "Select file", "*.cara" )
+local j=0
+local nlines=0
+local nsub=0
+
+--Read *.cara and attemt Win to Lin conversion
+print("Attempt Win to Lin conversion")
+								if(FileIn) then 
+									for line in io.lines(FileIn) do
+									j=j+1
+									t[j]=line --storage of lines
+										if(string.find(line,winPath)) then
+											line = string.gsub(line, winPath, linPath)
+											nsub=nsub+1
+											print(" From: "..t[j])
+											print(" To  : "..line)
+											t[j]=line
+										end --if(string.fin
+									end --for line
+									nlines=j
+								print(string.format("read lines: %d ",j).."in: "..FileIn)
+								print("substituted: ", nsub)
+								
+								end --if(FileIn) then
+								
+if(nsub==0) then  --attempt Lin to Win conversion
+print("Attempt Lin to Win conversion")
+	for j=1, nlines do
+										if(string.find(t[j],linPath)) then
+											line = string.gsub(t[j], linPath, winPath)
+											nsub=nsub+1
+											print(" From: "..t[j])
+											print(" To  : "..line)
+											t[j]=line
+										end --if(string.fin
+	
+	end --for
+
+end --
+
+if(nsub&gt;0) then
+
+	-- get output filename	
+if(string.find(FileIn,".cara")) then
+FileOut = string.gsub(FileIn, ".cara", "-1.cara")
+end 
+	
+	
+	local FileOut = dlg.getText("Enter the output filename", "", FileOut ) --return nil if Cancel
+	--print(FileOut)
+	if(FileOut) then
+		outfile = io.output( FileOut)
+		for j=1, nlines do
+			outfile:write(t[j].."\n")
+		end --for
+		outfile:close()
+		print("Exported as file: "..FileOut)
+    else 
+		local answ=dlg.getSymbol("Canceled writing", "", "Got it","hmm..");
+	end--if(FileOut)
+	
+else--if(nsub&gt;0) then
+	local answ=dlg.getSymbol("No convertable path found in", FileIn, "Got it","hmm..");
+end--if(nsub&gt;0) then
+
+end --convertWindows2LinuxSpecPathsInCara()
+
+convertWindows2LinuxSpecPathsInCara()
+</code>
+<fld name='Creation Date' type='Date'>2014-12-4</fld>
+</script>
+<script name='nmr'>
 <code lang='Lua'>--function create_scrollview(main_window_main_frame,curr_project, curr_type, filter_pattern)
 --function create_filter_controls(main_window_main_frame0)
 --function date_stamp() 	 
@@ -4764,8 +4861,8 @@ for key, value in pairs( exp_vars ) do
 	end --if(string.find(key,"(%s
 end --for key, value in pairs( exp_vars )
 
-if(exp_vars["getprosol"] and exp_vars.p1 and exp_vars.pl1) then --write getprosol at pre-last
-outfile:write( "\ngetprosol "..exp_vars["getprosol"].." "..exp_vars.p1.." ".. exp_vars.pl1)
+if(exp_vars["getprosol"] ) then --write getprosol at pre-last
+outfile:write( "\ngetprosol "..exp_vars["getprosol"].." "..spectrometer[now].calibration_pulse90_f1.." ".. spectrometer[now].calibration_power_db_f1)
 end
 
 -- params to be setup after execution of getprosol. This is needed since getprosol missets some pulses, e.g. in roesy p15 is misset
@@ -6589,103 +6686,6 @@ StartPage()
 </code>
 <fld name='Creation Date' type='Date'>2007-12-1</fld>
 </script>
-<script name='w2l.lua'>
-<code lang='Lua'>winPath="C:/Dropbox/My CARA/NMRgenerator/Development/SPECTRA/"
-linPath="/home/konstantin/NMRgenerator/SPECTRA/"
-
-function find_pattern(search_text, search_pattern)
---retuns value in ["key"]="value"
-ret99=nil
---print("ssss: "..search_text)
-if(search_text and search_pattern) then
-if(string.find(search_text,search_pattern)) then
-local x = string.gsub(search_text, "%s*.."..search_pattern.."..%s*=%s*\"([%w_.,-]+)", function (v)
-ret99=v
---print("vvv: "..v)
---return ret99
-end)
-end --if(string.find(search_text,search_pattern) then
-end --if(search_text and search_pattern) then
-return ret99
-end --function find_pattern(search_text, search_pattern)
-
-
-function convertWindows2LinuxSpecPathsInCara()
---attmpt to convert from Win to Lin and from Lin to Win
---local answ=dlg.getSymbol("Adjust *.cara", "Convert path to spectra", "Windows-&gt;Linux","Linux-&gt;Windows");
---print(answ)
-local t={}
-local FileIn = dlg.getOpenFileName( "Select file", "*.cara" )
-local j=0
-local nlines=0
-local nsub=0
-
---Read *.cara and attemt Win to Lin conversion
-print("Attempt Win to Lin conversion")
-								if(FileIn) then 
-									for line in io.lines(FileIn) do
-									j=j+1
-									t[j]=line --storage of lines
-										if(string.find(line,winPath)) then
-											line = string.gsub(line, winPath, linPath)
-											nsub=nsub+1
-											print(" From: "..t[j])
-											print(" To  : "..line)
-											t[j]=line
-										end --if(string.fin
-									end --for line
-									nlines=j
-								print(string.format("read lines: %d ",j).."in: "..FileIn)
-								print("substituted: ", nsub)
-								
-								end --if(FileIn) then
-								
-if(nsub==0) then  --attempt Lin to Win conversion
-print("Attempt Lin to Win conversion")
-	for j=1, nlines do
-										if(string.find(t[j],linPath)) then
-											line = string.gsub(t[j], linPath, winPath)
-											nsub=nsub+1
-											print(" From: "..t[j])
-											print(" To  : "..line)
-											t[j]=line
-										end --if(string.fin
-	
-	end --for
-
-end --
-
-if(nsub&gt;0) then
-
-	-- get output filename	
-if(string.find(FileIn,".cara")) then
-FileOut = string.gsub(FileIn, ".cara", "-1.cara")
-end 
-	
-	
-	local FileOut = dlg.getText("Enter the output filename", "", FileOut ) --return nil if Cancel
-	--print(FileOut)
-	if(FileOut) then
-		outfile = io.output( FileOut)
-		for j=1, nlines do
-			outfile:write(t[j].."\n")
-		end --for
-		outfile:close()
-		print("Exported as file: "..FileOut)
-    else 
-		local answ=dlg.getSymbol("Canceled writing", "", "Got it","hmm..");
-	end--if(FileOut)
-	
-else--if(nsub&gt;0) then
-	local answ=dlg.getSymbol("No convertable path found in", FileIn, "Got it","hmm..");
-end--if(nsub&gt;0) then
-
-end --convertWindows2LinuxSpecPathsInCara()
-
-convertWindows2LinuxSpecPathsInCara()
-</code>
-<fld name='Creation Date' type='Date'>2014-12-4</fld>
-</script>
 <color code='1' name='#00ffff'/>
 <color code='2' name='#ff00ff'/>
 <color code='3' name='#ffff00'/>
@@ -7107,6 +7107,7 @@ sssssssss
 <fld name='287' type='OID'>287</fld>
 <fld name='292' type='OID'>292</fld>
 <fld name='293' type='OID'>293</fld>
+<fld name='295' type='OID'>295</fld>
 </obj>
 <obj oid='34'>
 <fld name='Macro Name' type='String'>trosy_pfg</fld>
@@ -7391,6 +7392,7 @@ p22 =1000 --(watergate)
 <fld name='286' type='OID'>286</fld>
 <fld name='288' type='OID'>288</fld>
 <fld name='289' type='OID'>289</fld>
+<fld name='296' type='OID'>296</fld>
 </obj>
 <obj oid='39'>
 <fld name='40' type='OID'>40</fld>
@@ -7404,31 +7406,31 @@ p22 =1000 --(watergate)
 <fld name='173' type='OID'>173</fld>
 </obj>
 <obj oid='41'>
-<fld name='Description' type='String'>Avance I, Installed 2005</fld>
+<fld name='Description' type='String'>2005</fld>
 <fld name='Type' type='String'>Spectrometer</fld>
-<fld name='Datum' type='String'>20-12-2007</fld>
+<fld name='Datum' type='String'>17-3-2015</fld>
 <fld name='Body' type='Memo'>now="selected";
 spectrometer ={
 ["selected"]={
 
 B_field = 600.13, -- MHz
 SR=0,
-proton_carrier_298k= 2821, --2822, --2817, --2817, --2823.9, --2823.9, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824, --2817, 
-calibration_power_db_f1= 4, --4, --4, --4, --4, --4, --4, --16.1/2, --16.1/2, --16.1/2, --4, 
-calibration_pulse90_f1= 6.93, --6.93, --7.5, --7.5, --7.38, --8.0, --11.38, --11.25, --10.88, --9.4, --9.4, --9.45, --9.45, --9.45, --9.45, --9.45, --9.45, --9.5, --8.05, --8.05, --8.05, --8.05, --7.82, --7.82, 
+proton_carrier_298k= 2820.2, --2822, --2817, --2817, --2823.9, --2823.9, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824, --2817, 
+calibration_power_db_f1= 5.2, --4, --4, --4, --4, --4, --4, --16.1/2, --16.1/2, --16.1/2, --4, 
+calibration_pulse90_f1= 11.50, --6.93, --7.5, --7.5, --7.38, --8.0, --11.38, --11.25, --10.88, --9.4, --9.4, --9.45, --9.45, --9.45, --9.45, --9.45, --9.45, --9.5, --8.05, --8.05, --8.05, --8.05, --7.82, --7.82, 
 calibration_power_db_f2=-3.0, --db   
 calibration_pulse90_f2=12.5, --mks C-calibration 2Nov2007
 calibration_power_db_f3=-4.0, --db
 calibration_pulse90_f3=34.0, --mks N-calibration 19 Aug2008
 calibration_power_db_f4=-1, --db
 calibration_pulse90_f4=260., --mks 
-home_topspin="/opt/ts1.3/exp/stan/nmr/lists"
+home_topspin="/opt/topspin2/exp/stan/nmr/lists"
 }
 }
 pulses ={
 watergate90=(1000.0*700.13/(spectrometer[now].B_field)), --mks
 COdec90=300.0*700.13/spectrometer[now].B_field, --mks
-Ncpd90=120.0*700.13/spectrometer[now].B_field, --mks
+Ncpd90=320.0*600.13/spectrometer[now].B_field, --mks
 Ccpd90=85.0*700.13/spectrometer[now].B_field, --mks
 Hcpd90=80.0*700.13/spectrometer[now].B_field, --mks
 Dcpd90=300.0*700.13/spectrometer[now].B_field, --mks
@@ -7448,10 +7450,11 @@ C13=0.251449530, -- DSS (internal)
 N15=0.101329118, -- Liquid NH3 (external)
 P31=0.404808636 -- (CH3O)3PO (internal)
 }
+InternetBrowser="/usr/bin/firefox"
 </fld>
 <fld name='Memo' type='String'>CryoProbe, Automatic Tune &amp; Match</fld>
 <fld name='URL reference' type='String'>www.trosy.com</fld>
-<fld name='Spec Name' type='String'>Avance 600 @ SBS NTU</fld>
+<fld name='Spec Name' type='String'>A600 TS2.1 @ SBS NTU</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Contact Person' type='String'>Dr. Ye Hong (c/o Prof. Yoon)</fld>
 <fld name='Output TopSpin macro' type='String'>/opt/xwinnmr/exp/stan/nmr/lists</fld>
@@ -7471,6 +7474,7 @@ P31=0.404808636 -- (CH3O)3PO (internal)
 <fld name='195' type='OID'>195</fld>
 <fld name='197' type='OID'>197</fld>
 <fld name='223' type='OID'>223</fld>
+<fld name='294' type='OID'>294</fld>
 </obj>
 <obj oid='43'>
 <fld name='Type' type='String'>Sample</fld>
@@ -7518,58 +7522,75 @@ J_HaHb = {Hz=6., range={min=3., max=12.}} -- Hz
 <fld name='45' type='OID'>45</fld>
 </obj>
 <obj oid='45'>
-<fld name='Sample' type='String'>CRLR_amylin</fld>
+<fld name='Sample' type='String'>Ubiquitin 2% Glycerol</fld>
 <fld name='Script' type='String'>compute_all.m</fld>
-<fld name='Spectrometer' type='String'>Avance 700 @ SBS NTU</fld>
-<fld name='Macro' type='String'>cosy_dqf_excitation_sculpting_15Ndecoupling-tst</fld>
+<fld name='Spectrometer' type='String'>A600 TS2.1 @ SBS NTU</fld>
+<fld name='Macro' type='String'>hsqc-pfg</fld>
 <fld name='Pulse Program' type='String'>hncacbgp3d</fld>
 <fld name='Current Settings' type='String'>Avance 700 @ SBS NTU</fld>
 <fld name='Composite Pulse Decoupling' type='String'>garp</fld>
 <fld name='Wave Form' type='String'>Q3.1000</fld>
 <fld name='Type' type='String'>Current Settings</fld>
 <fld name='Datum' type='String'>11.20.07</fld>
-<fld name='Body' type='Memo'>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Macro&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Macro Name&lt;nmrname&gt;gradient calibration&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Author(s)&lt;nmrauthor&gt;K.Pervushin&lt;/nmrauthor&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;28-2-2008&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Dimension&lt;nmrother&gt;1D&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Group&lt;nmrother&gt;calibration&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Exp (CARA)&lt;nmrtype&gt;1D 1H&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;URL reference&lt;nmrurl&gt;http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=68&amp;t=289&lt;/nmrurl&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;exp_environment = {
-d1=1.,
-
-["pulprog"]= "gradient_calibration.pk",
-o1 = spectrometer[now].proton_carrier_298k, 
-o2p=spectrum.CaCb.carrier,
-o3p=spectrum.N.carrier,
-o4p=spectrum.D.carrier,
-["xcpr"]="parmode 1D",
-gpz2=3, -- 0% single water line in the middle, 3% split of water by 6765 Hz
--- set hard pulses
-p1 = spectrometer[now].calibration_pulse90_f1,
-pl1= spectrometer[now].calibration_power_db_f1, 
-pl19 =60, --water presat (when used) 
-pcpd2 = pulses.Ccpd90,
-pl12 = calc_power_set(pulses.Ccpd90,1.0,spectrometer[now].calibration_pulse90_f2,spectrometer[now].calibration_power_db_f2),
-["cpdprg2"]="garp4",
-pcpd3 = pulses.Ncpd90,
-pl13 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
-["cpdprg3"]="waltz16",
-
- --set soft powers and pulses
-p11 = pulses.watergate90, -- assume that watergate90 mks is ideal for 700
-["spnam2"]= "Gauss_5_256.pk", -- integral factor 0.5
- sp2= calc_power_set(pulses.watergate90,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
- spoal2 =0.5, -- have to check what's that
- spoffs2=0,
- ["wdw"]="QSINE",
- ["ssb"]=2,
-
- 
-
-
-
-
-p21 =1000, --(Crusher)
-p22 =1000 --(watergate)
- }&lt;/nmrcode&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;/nmritems&gt;
+<fld name='Body' type='Memo'>
+xcpr parmode 2D
+o2p 48.5
+2 si 4096
+2 ABSF2 -2.000
+gpz1 50
+p16 1000
+1 ABSF1 1000.000
+o4p 3.8
+2 ABSF1 12.000
+2 td  2048
+d1 0.5
+gpz2 8.1
+1 sw 12
+gpnam3 SMSQ10.100
+gpnam2 SMSQ10.100
+o1 2820.2
+spoal1 0.5
+2 FT_mod fsc
+gpnam1 SMSQ10.100
+1 ABSF2 -1000.000
+1 BC_mod no
+2 BC_mod qpol
+p1 11.5
+o3p 119
+1 FnMODE Echo-Antiecho
+1 REVERSE FALSE
+1 PH_mod pk
+pcpd3 320
+1 FT_mod no
+1 phc0 90
+2 stsi 2048
+2 PH_mod pk
+2 ssb 2
+1 td  1024
+ds 4
+spoffs1 0
+pulprog pk.hsqc-pfg
+1 sr  0
+1 phc1 -180
+d0 0
+1 si 512
+1 sf  600.13
+spnam1 Squa100.1000
+2 REVERSE FALSE
+1 ssb 2
+spnam13 Crp60,0.5,20.1
+d12 2e-005
+d16 0.0002
+2 sr  0
+p2 23
+cpdprg3 garp4
+spoffs13 0
+spoal13 0.5
+getprosol 1H 11.5 5.2
+1 SF 60.81064358534
 </fld>
 <fld name='Output TopSpin macro' type='String'>my.mac</fld>
-<fld name='Current Directory' type='String'>/opt/topspin/exp/stan/nmr/lists</fld>
+<fld name='Current Directory' type='String'>/opt/topspin2/exp/stan/nmr/lists</fld>
 <fld name='Browser' type='String'>start iexplore.exe</fld>
 <fld name='o1' type='String'> 2821</fld>
 <fld name='pl1' type='String'> 5</fld>
@@ -40072,7 +40093,11 @@ ph31=0 2 2 0 0 2 2 0 2 0 0 2 2 0 0 2
 <fld name='Type' type='String'>Macro</fld>
 <fld name='Author(s)' type='String'>K.Pervushin</fld>
 <fld name='Datum' type='String'>20-12-2007</fld>
-<fld name='Body' type='Memo'>exp_environment = {
+<fld name='Body' type='Memo'>exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15
+}
+
+exp_environment = {
 d2= 1/(4.*couplings.J_HN.Hz),
 d1 =1.,
 
@@ -40162,8 +40187,7 @@ gpz10=80,
 ["2 WDW"]="QSINE",
 ["1 ssb"]=2,
 ["2 ssb"]=2,
-["2 sr"]=0,  --referencing relative to absolute spectormeter calibration
-["1 sf"]=spectrometer[now].B_field*IndirectChemicalShiftReferences.N15 -- N dim referencing relative to DSS
+["1 SF"] = (spectrometer[now].B_field+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15
 }
 
 </fld>
@@ -40173,6 +40197,8 @@ gpz10=80,
 <fld name='Memo' type='String'>for RDC measurements</fld>
 <fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3/viewtopic.php?f=63&amp;t=240&amp;p=635#p635</fld>
 <fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Ref Sample' type='String'>---</fld>
+<fld name='1D Spectrum' type='String'>---</fld>
 </obj>
 <obj oid='241'>
 <fld name='Macro Name' type='String'>trosy_pfg_RDC</fld>
@@ -50275,6 +50301,339 @@ p22 =1000 --(watergate)
 <fld name='1D Spectrum' type='String'>---</fld>
 <fld name='Ref Sample' type='String'>---</fld>
 </obj>
+<obj oid='294'>
+<fld name='Type' type='String'>Sample</fld>
+<fld name='Subgroup' type='String'>for IAPP</fld>
+<fld name='Group' type='String'>soluble</fld>
+<fld name='Sample Name' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='URL reference' type='String'>https://onedrive.live.com/edit.aspx?cid=04b4a71a43dca971&amp;id=documents&amp;resid=4B4A71A43DCA971!1596&amp;app=OneNote&amp;&amp;wd=target%28%2F%2FNMR%20logbook.one%7C5229aa15-887a-42a2-a879-a831ca098033%2F9%5C%2F29%5C%2F2014%3DAO4%20peptide%3DStructure%7C46e91aba-0ef8-4ee5-9864-8543035c1549%2F%29</fld>
+<fld name='Body' type='Memo'>
+spectrum ={
+SR = 6.26,  -- SR for calibration relative DSS
+N =  {carrier=119., sw=30.}, --ppm center, sw  
+Ca=  {carrier=56.,  sw=40.},   
+CaCb={carrier=48.5,  sw=70.}, 
+CO=  {carrier=173., sw=16.},
+Carom={carrier=110.,sw=20.},
+D=   {carrier=3.8, sw=14.},
+H=   {carrier=4.73, sw=12.},
+del_3_9_19= 0.000150 -- for 3-9-19, d5=1/d, d to next null (Hz)
+}
+
+-- hetero-nuclear J couplings
+couplings ={
+J_HN =   {Hz=91., range={min=89., max=92.}}, -- Hz
+J_HC = {Hz=145., range={min=130., max=160.}}, -- Hz
+J_HaCa = {Hz=140., range={min=140., max=140.}}, -- Hz
+J_HbCb = {Hz=130., range={min=140., max=140.}}, -- Hz
+J_HmCm = {Hz=125., range={min=140., max=140.}}, -- Hz  methyl
+J_CC =   {Hz=35., range={min=140., max=140.}}, -- Hz  methyl
+J_CaCb = {Hz=35., range={min=140., max=140.}}, -- Hz
+J_CaCO = {Hz=55., range={min=140., max=140.}}, -- Hz
+J_CON =  {Hz=15., range={min=140., max=140.}}, -- Hz
+J_CaN =  {Hz=11., range={min=10., max=15.}}, -- Hz
+J_CaN_1 =  {Hz=7., range={min=140., max=140.}}, -- Hz
+J_CON_1 =  {Hz=1., range={min=140., max=140.}}, -- Hz
+-- homo-nuclear J couplings
+J_HnHa = {Hz=6., range={min=3., max=12.}}, -- Hz
+J_HaHb = {Hz=6., range={min=3., max=12.}} -- Hz
+}
+</fld>
+<fld name='Datum' type='String'>17-3-2015</fld>
+<fld name='Labeling' type='String'>CN, Hepes 50 mM</fld>
+<fld name='1D Spectrum' type='String'>1D</fld>
+<fld name='Tau_C (ns)' type='String'>---</fld>
+<fld name='Author(s)' type='String'>Margaret Phillips</fld>
+<fld name='Memo' type='String'>H2O, pH 5, 288K</fld>
+</obj>
+<obj oid='295'>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='Group' type='String'>fingerprint</fld>
+<fld name='URL reference' type='String'>http://trosy.ntu.edu.sg/phpbb3</fld>
+<fld name='Macro Name' type='String'>hsqc-pfg</fld>
+<fld name='Ref Sample' type='String'>---</fld>
+<fld name='Datum' type='String'>17-3-2015</fld>
+<fld name='1D Spectrum' type='String'>1Dprecipitated</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15
+}
+
+-- all other needed parameters
+exp_environment = {
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqc-pfg",
+["xcpr"]="parmode 2D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+p2=2*spectrometer[now].calibration_pulse90_f1,
+--pl1= calc_power_set(spectrometer[now].calibration_pulse90_f1,1.0,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+--pl1= spectrometer[now].calibration_power_db_f1,
+--pl3= spectrometer[now].calibration_power_db_f3,
+--p22=2*spectrometer[now].calibration_pulse90_f3,
+
+
+
+--set soft powers and pulses
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal13 =0.5, -- have to check what's that
+ spoffs13=0,
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg3"]= "garp4", 
+
+
+
+d0=0,
+d1=0.5,
+--ns=16,
+ds=4,
+d12=0.00002, --20 mks, for power switch
+d16=0.0002, --200 mks, for gradient recovery
+--d19=spectrum.del_3_9_19, -- 0.000250, -- for 3-9-19 as suggested by bruker
+
+  ["1 sw"] = spectrum.H.sw,  
+  --set number of sampled points
+ ["1 td "]=(1024), --H direction
+ ["2 td "]=(2048), --H direction
+
+--acqu modes
+["1 FnMODE"]= "Echo-Antiecho",
+--processing
+--["1 mc2"]= "Echo-Antiecho",
+["1 FT_mod"]= "no",
+["2 FT_mod"]= "fsc",
+
+["2 stsi"]= 2048,
+["2 si"]= 4096, 
+["1 si"]= 512, -- H dim
+["1 phc0"]= 90, -- N dim
+["1 phc1"]= -180, -- N dim 
+["1 sf "]=spectrometer[now].B_field, -- H dim  
+["1 sr "]=0, -- N dim
+["2 sr "]=0, -- N dim 
+["1 ssb"]=  2, -- n dim
+["2 ssb"]=  2, -- n dim
+["1 PH_mod"]=  "pk", -- n dim
+["2 PH_mod"]=  "pk", -- n dim 
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["2 BC_mod"]="qpol",
+["1 BC_mod"]="no",
+["2 ABSF1"]="12.000",
+["2 ABSF2"]="-2.000",
+["1 ABSF1"]="1000.000",
+["1 ABSF2"]="-1000.000",
+
+--set gradients
+p16=1000., -- 1ms for gradient
+gpnam1 ="SMSQ10.100",
+gpnam2 ="SMSQ10.100",
+gpnam3 ="SMSQ10.100",
+gpz1 =50,
+gpz2=80,
+gpz2=8.1
+}
+
+
+
+</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='296'>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='PP Name' type='String'>pk.hsqc-pfg</fld>
+<fld name='Datum' type='String'>17-3-2015</fld>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Dimension' type='String'>---</fld>
+<fld name='Group' type='String'>---</fld>
+<fld name='Subgroup' type='String'>---</fld>
+<fld name='Memo' type='String'>---</fld>
+<fld name='URL reference' type='String'>---</fld>
+<fld name='Body' type='Memo'>;hsqcetfpf3gpsi
+;avance-version (07/04/04)
+;HSQC
+;2D H-1/X correlation via double inept transfer
+;   using sensitivity improvement
+;phase sensitive using Echo/Antiecho-TPPI gradient selection
+;with decoupling during acquisition
+;using f3 - channel
+;using flip-back pulse
+;
+;A.G. Palmer III, J. Cavanagh, P.E. Wright &amp; M. Rance, J. Magn.
+;   Reson. 93, 151-170 (1991)
+;L.E. Kay, P. Keifer &amp; T. Saarinen, J. Am. Chem. Soc. 114,
+;   10663-5 (1992)
+;J. Schleucher, M. Schwendinger, M. Sattler, P. Schmidt, O. Schedletzky,
+;   S.J. Glaser, O.W. Sorensen &amp; C. Griesinger, J. Biomol. NMR 4,
+;   301-306 (1994)
+;S. Grzesiek &amp; A. Bax, J. Am. Chem. Soc. 115, 12593-12594 (1993)
+;
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+prosol relations=&lt;triple&gt;
+
+
+#include &lt;Avance.incl&gt;
+#include &lt;Grad.incl&gt;
+#include &lt;Delay.incl&gt;
+
+
+"p2=p1*2"
+"p22=p21*2"
+"d11=30m"
+"d26=1s/(cnst4*4)"
+
+
+"d0=3u"
+
+"in0=inf1/2"
+
+
+"DELTA1=p16+d16+8u"
+
+#   ifdef LABEL_CN
+"DELTA=p16+d16+larger(p2,p8)+d0*2"
+#   else
+"DELTA=p16+d16+p2+d0*2"
+#   endif /*LABEL_CN*/
+
+
+1 ze
+  d11 pl16:f3
+2 d1 do:f3
+3 (p1 ph1)
+  d26 pl3:f3
+  (center (p2 ph2) (p22 ph6):f3 )
+  d26 UNBLKGRAD
+  (p1 ph2) 
+  4u pl0:f1
+  (p11:sp1 ph1:r):f1
+  4u
+  p16:gp1
+  d16 pl1:f1
+  (p21 ph3):f3
+  d0 
+
+#   ifdef LABEL_CN
+  (center (p2 ph7) (p8:sp13 ph1):f2 )
+#   else
+  (p2 ph7)
+#   endif /*LABEL_CN*/
+
+  d0
+  p16:gp2*EA
+  d16
+  (p22 ph4):f3
+  DELTA
+  (center (p1 ph1) (p21 ph4):f3 )
+  d24
+  (center (p2 ph1) (p22 ph1):f3 )
+  d24
+  (center (p1 ph2) (p21 ph5):f3 )
+  d26
+  (center (p2 ph1) (p22 ph1):f3 )
+  d26
+  (p1 ph1)
+  DELTA1
+  (p2 ph1)
+  4u
+  p16:gp3
+  d16 pl16:f3
+  4u BLKGRAD
+  go=2 ph31 cpd3:f3
+  d1 do:f3 mc #0 to 2 
+     F1EA(igrad EA &amp; ip5*2, id0 &amp; ip3*2 &amp; ip6*2 &amp; ip31*2)
+exit
+   
+
+ph1=0 
+ph2=1
+ph3=0 2
+ph4=0 0 2 2
+ph5=1 1 3 3
+ph6=0
+ph7=0 0 2 2
+ph31=2 0 0 2
+  
+
+;pl0 : 120dB
+;pl1 : f1 channel - power level for pulse (default)
+;pl3 : f3 channel - power level for pulse (default)
+;pl16: f3 channel - power level for CPD/BB decoupling
+;sp1: f1 channel - shaped pulse  90 degree
+;sp13: f2 channel - shaped pulse 180 degree (adiabatic)
+;p1 : f1 channel -  90 degree high power pulse
+;p2 : f1 channel - 180 degree high power pulse
+;p8 : f2 channel - 180 degree shaped pulse for inversion (adiabatic)
+;p11: f1 channel -  90 degree shaped pulse
+;p16: homospoil/gradient pulse                         [1 msec]
+;p21: f3 channel -  90 degree high power pulse
+;p22: f3 channel - 180 degree high power pulse
+;d0 : incremented delay (2D)                           [3 usec]
+;d1 : relaxation delay; 1-5 * T1
+;d11: delay for disk I/O                               [30 msec]
+;d16: delay for homospoil/gradient recovery
+;d24: 1/(4J)YH for YH
+;     1/(8J)YH for all multiplicities
+;d26: 1/(4J(YH))
+;cnst4: = J(YH)
+;inf1: 1/SW(X) = 2 * DW(X)
+;in0: 1/(2 * SW(X)) = DW(X)
+;nd0: 2
+;NS: 1 * n
+;DS: &gt;= 16
+;td1: number of experiments
+;FnMODE: echo-antiecho
+;cpd3: decoupling according to sequence defined by cpdprg3
+;pcpd3: f3 channel - 90 degree pulse for decoupling sequence
+
+
+;use gradient ratio:	gp 1 : gp 2 : gp 3
+;			  50 :   80 : 20.1       for C-13
+;			  50 :   80 :  8.1       for N-15
+
+;for z-only gradients:
+;gpz1: 50%
+;gpz2: 80%
+;gpz3: 20.1% for C-13, 8.1% for N-15
+
+;use gradient files:   
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+;gpnam3: SINE.100
+
+
+                                          ;preprocessor-flags-start
+;LABEL_CN: for C-13 and N-15 labeled samples start experiment with 
+;             option -DLABEL_CN (eda: ZGOPTNS)
+                                          ;preprocessor-flags-end
+
+
+
+;$Id: hsqcetfpf3gpsi,v 1.4 2007/04/11 13:34:30 ber Exp $
+</fld>
+</obj>
 </database>
 <fld name='Creation Date' type='Date'>2007-11-12</fld>
 <fld name='Description' type='Memo'>NMR generation/information system. For the usage information check 
@@ -50288,4 +50647,5 @@ A hub for setting up NMR experiments</fld>
 <fld name='TemplateDate' type='Date'>2009-5-3</fld>
 <fld name='TemplateDesc' type='Memo'>User field - enter notes on repository changes</fld>
 <fld name='#ext-delta#' type='Boolean'>true</fld>
+<fld name='Author' type='String'>K.Pervushin</fld>
 </repository>
