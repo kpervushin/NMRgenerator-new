@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ngxml.xsl"?>
+<nmritems> <nmrrecord><nmrattr>Type<nmrtype>Sample</nmrtype></nmrattr><nmrattr>Sample Name<nmrname>Ubiquitin 2% Glycerol</nmrname></nmrattr><nmrattr>Author(s)<nmrauthor>Margaret Phillips</nmrauthor></nmrattr><nmrattr>Datum<nmrother>17-3-2015</nmrother></nmrattr><nmrattr>Labeling<nmrother>CN, Hepes 50 mM</nmrother></nmrattr><nmrattr>Tau_C (ns)<nmrother>---</nmrother></nmrattr><nmrattr>Group<nmrother>soluble</nmrother></nmrattr><nmrattr>1D Spectrum<nmrother>1D</nmrother></nmrattr><nmrattr>URL reference<nmrurl>https://onedrive.live.com/edit.aspx?cid=04b4a71a43dca971&id=documents&resid=4B4A71A43DCA971!1596&app=OneNote&&wd=target%28%2F%2FNMR%20logbook.one%7C5229aa15-887a-42a2-a879-a831ca098033%2F9%5C%2F29%5C%2F2014%3DAO4%20peptide%3DStructure%7C46e91aba-0ef8-4ee5-9864-8543035c1549%2F%29</nmrurl></nmrattr><nmrattr>Body<nmrcode>
+spectrum ={
+SR = 6.26,  -- SR for calibration relative DSS
+N =  {carrier=118., sw=32.}, --ppm center, sw  
+Ca=  {carrier=53.8,  sw=25.0},   
+CaCb={carrier=48.5,  sw=70.}, 
+CO=  {carrier=173., sw=16.},
+Carom={carrier=110.,sw=20.},
+D=   {carrier=3.8, sw=14.},
+H=   {carrier=4.73, sw=12.0166},
+del_3_9_19= 0.000150 -- for 3-9-19, d5=1/d, d to next null (Hz)
+}
+
+-- hetero-nuclear J couplings
+couplings ={
+J_HN =   {Hz=91., range={min=89., max=92.}}, -- Hz
+J_HC = {Hz=145., range={min=130., max=160.}}, -- Hz
+J_HaCa = {Hz=140., range={min=140., max=140.}}, -- Hz
+J_HbCb = {Hz=130., range={min=140., max=140.}}, -- Hz
+J_HmCm = {Hz=125., range={min=140., max=140.}}, -- Hz  methyl
+J_CC =   {Hz=35., range={min=140., max=140.}}, -- Hz  methyl
+J_CaCb = {Hz=35., range={min=140., max=140.}}, -- Hz
+J_CaCO = {Hz=55., range={min=140., max=140.}}, -- Hz
+J_CON =  {Hz=15., range={min=140., max=140.}}, -- Hz
+J_CaN =  {Hz=11., range={min=10., max=15.}}, -- Hz
+J_CaN_1 =  {Hz=7., range={min=140., max=140.}}, -- Hz
+J_CON_1 =  {Hz=1., range={min=140., max=140.}}, -- Hz
+-- homo-nuclear J couplings
+J_HnHa = {Hz=6., range={min=3., max=12.}}, -- Hz
+J_HaHb = {Hz=6., range={min=3., max=12.}} -- Hz
+}
+</nmrcode></nmrattr></nmrrecord></nmritems>

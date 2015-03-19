@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ngxml.xsl"?>
+<nmritems> <nmrrecord><nmrattr>Type<nmrtype>Spectrometer</nmrtype></nmrattr><nmrattr>Spec Name<nmrname>A600 TS2.1 @ SBS NTU</nmrname></nmrattr><nmrattr>Location<nmrother>SBS NTU</nmrother></nmrattr><nmrattr>Contact Person<nmrother>Dr. Ye Hong (c/o Prof. Yoon)</nmrother></nmrattr><nmrattr>Datum<nmrother>17-3-2015</nmrother></nmrattr><nmrattr>Description<nmrother>2005</nmrother></nmrattr><nmrattr>Memo<nmrother>CryoProbe, Automatic Tune & Match</nmrother></nmrattr><nmrattr>URL reference<nmrurl>www.trosy.com</nmrurl></nmrattr><nmrattr>Body<nmrcode>now="selected";
+spectrometer ={
+["selected"]={
+
+B_field = 600.13, -- MHz
+SR=6.2, --0,
+proton_carrier_298k= 2820.2, --2822, --2817, --2817, --2823.9, --2823.9, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824.3, --2824, --2817, 
+calibration_power_db_f1= 5.2, --4, --4, --4, --4, --4, --4, --16.1/2, --16.1/2, --16.1/2, --4, 
+calibration_pulse90_f1= 11.50, --6.93, --7.5, --7.5, --7.38, --8.0, --11.38, --11.25, --10.88, --9.4, --9.4, --9.45, --9.45, --9.45, --9.45, --9.45, --9.45, --9.5, --8.05, --8.05, --8.05, --8.05, --7.82, --7.82, 
+calibration_power_db_f2=-3.0, --db   
+calibration_pulse90_f2=12.5, --mks C-calibration 2Nov2007
+calibration_power_db_f3=-4.0, --db
+calibration_pulse90_f3=34.0, --mks N-calibration 19 Aug2008
+calibration_power_db_f4=-1, --db
+calibration_pulse90_f4=260., --mks 
+home_topspin="/opt/topspin2/exp/stan/nmr/lists"
+}
+}
+pulses ={
+watergate90=(1000.0*700.13/(spectrometer[now].B_field)), --mks
+COdec90=300.0*700.13/spectrometer[now].B_field, --mks
+Ncpd90=320.0*600.13/spectrometer[now].B_field, --mks
+Ccpd90=85.0*700.13/spectrometer[now].B_field, --mks
+Hcpd90=80.0*700.13/spectrometer[now].B_field, --mks
+Dcpd90=300.0*700.13/spectrometer[now].B_field, --mks
+Htocsy90=25.0*700.13/spectrometer[now].B_field, --mks
+--Bruker pulses
+
+bru_CaCb_180 = 210*750.13/(spectrometer[now].B_field), --mks inv pulse with Q3 shape
+bru_CaCb_90 = 308*750.13/(spectrometer[now].B_field), --mks excitation pulse with Q5 shape
+bru_Crp60=(500.0*600.13/(spectrometer[now].B_field)) --mks
+
+}
+
+IndirectChemicalShiftReferences={ -- from Cavanagh etc, page 263
+-- compound     ratio     Secondary reference : DSS , 2,2-Dimethyl-2-silapentane-5-sulfonic acid
+H2=0.153506088, -- DSS (internal)
+C13=0.251449530, -- DSS (internal)
+N15=0.101329118, -- Liquid NH3 (external)
+P31=0.404808636 -- (CH3O)3PO (internal)
+}
+InternetBrowser="/usr/bin/firefox"
+</nmrcode></nmrattr></nmrrecord></nmritems>
