@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Wed 25. Mar 15:24:28 2015' author='Fred Damberger' 
+<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Thu 26. Mar 09:59:47 2015' author='Fred Damberger' 
 template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinLiquidState1.3v9.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -18329,7 +18329,7 @@ main_file_menu_button_cm={}
 main_file_menu_button_1d={}
 InternetBrowser ="start iexplore.exe"
 now="selected" -- to define spectrometer[now]
-
+recalcRmsd=true
 --these are defined globally to avoid garbage collection induced crash
 
 function ContentEditor(record_type)
@@ -21771,9 +21771,9 @@ refresh(w)
     function (self, p)
        local width,height = self:getSize()
 	   local ampl=0
-	   local baseline=0
-	   local rmsd=0
-	   local sn =0
+	    --baseline={0}
+	    --rmsd={0}
+	    --sn ={0}
 	for ii=1,imax do
         --p:drawContour( self:getData().c[ii],0,0,width,height)
 		p:drawSlice( self:getData().c[ii],0,0,width,height)
@@ -21788,6 +21788,14 @@ refresh(w)
 		else 
 			ampl=0.0
 		end
+		
+		--Calculate RMSD and baseline
+		if(rmsd[ii] ==nil or recalcRmsd==true) then
+			baseline[ii] = MeanInPpmRange(self:getData().buf[ii], self:getData().noiseboxppmmax, self:getData().noiseboxppmmin)
+			rmsd[ii] = RMSDinPpmRange(self:getData().buf[ii], self:getData().noiseboxppmmax, self:getData().noiseboxppmmin)
+		end --if(baseline[ii] ==nil) then	
+		sn[ii] = (ampl-baseline[ii])/(rmsd[ii]+0.001) -- to aviod division by zero
+		
 		local amplR=0
 		local imaxL=0
 		--print amplitudes at the reference lines positions
@@ -21797,6 +21805,7 @@ refresh(w)
 					xnb = (self:getData().ppmmax1-reference1HsPPM[jj])/(self:getData().ppmmax1-self:getData().ppmmin1)
 					xnb=xnb*width
 					amplR = self:getData().buf[ii]:getAtPpm(reference1HsPPM[jj])
+					amplR = (amplR-baseline[ii])/(rmsd[ii]+0.001)
 					p:drawText( xnb,height*0.5+15*ii,string.format( "%7.2f",amplR))
 					--p:drawLine(xnb,0,xnb,height)
 					end --if(
@@ -21804,14 +21813,11 @@ refresh(w)
 		
 		 
 		
-		
-			baseline = MeanInPpmRange(self:getData().buf[ii], self:getData().noiseboxppmmax, self:getData().noiseboxppmmin)
-			rmsd = RMSDinPpmRange(self:getData().buf[ii], self:getData().noiseboxppmmax, self:getData().noiseboxppmmin)
-			sn = (ampl-baseline)/(rmsd+0.01) -- to aviod division by zero
+	
 
-		local otxt=self:getData().name[ii].." Ampl: "..string.format( "%7.2f",ampl).." BL: "..string.format( "%7.2f",baseline)
-		otxt=otxt.." rmsd: "..string.format( "%7.2f",rmsd) --from function RMSDinPpmRange()
-		otxt=otxt.." SN: "..string.format( "%7.2f",sn)
+		local otxt=self:getData().name[ii].." Ampl: "..string.format( "%7.2f",ampl).." BL: "..string.format( "%7.2f",baseline[ii])
+		otxt=otxt.." rmsd: "..string.format( "%7.2f",rmsd[ii]) --from function RMSDinPpmRange()
+		otxt=otxt.." SN: "..string.format( "%7.2f",sn[ii] )
 		p:drawText( width*0.03,height*0.04+15*ii,otxt)
 		--draw noiseboxes
 		--p:setPen("white",1)
@@ -21819,11 +21825,11 @@ refresh(w)
 		 xnb = (self:getData().ppmmax1-self:getData().noiseboxppmmax)/(self:getData().ppmmax1-self:getData().ppmmin1)
 			xnb=xnb*width
 		local mi,ma = self:getData().c[ii]:getMinMax()
-		local ynb = (ma-baseline-rmsd/2)/(ma-mi)*height
+		local ynb = (ma-baseline[ii]-rmsd[ii]/2)/(ma-mi)*height
 		
 		local wnb = (self:getData().noiseboxppmmax-self:getData().noiseboxppmmin)/(self:getData().ppmmax1-self:getData().ppmmin1)
 			wnb=wnb*width+2
-		local hnb = (rmsd)/(ma-mi)*height+2
+		local hnb = (rmsd[ii])/(ma-mi)*height+2
 
 		--print(string.format( "xnb %7.2f",xnb) ..string.format( " ynb %7.2f",ynb))
 		--print(string.format( "wnb %7.2f",wnb) ..string.format( " hnb %7.2f",hnb)) 		
@@ -21832,7 +21838,7 @@ refresh(w)
 		p:drawLine(xnb,ynb+hnb,xnb+wnb,ynb+hnb)
 		
 	end --for ii=1,imax do
-
+    recalcRmsd=false --prevent recalculating RMSD
 
 	   
        -- draw Cursor HERE
@@ -21862,7 +21868,7 @@ refresh(w)
 		--print("imaxL ="..imaxL)
 		
 	   p:setPen("white",1)
-	   p:drawText(width*0.03,height*0.04-15, "Cntrl+Shift Mouse to zoom, Cntr Mouse to re-define noisebox (blue), Alt L/R Mouse to pick 1H lines")
+	   p:drawText(width*0.03,height*0.04-15, "Cntrl+Shift Mouse to zoom, Cntr Mouse to re-define noisebox (blue), Alt L/R Mouse to add/remove 1H lines at cursor")
     end --function (self, p)
 	) --w:setCallback(gui.event.Paint -- end Draw and Redraw Callback
 	
@@ -21901,12 +21907,12 @@ refresh(w)
 		 local szn=table.getn(reference1HsPPM)
 		 reference1HsPPM[szn+1]=self:getData().XcursorPos
 		 -- print the lines
-		 local acro = "{"
-			for i,line in ipairs(reference1HsPPM) do
-			acro=acro..string.format("%5.3f",line)..","
+		 			local acro = "{"
+			for ii=1,table.getn(reference1HsPPM) do
+				acro=acro..string.format("%5.3f",reference1HsPPM[ii])..","
 			end
 			acro=acro.."}"
-			--print(acro)
+
 		 insert_braketed_to_sample_after("reference1HsPPM", acro)
 		--sample record updated
 		 self:update()
@@ -21937,20 +21943,20 @@ refresh(w)
 			end
 			
 			--print(table.getn(refTmp))
-			reference1HsPPM={}
-			
-			
+			reference1HsPPM={}			
+			local acro = "{"
 			for ii=1,table.getn(refTmp) do
 				reference1HsPPM[ii]=refTmp[ii]
-			end
-			
-			
-			
-		local acro = "{"
-			for i,line in ipairs(reference1HsPPM) do
-			acro=acro..string.format("%5.3f",line)..","
+				acro=acro..string.format("%5.3f",reference1HsPPM[ii])..","
 			end
 			acro=acro.."}"
+			
+			
+		
+			--for i,line in ipairs(reference1HsPPM) do
+			--acro=acro..string.format("%5.3f",line)..","
+			--end
+			--acro=acro.."}"
 			--print(acro)
 
 		 insert_braketed_to_sample_after("reference1HsPPM", acro)
@@ -22006,6 +22012,7 @@ refresh(w)
 local instxt = "{"..string.format("%7.3f",self:getData().noiseboxppmmax)..","..string.format("%7.3f",self:getData().noiseboxppmmin).."}"
 		insert_braketed_to_sample_after("noiseRegion1HsPPM", instxt)
 		--sample record updated
+		recalcRmsd=true --recalculate RMSD
 		
 	refresh(self)
   
@@ -22297,7 +22304,7 @@ StartPage()
 <fld name='Sample' type='String'>Ubiquitin 2% Glycerol</fld>
 <fld name='Spectrometer' type='String'>PC datastation</fld>
 <fld name='Type' type='String'>Current Settings</fld>
-<fld name='Macro' type='String'>pk.trosy</fld>
+<fld name='Macro' type='String'>zg</fld>
 <fld name='Output TopSpin macro' type='String'>mm</fld>
 <fld name='Current Directory' type='String'>C:/Dropbox/NMRGenerator/</fld>
 <fld name='Browser' type='String'>start iexplore.exe</fld>
@@ -24076,10 +24083,10 @@ del_3_9_19= 0.000150 -- for 3-9-19, d5=1/d, d to next null (Hz)
 }
 
 -- settings for noise box. Can be changed in Overlay1D
-noiseRegion1HsPPM={ 11.257, 10.066}  
+noiseRegion1HsPPM={ 11.258,  9.932}  
 
 -- list of reference 1H resonances 
-reference1HsPPM={9.229,8.815,2.877,2.345,1.360,0.366,}
+reference1HsPPM={0.366,8.406,8.312,8.254,8.158,8.000,7.952,7.881,7.811,7.723,7.661,7.598,7.450,7.380,7.328,7.190,7.111,7.034,6.965,6.893,6.851,6.793,6.726,6.643,6.576,6.524,6.491,1.473,1.243,1.051,0.307,1.909,0.037,-0.350,-0.560,}
 
 -- hetero-nuclear J couplings
 couplings ={
@@ -24163,7 +24170,7 @@ p1=spectrometer[now].calibration_pulse90_f1,
 
 </fld>
 <fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
-<fld name='1D Spectrum' type='String'>zg_1D</fld>
+<fld name='1D Spectrum' type='String'></fld>
 <fld name='Exp (CARA)' type='String'> 1D 1H</fld>
 <fld name='Type' type='String'>Macro</fld>
 <fld name='Datum' type='String'>23-3-2015</fld>
