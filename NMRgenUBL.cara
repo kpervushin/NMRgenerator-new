@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Wed 1. Apr 10:16:04 2015' author='Fred Damberger' 
+<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Wed 1. Apr 11:50:35 2015' author='Fred Damberger' 
 template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinLiquidState1.3v9.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -17934,6 +17934,64 @@ iconWave = dlg.createIcon( xpmWave )
 ]]
 iconWaveRed = dlg.createIcon( xpmWaveRed )
 
+	xpmVd = [[/* XPM */   --variable delay
+"16 16 8 1"
+"# c #000000"
+"b c #ffffff"
+"e c #000000"
+"d c #404000"
+"c c blue"
+"g c black"
+"o c cyan"
+". c None"
+"o..............."
+"oo.............."
+"ooo............."
+"ooooo..........."
+"oooooo.........."
+"ooooooo........."
+"oooooooo........"
+"oooooooooo......"
+"oooooooooooo...."
+"ooooooooooooo..."
+"oooooooooooooo.."
+"ooooooooooooooo."
+"oooooooooooooooo"
+"cccccccccccccccc"
+"cccccccccccccccc"
+"................"
+]]
+iconVd = dlg.createIcon( xpmVd )
+
+	xpmVdRed = [[/* XPM */
+"16 16 8 1"
+"# c #000000"
+"b c #ffffff"
+"e c #000000"
+"d c #404000"
+"c c magenta"
+"g c black"
+"o c red"
+". c None"
+"o..............."
+"oo.............."
+"ooo............."
+"ooooo..........."
+"oooooo.........."
+"ooooooo........."
+"oooooooo........"
+"oooooooooo......"
+"oooooooooooo...."
+"ooooooooooooo..."
+"oooooooooooooo.."
+"ooooooooooooooo."
+"oooooooooooooooo"
+"cccccccccccccccc"
+"cccccccccccccccc"
+"................"
+]]
+iconVdRed = dlg.createIcon( xpmVdRed )
+
 
 	xpmSample = [[/* XPM */
 "16 16 8 1"
@@ -18313,8 +18371,8 @@ object_attributes ={
 ["attr7"]="URL reference",
 ["linked as"]="vdlist",
 ["location"]="vd",  -- location of the resource
-["icon"]=iconWave,
-["icon_alert"]=iconWaveRed,
+["icon"]=iconVd,
+["icon_alert"]=iconVdRed,
 ["attr99"]="Body" -- Spectrometer's settings
 },
 ["VariableCounter"]={
@@ -18328,8 +18386,8 @@ object_attributes ={
 ["attr7"]="URL reference",
 ["linked as"]="vclist",
 ["location"]="vc/user",  -- location of the resource
-["icon"]=iconWave,
-["icon_alert"]=iconWaveRed,
+["icon"]=iconVd,
+["icon_alert"]=iconVdRed,
 ["attr99"]="Body" -- Spectrometer's settings
 }
 }
@@ -22521,7 +22579,7 @@ StartPage()
 <fld name='Sample' type='String'>Ubiquitin 2% Glycerol</fld>
 <fld name='Spectrometer' type='String'>A600 TS2.1 @ SBS NTU</fld>
 <fld name='Type' type='String'>Current Settings</fld>
-<fld name='Macro' type='String'>HNCACB-pfg</fld>
+<fld name='Macro' type='String'>T1 N15 hsqc-pfg</fld>
 <fld name='Output TopSpin macro' type='String'>mm</fld>
 <fld name='Current Directory' type='String'>/opt/topspin2/exp/stan/nmr/lists</fld>
 <fld name='Browser' type='String'>start iexplore.exe</fld>
@@ -22531,97 +22589,87 @@ StartPage()
 <fld name='Help URL' type='String'>https://github.com/kpervushin/NMRgenerator-new/wiki</fld>
 <fld name='SR' type='String'>-79</fld>
 <fld name='Body' type='Memo'>----Experiment info for lab journal--------
-    Exp  , HNCA-pfg, Ubiquitin 2% Glycerol, o1= 2819, p1@pl1  11.00@5.2, SR=-79 
+    Exp  , T1 N15 hsqc-pfg, Ubiquitin 2% Glycerol, o1= 2819, p1@pl1  11.00@5.2, SR=-79 
 
 ---------Macro listing----------
 
 rpar HNCAGP3D all
 o2p 48.5
-gpz1 30
+gpz1 50
 pl0 120
-1 ABSF1 1000
-3 ABSF1 12
-2 ABSF1 1000
+3 ABSF1 12.000
+2 ABSF1 1000.000
 d1 1
 pcpd1 80
-gpnam4 SINE.100
-spoal5 0.5
+gpnam4 SMSQ10.100
+vd1 relax
 o1 2819
 spoal1 0.5
-2 FT_mod no
-3 FT_mod no
+cnst22 54
+3 FT_mod fsc
 rg 128
 p1 11
-3 phc0 -243.697
+NBL 16
 2 phc0 0
-gpz2 80
-1 BC_mod no
+vdlist1 relax
 p26 80
 2 BC_mod no
 2 phc1 0
-1 phc1 0
-3 phc1 -9.4
-2 ssb 2
+cnst11 4
+3 phc1 0
+p8 500
 3 ssb 2
-1 ssb 2
-sp2 0.03
-spnam2 Q5.1000
+zgoptns -DLABEL_CN
 d16 0.0002
-1 si 512
-2 si 128
-3 si 1024
-2 ABSF2 -1000
+1 si 16
+2 si 256
+3 si 8192
+2 ABSF2 -1000.000
 3 ABSF2 5.8
-spnam5 Q3.1000
-gpz3 8.1
+gpz3 16.2
 o4p 3.8
 3 td  1024
-2 td  40
-1 td  128
-2 sw 35
-1 sw 27
+2 td  2
+1 td  16
+1 sw 35
 p11 1000
 3 sw 14.0166
-pl16 15.22
-1 ABSF2 -1000
 3 BC_mod qpol
-1 FnMODE States-TPPI
-p16 1000
+cnst12 4
 o3p 118
-1 REVERSE FALSE
-2 WDW QSINE
-p21 35
-3 stsi 1024
-gpnam3 SINE.100
-gpnam2 SINE.100
-spoal8 0.5
+gpz4 30
+3 phc0 89.7
+p16 1000
+3 stsi 4096
+gpnam3 SMSQ10.100
+2 ssb 2
+cpdprg1 dipsi2
 2 PH_mod pk
 3 PH_mod pk
-2 FnMODE Echo-Antiecho
+2 FT_mod no
 spoffs1 0
-1 phc0 0
-1 mc2 States-TPPI
-pulprog pk.hncagp3d
+1 mc2 QF
 2 mc2 echo-antiecho
+pulprog pk.hsqct1etf3gpsi3d
+gpnam2 SMSQ10.100
 3 REVERSE FALSE
-1 WDW QSINE
-spnam8 Q5tr.1000
+cnst4 90
+2 WDW QSINE
 cnst21 172
 spnam1 Squa100.1000
 2 REVERSE FALSE
-1 PH_mod pk
-gpnam1 SINE.100
-spnam3 Q3.1000
+gpz2 80
+spnam13 Crp60,0.5,20.1
+1 FnMODE QF
+gpnam1 SMSQ10.100
 pcpd3 320
-cpdprg1 dipsi2
 3 WDW QSINE
 cpdprg3 garp4
-spoal3 0.5
-spoal2 0.5
+2 FnMODE Echo-Antiecho
+spoal13 0.5
 getprosol 1H 11 5.2
 2 SF 60.81063558034
 3 SR -79
-1 SF 150.90238657439
 </fld>
 <fld name='Pulse Program' type='String'>pk.hncagp3d</fld>
 <fld name='VariableDelay' type='String'>relax</fld>
@@ -22773,6 +22821,7 @@ exp_environment = {
 <fld name='26' type='OID'>26</fld>
 <fld name='38' type='OID'>38</fld>
 <fld name='67' type='OID'>67</fld>
+<fld name='85' type='OID'>85</fld>
 </obj>
 <obj oid='28'/>
 <obj oid='29'>
@@ -29065,7 +29114,7 @@ exp_environment = {
 ["1 si"]= 16, -- N dim
 ["2 si"]= 256,
 
-vdlist = "relax", -- relaxation delays list, --vdlist
+["vdlist"] = "relax", -- relaxation delays list, --vdlist
 
 ["cnst4"] = 90, --Hz J(H, N) coupling
 ["cnst11"] = 4, --4 for NH
@@ -31717,6 +31766,32 @@ p16=1000.0, -- 1ms for gradient
 </fld>
 <fld name='Author(s)' type='String'>Margaret Phillips</fld>
 <fld name='Memo' type='String'>set power at 50% of maximum</fld>
+</obj>
+<obj oid='85'>
+<fld name='Type' type='String'>VariableDelay</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Location' type='String'>K.Pervushin</fld>
+<fld name='Contact Person' type='String'>---</fld>
+<fld name='Description' type='String'>---</fld>
+<fld name='Memo' type='String'>/opt/topspin2/exp/stan/nmr/lists/vd/user/</fld>
+<fld name='URL reference' type='String'>---</fld>
+<fld name='Body' type='Memo'>0.04
+0.10
+0.20
+0.40
+0.50
+0.60
+0.80
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.1
+2.2
+2.5</fld>
 </obj>
 </database>
 <fld name='Creation Date' type='Date'>2013-10-1</fld>
