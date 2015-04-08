@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
-<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Wed 1. Apr 11:50:35 2015' author='Fred Damberger' 
+<repository version='37' sub='0' creator='CARA 1.9.1b11' modified='Wed 8. Apr 15:55:42 2015' author='Fred Damberger' 
 template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinLiquidState1.3v9.cara'>
 <odef class='Repository'>
 <fld name='Author' type='String' desc=''/>
@@ -60,6 +60,168 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='Version' type='Short' desc=''/>
 </odef>
 <library nterm='N' cterm='C' gensys='BB'>
+<spectrum-type name='3D H(CCCO)NH'>
+<dim name='HN' atom='H1' width='0.000000'>
+<label tag='H' off='0' final='1'/>
+</dim>
+<dim name='Hali' atom='H1' width='0.000000'/>
+<dim name='N' atom='N15' width='0.000000'>
+<label tag='N' off='0' final='1'/>
+</dim>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
+<step text='Co' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='25.000000'/>
+<step text='Ca' atom='C13' dim='-1' hops='1' rep='0' mean='54.000000' dev='10.000000'/>
+<step text='Cali' atom='C13' dim='-1' hops='1' rep='1' mean='40.000000' dev='35.000000'/>
+<step text='Hali' atom='H1' dim='1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
+<fld name='reference' type='Memo'>Grzesiek S. Anglister J, Bax A, J Magn Reson B, 101, 114-119 (1993)</fld>
+</spectrum-type>
+<spectrum-type name='2D (H)CC(H)-COSYali'>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<dim name='Ccosy' atom='C13' width='0.000000'/>
+<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Cinept' atom='C13' dim='0' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Hinept' atom='H1' dim='-1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
+<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
+<fld name='comment' type='Memo'>C-C projection of hCCH-COSYali</fld>
+</spectrum-type>
+<spectrum-type name='3D (H)CCH-COSYali'>
+<dim name='Hinept' atom='H1' width='0.000000'/>
+<dim name='Ccosy' atom='C13' width='0.000000'/>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
+<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
+</spectrum-type>
+<spectrum-type name='3D (H)CC(H)-COSYaro'>
+<dim name='C1' atom='C13' width='0.000000'/>
+<dim name='C2' atom='C13' width='0.000000'/>
+<step text='' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='C1' atom='C13' dim='0' hops='1' rep='0' mean='125.000000' dev='25.000000'/>
+<step text='C2' atom='C13' dim='1' hops='1' rep='0' mean='125.000000' dev='25.000000'/>
+<step text='' atom='H1' dim='-1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
+<fld name='comment' type='Memo'>C-C projection of hCCH-COSYaro</fld>
+</spectrum-type>
+<spectrum-type name='3D (H)CCH-COSYaro'>
+<dim name='Hinept' atom='H1' width='0.000000'/>
+<dim name='Ccosy' atom='C13' width='0.000000'/>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
+<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
+<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
+<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
+</spectrum-type>
+<spectrum-type name='3D (H)CCH-TOCSYali'>
+<dim name='Hinept' atom='H1' width='0.000000'/>
+<dim name='Ctocsy' atom='C13' width='0.000000'/>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<step text='Htocsy' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='Ctocsy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Cinept' atom='C13' dim='2' hops='1' rep='1' mean='40.000000' dev='35.000000'/>
+<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
+<fld name='reference' type='Memo'></fld>
+</spectrum-type>
+<spectrum-type name='3D (H)CCH-TOCSYaro'>
+<dim name='Hinept' atom='H1' width='0.000000'/>
+<dim name='Ctocsy' atom='C13' width='0.000000'/>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<step text='Htocsy' atom='H1' dim='-1' hops='0' rep='0'/>
+<step text='Ctocsy' atom='C13' dim='1' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
+<step text='Cinept' atom='C13' dim='2' hops='1' rep='1' mean='120.000000' dev='25.000000'/>
+<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
+</spectrum-type>
+<spectrum-type name='3D HC(C)H-TOCSYaro'>
+<dim name='Hinept' atom='H1' width='0.000000'/>
+<dim name='Htocsy' atom='H1' width='0.000000'/>
+<dim name='Cinept' atom='C13' width='0.000000'/>
+<step text='Hinept' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
+<step text='Ctocsy' atom='C13' dim='-1' hops='1' rep='1' mean='120.000000' dev='25.000000'/>
+<step text='Htocsy' atom='H1' dim='1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
+<fld name='reference' type='Memo'>Bax A, Clore GM, Gronenborn A, J Magn Reson, 88, 425-431 (1990)</fld>
+</spectrum-type>
+<spectrum-type name='3D CBCA(CO)NH'>
+<dim name='HN' atom='H1' width='0.000000'>
+<label tag='H' off='0' final='1'/>
+</dim>
+<dim name='Cab' atom='C13' width='0.000000'>
+<label tag='CB' off='-1' final='1'/>
+<label tag='CA' off='-1' final='1'/>
+</dim>
+<dim name='N' atom='N15' width='0.000000'>
+<label tag='N' off='0' final='1'/>
+</dim>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
+<step text='Co' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='20.000000'/>
+<step text='Ca' atom='C13' dim='-1' hops='1' rep='0' mean='54.000000' dev='10.000000'/>
+<step text='Cab' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
+<fld name='reference' type='Memo'>Grzesiek S, Bax A, J Amer Chem Soc, 114, 6291-6293 (1992)</fld>
+</spectrum-type>
+<spectrum-type name='2D H(N)HB'>
+<dim name='HN' atom='H1' width='0.000000'/>
+<dim name='HB' atom='H1' width='0.000000'/>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
+<step text='See object Table' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='of 3D HNHB' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='HB' atom='H1' dim='1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
+<fld name='comment' type='Memo'>See comment in 3D HNHB (procedure uses C13)</fld>
+</spectrum-type>
+<spectrum-type name='2D H(N)HA'>
+<dim name='HN' atom='H1' width='0.000000'/>
+<dim name='HA' atom='H1' width='0.000000'/>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
+<step text='HA' atom='H1' dim='1' hops='3' rep='0'/>
+</spectrum-type>
+<spectrum-type name='2D H(NCO)CA'>
+<dim name='HN' atom='H1' width='0.000000'/>
+<dim name='CA' atom='C13' width='0.000000'/>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
+<step text='CO' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='15.000000'/>
+<step text='CA' atom='C13' dim='1' hops='1' rep='0' mean='52.000000' dev='12.000000'/>
+<fld name='ExperimentType' type='Memo'>2D Triple Resonance</fld>
+<fld name='comment' type='Memo'>HN-CA projection of 3D HN(CO)CA</fld>
+</spectrum-type>
+<spectrum-type name='2D H(NCA)CO'>
+<dim name='HN' atom='H1' width='0.000000'/>
+<dim name='CO' atom='C13' width='0.000000'/>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
+<step text='CA' atom='C13' dim='-1' hops='2' rep='0' mean='54.000000' dev='10.000000'/>
+<step text='CO' atom='C13' dim='1' hops='1' rep='0' mean='175.000000' dev='25.000000'/>
+<fld name='ExperimentType' type='Memo'>2D Triple Resonance</fld>
+<fld name='reference' type='Memo'></fld>
+<fld name='comment' type='Memo'>HN-CO projection of 3D HN(CA)CO</fld>
+</spectrum-type>
+<spectrum-type name='3D HBHANH'>
+<dim name='HN' atom='H1' width='0.000000'/>
+<dim name='Hab,Hab-1' atom='H1' width='0.000000'/>
+<dim name='N' atom='N15' width='0.000000'/>
+<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
+<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
+<step text='Ca,Ca-1' atom='C13' dim='-1' hops='2' rep='0' mean='52.000000' dev='12.000000'/>
+<step text='Cab,Cab-1' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
+<step text='Hab,Hab-1' atom='H1' dim='1' hops='1' rep='0'/>
+<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
+<fld name='reference' type='Memo'>Wang AC, Lodi PJ, Qin J, Vuister GW, Gronenborn AM, Clore GM, J Magn Reson B, 105, 196-198 (1994)</fld>
+</spectrum-type>
 <spectrum-type name='2D TOCSY'>
 <dim name='Hacq' atom='H1' width='0.000000'/>
 <dim name='Htocsy' atom='H1' width='0.000000'/>
@@ -432,168 +594,6 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
 <fld name='reference' type='Memo'>Grzesiek S, Anglister J, Bax A, J Magn Reson B, 101, 114-119 (1993)</fld>
 </spectrum-type>
-<spectrum-type name='3D H(CCCO)NH'>
-<dim name='HN' atom='H1' width='0.000000'>
-<label tag='H' off='0' final='1'/>
-</dim>
-<dim name='Hali' atom='H1' width='0.000000'/>
-<dim name='N' atom='N15' width='0.000000'>
-<label tag='N' off='0' final='1'/>
-</dim>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
-<step text='Co' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='25.000000'/>
-<step text='Ca' atom='C13' dim='-1' hops='1' rep='0' mean='54.000000' dev='10.000000'/>
-<step text='Cali' atom='C13' dim='-1' hops='1' rep='1' mean='40.000000' dev='35.000000'/>
-<step text='Hali' atom='H1' dim='1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
-<fld name='reference' type='Memo'>Grzesiek S. Anglister J, Bax A, J Magn Reson B, 101, 114-119 (1993)</fld>
-</spectrum-type>
-<spectrum-type name='2D (H)CC(H)-COSYali'>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<dim name='Ccosy' atom='C13' width='0.000000'/>
-<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Cinept' atom='C13' dim='0' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Hinept' atom='H1' dim='-1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
-<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
-<fld name='comment' type='Memo'>C-C projection of hCCH-COSYali</fld>
-</spectrum-type>
-<spectrum-type name='3D (H)CCH-COSYali'>
-<dim name='Hinept' atom='H1' width='0.000000'/>
-<dim name='Ccosy' atom='C13' width='0.000000'/>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
-<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
-</spectrum-type>
-<spectrum-type name='3D (H)CC(H)-COSYaro'>
-<dim name='C1' atom='C13' width='0.000000'/>
-<dim name='C2' atom='C13' width='0.000000'/>
-<step text='' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='C1' atom='C13' dim='0' hops='1' rep='0' mean='125.000000' dev='25.000000'/>
-<step text='C2' atom='C13' dim='1' hops='1' rep='0' mean='125.000000' dev='25.000000'/>
-<step text='' atom='H1' dim='-1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
-<fld name='comment' type='Memo'>C-C projection of hCCH-COSYaro</fld>
-</spectrum-type>
-<spectrum-type name='3D (H)CCH-COSYaro'>
-<dim name='Hinept' atom='H1' width='0.000000'/>
-<dim name='Ccosy' atom='C13' width='0.000000'/>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<step text='Hcosy' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='Ccosy' atom='C13' dim='1' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
-<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
-<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
-<fld name='reference' type='Memo'>Gehring K, Ekiel I, J Magn Reson, 135, 185-193 (1998)</fld>
-</spectrum-type>
-<spectrum-type name='3D (H)CCH-TOCSYali'>
-<dim name='Hinept' atom='H1' width='0.000000'/>
-<dim name='Ctocsy' atom='C13' width='0.000000'/>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<step text='Htocsy' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='Ctocsy' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Cinept' atom='C13' dim='2' hops='1' rep='1' mean='40.000000' dev='35.000000'/>
-<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
-<fld name='reference' type='Memo'></fld>
-</spectrum-type>
-<spectrum-type name='3D (H)CCH-TOCSYaro'>
-<dim name='Hinept' atom='H1' width='0.000000'/>
-<dim name='Ctocsy' atom='C13' width='0.000000'/>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<step text='Htocsy' atom='H1' dim='-1' hops='0' rep='0'/>
-<step text='Ctocsy' atom='C13' dim='1' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
-<step text='Cinept' atom='C13' dim='2' hops='1' rep='1' mean='120.000000' dev='25.000000'/>
-<step text='Hinept' atom='H1' dim='0' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
-</spectrum-type>
-<spectrum-type name='3D HC(C)H-TOCSYaro'>
-<dim name='Hinept' atom='H1' width='0.000000'/>
-<dim name='Htocsy' atom='H1' width='0.000000'/>
-<dim name='Cinept' atom='C13' width='0.000000'/>
-<step text='Hinept' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='Cinept' atom='C13' dim='2' hops='1' rep='0' mean='120.000000' dev='25.000000'/>
-<step text='Ctocsy' atom='C13' dim='-1' hops='1' rep='1' mean='120.000000' dev='25.000000'/>
-<step text='Htocsy' atom='H1' dim='1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Double Resonance</fld>
-<fld name='reference' type='Memo'>Bax A, Clore GM, Gronenborn A, J Magn Reson, 88, 425-431 (1990)</fld>
-</spectrum-type>
-<spectrum-type name='3D CBCA(CO)NH'>
-<dim name='HN' atom='H1' width='0.000000'>
-<label tag='H' off='0' final='1'/>
-</dim>
-<dim name='Cab' atom='C13' width='0.000000'>
-<label tag='CB' off='-1' final='1'/>
-<label tag='CA' off='-1' final='1'/>
-</dim>
-<dim name='N' atom='N15' width='0.000000'>
-<label tag='N' off='0' final='1'/>
-</dim>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
-<step text='Co' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='20.000000'/>
-<step text='Ca' atom='C13' dim='-1' hops='1' rep='0' mean='54.000000' dev='10.000000'/>
-<step text='Cab' atom='C13' dim='1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
-<fld name='reference' type='Memo'>Grzesiek S, Bax A, J Amer Chem Soc, 114, 6291-6293 (1992)</fld>
-</spectrum-type>
-<spectrum-type name='2D H(N)HB'>
-<dim name='HN' atom='H1' width='0.000000'/>
-<dim name='HB' atom='H1' width='0.000000'/>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
-<step text='See object Table' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='of 3D HNHB' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='HB' atom='H1' dim='1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>2D Double Resonance</fld>
-<fld name='comment' type='Memo'>See comment in 3D HNHB (procedure uses C13)</fld>
-</spectrum-type>
-<spectrum-type name='2D H(N)HA'>
-<dim name='HN' atom='H1' width='0.000000'/>
-<dim name='HA' atom='H1' width='0.000000'/>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
-<step text='HA' atom='H1' dim='1' hops='3' rep='0'/>
-</spectrum-type>
-<spectrum-type name='2D H(NCO)CA'>
-<dim name='HN' atom='H1' width='0.000000'/>
-<dim name='CA' atom='C13' width='0.000000'/>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
-<step text='CO' atom='C13' dim='-1' hops='1' rep='0' mean='175.000000' dev='15.000000'/>
-<step text='CA' atom='C13' dim='1' hops='1' rep='0' mean='52.000000' dev='12.000000'/>
-<fld name='ExperimentType' type='Memo'>2D Triple Resonance</fld>
-<fld name='comment' type='Memo'>HN-CA projection of 3D HN(CO)CA</fld>
-</spectrum-type>
-<spectrum-type name='2D H(NCA)CO'>
-<dim name='HN' atom='H1' width='0.000000'/>
-<dim name='CO' atom='C13' width='0.000000'/>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='-1' hops='1' rep='0'/>
-<step text='CA' atom='C13' dim='-1' hops='2' rep='0' mean='54.000000' dev='10.000000'/>
-<step text='CO' atom='C13' dim='1' hops='1' rep='0' mean='175.000000' dev='25.000000'/>
-<fld name='ExperimentType' type='Memo'>2D Triple Resonance</fld>
-<fld name='reference' type='Memo'></fld>
-<fld name='comment' type='Memo'>HN-CO projection of 3D HN(CA)CO</fld>
-</spectrum-type>
-<spectrum-type name='3D HBHANH'>
-<dim name='HN' atom='H1' width='0.000000'/>
-<dim name='Hab,Hab-1' atom='H1' width='0.000000'/>
-<dim name='N' atom='N15' width='0.000000'/>
-<step text='HN' atom='H1' dim='0' hops='0' rep='0'/>
-<step text='N' atom='N15' dim='2' hops='1' rep='0'/>
-<step text='Ca,Ca-1' atom='C13' dim='-1' hops='2' rep='0' mean='52.000000' dev='12.000000'/>
-<step text='Cab,Cab-1' atom='C13' dim='-1' hops='1' rep='0' mean='40.000000' dev='35.000000'/>
-<step text='Hab,Hab-1' atom='H1' dim='1' hops='1' rep='0'/>
-<fld name='ExperimentType' type='Memo'>3D Triple Resonance</fld>
-<fld name='reference' type='Memo'>Wang AC, Lodi PJ, Qin J, Vuister GW, Gronenborn AM, Clore GM, J Magn Reson B, 105, 196-198 (1994)</fld>
-</spectrum-type>
 <systype id='4' name='ALA' mdl='ALA' nterm='N' cterm='C' gensys='BB' class='AA'/>
 <systype id='8' name='AMX' mdl='SER' nterm='N' cterm='C' gensys='BB' class='AA'/>
 <systype id='9' name='GLY' mdl='GLY' nterm='N' cterm='C' gensys='BB' class='AA'/>
@@ -612,8 +612,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <systype id='29' name='MET' mdl='MET' nterm='N' cterm='C' gensys='BB' class='AA'/>
 <systype id='30' name='ARG' mdl='ARG' nterm='N' cterm='C' gensys='BB' class='AA'/>
 <residue-type name='BBresidue' short='BB' letter='B' systype='8' >
-<group name='HA' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HA' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='118.000' dev='35.000' x='1' y='2' />
 <atom name='C' type='C13' num='1' mean='175.000' dev='12.000' x='3' y='2' />
 <atom name='H' type='H1' num='1' mean='8.500' dev='2.000' x='1' y='1' />
@@ -627,13 +627,13 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='X' type='B' num='1' x='2' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='X'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
@@ -651,23 +651,23 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='177.760' dev='8.560' x='5' y='1' />
 <atom name='H' type='H1' num='1' mean='8.200' dev='2.400' x='3' y='0' />
 <atom name='CB' type='C13' num='1' mean='19.000' dev='7.240' x='4' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.260' dev='1.760' x='4' y='0' />
 <atom name='CA' type='C13' num='1' mean='53.160' dev='7.920' x='4' y='1' />
 <atom name='HB' type='H1' num='3' mean='1.360' dev='1.000' x='4' y='3' />
+<atom name='HA' type='H1' num='1' mean='4.260' dev='1.760' x='4' y='0' />
 <atom name='O' type='O' num='1' x='5' y='0' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
 <bond from='HB' to='CB'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='Double'>4.000000</fld>
@@ -678,8 +678,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='174.670' dev='6.960' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.280' dev='2.360' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='63.800' dev='5.960' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.480' dev='1.640' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='58.750' dev='8.400' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.480' dev='1.640' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='3.880' dev='1.000' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='3.850' dev='1.120' x='2' y='2' group='HB'/>
@@ -687,24 +687,24 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='OG' type='O' num='1' x='1' y='3' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='OG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
 <bond from='HG' to='OG'/>
-<bond from='OG' to='CB'/>
 <bond from='OG' to='HG'/>
+<bond from='OG' to='CB'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -719,8 +719,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='O' type='O' num='1' x='2' y='0' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
@@ -733,17 +733,17 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Leucine' short='LEU' letter='L' systype='11' >
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='HHD' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='121.860' dev='15.760' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='177.010' dev='7.960' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.220' dev='2.600' x='0' y='0' />
+<atom name='CB' type='C13' num='1' mean='42.300' dev='7.480' x='1' y='2' />
+<atom name='CA' type='C13' num='1' mean='55.650' dev='8.520' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.320' dev='1.880' x='1' y='0' />
 <atom name='HD1' type='H1' num='3' mean='0.760' dev='1.120' x='0' y='5' group='HD'/>
 <atom name='HD2' type='H1' num='3' mean='0.730' dev='1.160' x='2' y='5' group='HD'/>
-<atom name='CB' type='C13' num='1' mean='42.300' dev='7.480' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.320' dev='1.880' x='1' y='0' />
-<atom name='CA' type='C13' num='1' mean='55.650' dev='8.520' x='1' y='1' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='1.620' dev='1.360' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='1.530' dev='1.440' x='2' y='2' group='HB'/>
@@ -753,32 +753,32 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='CD2' type='C13' num='1' mean='24.100' dev='6.760' x='2' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HD2' to='CD2'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
 <bond from='HG' to='CG'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG'/>
 <bond from='CG' to='CD1'/>
 <bond from='CG' to='CD2'/>
-<bond from='CD1' to='HD1'/>
+<bond from='CG' to='CB'/>
 <bond from='CD1' to='CG'/>
-<bond from='CD2' to='HD2'/>
+<bond from='CD1' to='HD1'/>
 <bond from='CD2' to='CG'/>
+<bond from='CD2' to='HD2'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -789,9 +789,9 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='175.660' dev='7.560' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.290' dev='2.720' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='32.720' dev='7.200' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.180' dev='2.320' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='62.510' dev='11.520' x='1' y='1' />
 <atom name='HB' type='H1' num='1' mean='1.980' dev='1.280' x='0' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.180' dev='2.320' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HG2' type='H1' num='3' mean='0.800' dev='1.120' x='2' y='4' group='HG'/>
 <atom name='CG2' type='C13' num='1' mean='21.290' dev='6.280' x='2' y='3' />
@@ -799,26 +799,26 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='CG1' type='C13' num='1' mean='21.510' dev='5.440' x='0' y='3' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB'/>
 <bond from='CB' to='CG2'/>
 <bond from='CB' to='CG1'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
 <bond from='HB' to='CB'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HG2' to='CG2'/>
-<bond from='CG2' to='CB'/>
 <bond from='CG2' to='HG2'/>
+<bond from='CG2' to='CB'/>
 <bond from='HG1' to='CG1'/>
-<bond from='CG1' to='CB'/>
 <bond from='CG1' to='HG1'/>
+<bond from='CG1' to='CB'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -827,11 +827,11 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='N' type='N15' num='1' mean='121.470' dev='17.280' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='175.880' dev='7.760' x='3' y='1' />
 <atom name='H' type='H1' num='1' mean='8.280' dev='2.760' x='1' y='0' />
-<atom name='HD1' type='H1' num='3' mean='0.680' dev='1.160' x='1' y='5' />
 <atom name='CB' type='C13' num='1' mean='38.610' dev='8.080' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.180' dev='2.240' x='2' y='0' />
 <atom name='CA' type='C13' num='1' mean='61.640' dev='10.760' x='2' y='1' />
 <atom name='HB' type='H1' num='1' mean='1.790' dev='1.160' x='1' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.180' dev='2.240' x='2' y='0' />
+<atom name='HD1' type='H1' num='3' mean='0.680' dev='1.160' x='1' y='5' />
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='CD1' type='C13' num='1' mean='13.460' dev='6.720' x='1' y='4' />
 <atom name='HG2' type='H1' num='3' mean='0.780' dev='1.080' x='3' y='4' />
@@ -841,45 +841,45 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HG13' type='H1' num='1' mean='1.200' dev='1.640' x='2' y='3' group='HG1'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='CD1'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB'/>
 <bond from='CB' to='CG2'/>
 <bond from='CB' to='CG1'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
 <bond from='HB' to='CB'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
 <bond from='O' to='C'/>
-<bond from='CD1' to='HD1'/>
 <bond from='CD1' to='CG1'/>
+<bond from='CD1' to='HD1'/>
 <bond from='HG2' to='CG2'/>
-<bond from='CG2' to='CB'/>
 <bond from='CG2' to='HG2'/>
-<bond from='CG1' to='CB'/>
+<bond from='CG2' to='CB'/>
 <bond from='CG1' to='CD1'/>
 <bond from='CG1' to='HG12'/>
 <bond from='CG1' to='HG13'/>
+<bond from='CG1' to='CB'/>
 <bond from='HG12' to='CG1'/>
 <bond from='HG13' to='CG1'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Proline' short='PRO' letter='P' systype='19' >
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='HG' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='133.920' dev='26.880' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='176.740' dev='6.120' x='3' y='1' />
-<atom name='HD2' type='H1' num='1' mean='3.650' dev='1.400' x='0' y='2' group='HD'/>
 <atom name='CB' type='C13' num='1' mean='31.850' dev='4.760' x='3' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.400' dev='1.320' x='2' y='0' />
 <atom name='CA' type='C13' num='1' mean='63.340' dev='6.200' x='2' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.400' dev='1.320' x='2' y='0' />
+<atom name='HD2' type='H1' num='1' mean='3.650' dev='1.400' x='0' y='2' group='HD'/>
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.070' dev='1.400' x='4' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='2.010' dev='1.440' x='4' y='3' group='HB'/>
@@ -888,33 +888,33 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HG3' type='H1' num='1' mean='1.900' dev='1.320' x='2' y='4' group='HG'/>
 <atom name='CD' type='C13' num='1' mean='50.340' dev='3.920' x='1' y='2' />
 <atom name='HD3' type='H1' num='1' mean='3.620' dev='1.560' x='0' y='3' group='HD'/>
-<bond from='N' to='CA'/>
 <bond from='N' to='CD'/>
-<bond from='C' to='CA'/>
+<bond from='N' to='CA'/>
 <bond from='C' to='O'/>
-<bond from='HD2' to='CD'/>
-<bond from='CB' to='CA'/>
+<bond from='C' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD2' to='CD'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
-<bond from='CD' to='N'/>
-<bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
+<bond from='CD' to='N'/>
+<bond from='CD' to='HD2'/>
 <bond from='HD3' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
@@ -924,9 +924,9 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='174.560' dev='7.040' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.250' dev='2.480' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='69.720' dev='6.720' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.460' dev='1.920' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='62.230' dev='10.440' x='1' y='1' />
 <atom name='HB' type='H1' num='1' mean='4.170' dev='1.320' x='0' y='2' />
+<atom name='HA' type='H1' num='1' mean='4.460' dev='1.920' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HG2' type='H1' num='3' mean='1.140' dev='0.920' x='0' y='4' />
 <atom name='CG2' type='C13' num='1' mean='21.560' dev='4.400' x='0' y='3' />
@@ -934,42 +934,42 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='OG1' type='O' num='1' x='2' y='3' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB'/>
 <bond from='CB' to='CG2'/>
 <bond from='CB' to='OG1'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
 <bond from='HB' to='CB'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HG2' to='CG2'/>
-<bond from='CG2' to='CB'/>
 <bond from='CG2' to='HG2'/>
+<bond from='CG2' to='CB'/>
 <bond from='HG1' to='OG1'/>
-<bond from='OG1' to='CB'/>
 <bond from='OG1' to='HG1'/>
+<bond from='OG1' to='CB'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Lysine' short='LYS' letter='K' systype='22' >
 <group name='H' x='0' y='0'/>
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='HG' x='0' y='0'/>
 <group name='HE' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='121.070' dev='15.160' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='176.680' dev='7.880' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.190' dev='2.440' x='0' y='0' />
-<atom name='HD2' type='H1' num='1' mean='1.610' dev='0.920' x='0' y='4' group='HD'/>
 <atom name='CB' type='C13' num='1' mean='32.790' dev='7.120' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.270' dev='1.760' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='56.970' dev='8.800' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.270' dev='1.760' x='1' y='0' />
+<atom name='HD2' type='H1' num='1' mean='1.610' dev='0.920' x='0' y='4' group='HD'/>
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='1.780' dev='1.000' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='1.750' dev='1.080' x='2' y='2' group='HB'/>
@@ -985,32 +985,32 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='NZ' type='N15' num='1' mean='34.100' dev='11.880' x='1' y='6' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD2' to='CD'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD2' to='CD'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
-<bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
 <bond from='CD' to='CE'/>
+<bond from='CD' to='HD2'/>
 <bond from='HD3' to='CD'/>
 <bond from='HE2' to='CE'/>
 <bond from='HE3' to='CE'/>
@@ -1025,14 +1025,14 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Asparagine' short='ASN' letter='N' systype='8' >
-<group name='HD2' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD2' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='118.970' dev='16.080' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='175.300' dev='7.200' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.350' dev='2.480' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='38.690' dev='6.720' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.670' dev='1.480' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='53.550' dev='7.520' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.670' dev='1.480' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.810' dev='1.240' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='2.760' dev='1.320' x='2' y='2' group='HB'/>
@@ -1043,24 +1043,24 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HD21' type='H1' num='1' mean='7.350' dev='1.920' x='0' y='5' group='HD2'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='OD1'/>
 <bond from='CG' to='ND2'/>
+<bond from='CG' to='CB'/>
 <bond from='OD1' to='CG'/>
 <bond from='HD22' to='ND2'/>
 <bond from='ND2' to='CG'/>
@@ -1078,8 +1078,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='176.330' dev='7.840' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.220' dev='2.360' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='29.180' dev='7.320' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.270' dev='1.720' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='56.590' dev='8.560' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.270' dev='1.720' x='1' y='0' />
 <atom name='NE2' type='N15' num='1' mean='111.870' dev='7.040' x='1' y='5' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.050' dev='1.000' x='0' y='2' group='HB'/>
@@ -1093,33 +1093,33 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HE22' type='H1' num='1' mean='7.020' dev='1.760' x='2' y='6' group='HE2'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='NE2' to='CD'/>
 <bond from='NE2' to='HE21'/>
 <bond from='NE2' to='HE22'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
-<bond from='CD' to='NE2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='OE1'/>
+<bond from='CD' to='NE2'/>
 <bond from='OE1' to='CD'/>
 <bond from='HE21' to='NE2'/>
 <bond from='HE22' to='NE2'/>
@@ -1131,10 +1131,10 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='N' type='N15' num='1' mean='121.680' dev='16.520' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='176.190' dev='8.120' x='3' y='1' />
 <atom name='H' type='H1' num='1' mean='8.300' dev='3.120' x='1' y='0' />
-<atom name='HD1' type='H1' num='1' mean='7.150' dev='1.400' x='0' y='3' />
 <atom name='CB' type='C13' num='1' mean='29.980' dev='7.960' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.680' dev='2.080' x='2' y='0' />
 <atom name='CA' type='C13' num='1' mean='57.710' dev='10.360' x='2' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.680' dev='2.080' x='2' y='0' />
+<atom name='HD1' type='H1' num='1' mean='7.150' dev='1.400' x='0' y='3' />
 <atom name='HE1' type='H1' num='1' mean='10.100' dev='2.360' x='0' y='6' />
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='HB2' type='H1' num='1' mean='3.190' dev='1.440' x='1' y='2' group='HB'/>
@@ -1154,29 +1154,29 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='CE3' type='C13' num='1' mean='120.470' dev='6.560' x='4' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='CD1'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
 <bond from='HE1' to='NE1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='CD1'/>
 <bond from='CG' to='CD2'/>
-<bond from='CD1' to='HD1'/>
+<bond from='CG' to='CB'/>
 <bond from='CD1' to='CG'/>
 <bond from='CD1' to='NE1'/>
+<bond from='CD1' to='HD1'/>
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
 <bond from='CD2' to='CE3'/>
@@ -1185,9 +1185,9 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='NE1'/>
 <bond from='CE2' to='CZ2'/>
-<bond from='NE1' to='HE1'/>
 <bond from='NE1' to='CD1'/>
 <bond from='NE1' to='CE2'/>
+<bond from='NE1' to='HE1'/>
 <bond from='HZ2' to='CZ2'/>
 <bond from='CZ2' to='CE2'/>
 <bond from='CZ2' to='HZ2'/>
@@ -1210,11 +1210,11 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='N' type='N15' num='1' mean='119.600' dev='16.040' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='175.280' dev='7.920' x='3' y='1' />
 <atom name='H' type='H1' num='1' mean='8.240' dev='2.720' x='1' y='0' />
+<atom name='CB' type='C13' num='1' mean='30.210' dev='8.360' x='2' y='2' />
+<atom name='CA' type='C13' num='1' mean='56.490' dev='9.240' x='2' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.610' dev='1.760' x='2' y='0' />
 <atom name='HD1' type='H1' num='1' mean='8.760' dev='10.680' x='0' y='3' />
 <atom name='HD2' type='H1' num='1' mean='7.020' dev='1.760' x='4' y='4' />
-<atom name='CB' type='C13' num='1' mean='30.210' dev='8.360' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.610' dev='1.760' x='2' y='0' />
-<atom name='CA' type='C13' num='1' mean='56.490' dev='9.240' x='2' y='1' />
 <atom name='HE1' type='H1' num='1' mean='7.960' dev='2.000' x='0' y='6' />
 <atom name='NE2' type='N15' num='1' mean='182.000' dev='56.760' x='3' y='5' />
 <atom name='ND1' type='N15' num='1' mean='195.360' dev='73.080' x='1' y='4' />
@@ -1227,36 +1227,36 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='CE1' type='C13' num='1' mean='137.600' dev='9.320' x='1' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='ND1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='ND1'/>
+<bond from='HD2' to='CD2'/>
 <bond from='HE1' to='CE1'/>
 <bond from='NE2' to='CD2'/>
 <bond from='NE2' to='HE2'/>
 <bond from='NE2' to='CE1'/>
-<bond from='ND1' to='HD1'/>
 <bond from='ND1' to='CG'/>
 <bond from='ND1' to='CE1'/>
+<bond from='ND1' to='HD1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
+<bond from='CG' to='CD2'/>
 <bond from='CG' to='CB'/>
 <bond from='CG' to='ND1'/>
-<bond from='CG' to='CD2'/>
+<bond from='CD2' to='CG'/>
 <bond from='CD2' to='HD2'/>
 <bond from='CD2' to='NE2'/>
-<bond from='CD2' to='CG'/>
 <bond from='HE2' to='NE2'/>
 <bond from='CE1' to='HE1'/>
 <bond from='CE1' to='NE2'/>
@@ -1265,19 +1265,19 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Phenylalanine' short='PHE' letter='F' systype='8' >
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='CD' x='0' y='0'/>
 <group name='HE' x='0' y='0'/>
 <group name='CE' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='120.480' dev='16.520' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='175.460' dev='8.000' x='3' y='1' />
 <atom name='H' type='H1' num='1' mean='8.360' dev='2.880' x='1' y='0' />
+<atom name='CB' type='C13' num='1' mean='39.940' dev='8.400' x='2' y='2' />
+<atom name='CA' type='C13' num='1' mean='58.130' dev='10.280' x='2' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.620' dev='2.280' x='2' y='0' />
 <atom name='HD1' type='H1' num='1' mean='7.060' dev='1.200' x='0' y='4' group='HD'/>
 <atom name='HD2' type='H1' num='1' mean='7.070' dev='1.240' x='4' y='4' group='HD'/>
-<atom name='CB' type='C13' num='1' mean='39.940' dev='8.400' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.620' dev='2.280' x='2' y='0' />
-<atom name='CA' type='C13' num='1' mean='58.130' dev='10.280' x='2' y='1' />
 <atom name='HE1' type='H1' num='1' mean='7.090' dev='1.280' x='0' y='5' group='HE'/>
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='HB2' type='H1' num='1' mean='3.000' dev='1.480' x='1' y='2' group='HB'/>
@@ -1292,41 +1292,41 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='CZ' type='C13' num='1' mean='129.230' dev='6.120' x='2' y='6' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HD2' to='CD2'/>
 <bond from='HE1' to='CE1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='CD1'/>
 <bond from='CG' to='CD2'/>
-<bond from='CD1' to='HD1'/>
+<bond from='CG' to='CB'/>
 <bond from='CD1' to='CG'/>
 <bond from='CD1' to='CE1'/>
-<bond from='CD2' to='HD2'/>
+<bond from='CD1' to='HD1'/>
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
+<bond from='CD2' to='HD2'/>
 <bond from='HE2' to='CE2'/>
 <bond from='HZ' to='CZ'/>
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='HE2'/>
 <bond from='CE2' to='CZ'/>
-<bond from='CE1' to='HE1'/>
 <bond from='CE1' to='CD1'/>
 <bond from='CE1' to='CZ'/>
+<bond from='CE1' to='HE1'/>
 <bond from='CZ' to='HZ'/>
 <bond from='CZ' to='CE2'/>
 <bond from='CZ' to='CE1'/>
@@ -1334,19 +1334,19 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Tyrosine' short='TYR' letter='Y' systype='8' >
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='CD' x='0' y='0'/>
 <group name='HE' x='0' y='0'/>
 <group name='CE' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='120.610' dev='16.920' x='1' y='1' />
 <atom name='C' type='C13' num='1' mean='175.400' dev='7.960' x='3' y='1' />
 <atom name='H' type='H1' num='1' mean='8.320' dev='2.960' x='1' y='0' />
+<atom name='CB' type='C13' num='1' mean='39.310' dev='8.640' x='2' y='2' />
+<atom name='CA' type='C13' num='1' mean='58.130' dev='10.160' x='2' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.630' dev='2.240' x='2' y='0' />
 <atom name='HD1' type='H1' num='1' mean='6.940' dev='1.200' x='0' y='4' group='HD'/>
 <atom name='HD2' type='H1' num='1' mean='6.930' dev='1.200' x='4' y='4' group='HD'/>
-<atom name='CB' type='C13' num='1' mean='39.310' dev='8.640' x='2' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.630' dev='2.240' x='2' y='0' />
-<atom name='CA' type='C13' num='1' mean='58.130' dev='10.160' x='2' y='1' />
 <atom name='HE1' type='H1' num='1' mean='6.710' dev='0.920' x='0' y='5' group='HE'/>
 <atom name='O' type='O' num='1' x='3' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.910' dev='1.480' x='1' y='2' group='HB'/>
@@ -1362,40 +1362,40 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HH' type='H1' num='1' mean='9.390' dev='5.600' x='3' y='8' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='CD1'/>
-<bond from='HD2' to='CD2'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='CD1'/>
+<bond from='HD2' to='CD2'/>
 <bond from='HE1' to='CE1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='CD1'/>
 <bond from='CG' to='CD2'/>
-<bond from='CD1' to='HD1'/>
+<bond from='CG' to='CB'/>
 <bond from='CD1' to='CG'/>
 <bond from='CD1' to='CE1'/>
-<bond from='CD2' to='HD2'/>
+<bond from='CD1' to='HD1'/>
 <bond from='CD2' to='CG'/>
 <bond from='CD2' to='CE2'/>
+<bond from='CD2' to='HD2'/>
 <bond from='HE2' to='CE2'/>
 <bond from='CE2' to='CD2'/>
 <bond from='CE2' to='HE2'/>
 <bond from='CE2' to='CZ'/>
-<bond from='CE1' to='HE1'/>
 <bond from='CE1' to='CD1'/>
 <bond from='CE1' to='CZ'/>
+<bond from='CE1' to='HE1'/>
 <bond from='CZ' to='CE2'/>
 <bond from='CZ' to='CE1'/>
 <bond from='CZ' to='OH'/>
@@ -1413,8 +1413,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='176.210' dev='8.400' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.260' dev='2.400' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='32.990' dev='8.960' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.410' dev='1.920' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='56.140' dev='9.000' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.410' dev='1.920' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.030' dev='1.360' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='1.990' dev='1.360' x='2' y='2' group='HB'/>
@@ -1426,25 +1426,25 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='SD' type='S' num='1' x='1' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='SD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
 <bond from='HE' to='CE'/>
@@ -1456,18 +1456,18 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
 <residue-type name='Arginine' short='ARG' letter='R' systype='22' >
-<group name='HD' x='0' y='0'/>
 <group name='HB' x='0' y='0'/>
+<group name='HD' x='0' y='0'/>
 <group name='HG' x='0' y='0'/>
 <group name='HH2' x='0' y='0'/>
 <group name='HH1' x='0' y='0'/>
 <atom name='N' type='N15' num='1' mean='120.810' dev='14.800' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='176.440' dev='8.120' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.240' dev='2.440' x='0' y='0' />
-<atom name='HD2' type='H1' num='1' mean='3.120' dev='0.920' x='2' y='4' group='HD'/>
 <atom name='CB' type='C13' num='1' mean='30.680' dev='7.320' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.300' dev='1.840' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='56.790' dev='9.240' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.300' dev='1.840' x='1' y='0' />
+<atom name='HD2' type='H1' num='1' mean='3.120' dev='0.920' x='2' y='4' group='HD'/>
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='1.800' dev='1.080' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='1.770' dev='1.120' x='2' y='2' group='HB'/>
@@ -1487,32 +1487,32 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='HH11' type='H1' num='1' mean='6.900' dev='1.840' x='3' y='6' group='HH1'/>
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD2' to='CD'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD2' to='CD'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
-<bond from='CD' to='HD2'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='HD3'/>
 <bond from='CD' to='NE'/>
+<bond from='CD' to='HD2'/>
 <bond from='HD3' to='CD'/>
 <bond from='HE' to='NE'/>
 <bond from='CZ' to='NH2'/>
@@ -1539,10 +1539,10 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='N' type='N15' num='1' mean='120.660' dev='15.600' x='0' y='1' />
 <atom name='C' type='C13' num='1' mean='176.430' dev='7.040' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.310' dev='2.320' x='0' y='0' />
-<atom name='HD1' type='H1' num='1' x='0' y='5' />
 <atom name='CB' type='C13' num='1' mean='40.870' dev='6.520' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.600' dev='1.240' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='54.690' dev='8.160' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.600' dev='1.240' x='1' y='0' />
+<atom name='HD1' type='H1' num='1' x='0' y='5' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.720' dev='1.080' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='2.670' dev='1.120' x='2' y='2' group='HB'/>
@@ -1551,27 +1551,27 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='OD2' type='O' num='1' x='2' y='4' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='HD1' to='OD1'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
+<bond from='HD1' to='OD1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='OD1'/>
 <bond from='CG' to='OD2'/>
-<bond from='OD1' to='HD1'/>
+<bond from='CG' to='CB'/>
 <bond from='OD1' to='CG'/>
+<bond from='OD1' to='HD1'/>
 <bond from='OD2' to='CG'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
@@ -1583,8 +1583,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='176.920' dev='7.840' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.330' dev='2.400' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='30.000' dev='6.920' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.250' dev='1.640' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='57.350' dev='8.360' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.250' dev='1.640' x='1' y='0' />
 <atom name='HE1' type='H1' num='1' x='0' y='6' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.030' dev='0.840' x='0' y='2' group='HB'/>
@@ -1597,33 +1597,33 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='OE2' type='O' num='1' x='2' y='5' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='CG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='HE1' to='OE1'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
-<bond from='CG' to='CB'/>
 <bond from='CG' to='HG2'/>
 <bond from='CG' to='HG3'/>
 <bond from='CG' to='CD'/>
+<bond from='CG' to='CB'/>
 <bond from='HG2' to='CG'/>
 <bond from='HG3' to='CG'/>
 <bond from='CD' to='CG'/>
 <bond from='CD' to='OE1'/>
 <bond from='CD' to='OE2'/>
-<bond from='OE1' to='HE1'/>
 <bond from='OE1' to='CD'/>
+<bond from='OE1' to='HE1'/>
 <bond from='OE2' to='CD'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
@@ -1634,8 +1634,8 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='C' type='C13' num='1' mean='174.840' dev='8.240' x='2' y='1' />
 <atom name='H' type='H1' num='1' mean='8.400' dev='2.680' x='0' y='0' />
 <atom name='CB' type='C13' num='1' mean='32.840' dev='25.080' x='1' y='2' />
-<atom name='HA' type='H1' num='1' mean='4.670' dev='2.200' x='1' y='0' />
 <atom name='CA' type='C13' num='1' mean='58.160' dev='13.520' x='1' y='1' />
+<atom name='HA' type='H1' num='1' mean='4.670' dev='2.200' x='1' y='0' />
 <atom name='O' type='O' num='1' x='2' y='0' />
 <atom name='HB2' type='H1' num='1' mean='2.950' dev='1.800' x='0' y='2' group='HB'/>
 <atom name='HB3' type='H1' num='1' mean='2.900' dev='1.880' x='2' y='2' group='HB'/>
@@ -1643,24 +1643,24 @@ template-by='Fred Damberger, , , , ' orig-template-by='' template-name='ProteinL
 <atom name='SG' type='S' num='1' x='1' y='3' />
 <bond from='N' to='H'/>
 <bond from='N' to='CA'/>
-<bond from='C' to='CA'/>
 <bond from='C' to='O'/>
+<bond from='C' to='CA'/>
 <bond from='H' to='N'/>
-<bond from='CB' to='CA'/>
 <bond from='CB' to='HB2'/>
 <bond from='CB' to='HB3'/>
 <bond from='CB' to='SG'/>
-<bond from='HA' to='CA'/>
+<bond from='CB' to='CA'/>
 <bond from='CA' to='N'/>
 <bond from='CA' to='C'/>
 <bond from='CA' to='CB'/>
 <bond from='CA' to='HA'/>
+<bond from='HA' to='CA'/>
 <bond from='O' to='C'/>
 <bond from='HB2' to='CB'/>
 <bond from='HB3' to='CB'/>
 <bond from='HG' to='SG'/>
-<bond from='SG' to='CB'/>
 <bond from='SG' to='HG'/>
+<bond from='SG' to='CB'/>
 <fld name='Updated-MM-DD-YYYY' type='String'>06-25-2010</fld>
 <fld name='SDmult' type='String'>4.0</fld>
 </residue-type>
@@ -17795,7 +17795,8 @@ print(x)</code>
 --function CreateCurrentSettingsAndAllComponents()
 --function analyze_2D_timeseries(specname, type)
 --function round(num) 
-
+--function spectrumJc(R, w, tm, jc, stype) -- from Integrate.nb  -- Mathematica notebook
+--function maxofspectrumJc(R, tm, jc, stype)
 
 number_of_opened_AttributeEditors=0 -- this is used to tail multiple started AEs
 number_of_opened_ContentManagers=0 -- this is used to tail multiple started CMs
@@ -22461,7 +22462,7 @@ function analyze_2D_timeseries(spectrum_name, type)
 		end --if
 	end --for id,s
 	t.SpectrumName = spectrum_name;
-	--print(i)
+
 	for i = 1,table.getn( SpectrumNames ) do
 	--print(SpectrumNames[ i ])
 		if SpectrumNames[ i ] == t.SpectrumName then
@@ -22559,7 +22560,158 @@ function analyze_2D_timeseries(spectrum_name, type)
 end --function analyze_dosy()
 
 
-StartPage()
+function spectrumJc(R, w, tm, jc, stype) -- from Integrate.nb  -- Mathematica notebook
+-- stype: 0, for Cos mudlated and 1 for Sin modulated
+-- R2 relaxation rate, s-1
+-- w - Omega, Hz
+-- tm, t1max in s
+-- jc, passive J coupling, Hz
+--print( spectrumJc(10., 10, 0.8, 3.0,0)) -- test output 0.0026415726628795
+--print( spectrumJc(10., 10, 0.8, 3.0,1)) -- test output 0.000758312
+local E = 2.718281828
+local Pi = 3.14159
+local sp = 0
+if stype == 0 then
+sp=(2*tm*((16*math.pow(R,4)*math.pow(tm,4)+8*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,2)*(1+4*math.pow(jc,2)*math.pow(tm,2)-48*math.pow(tm,2)*math.pow(w,2))+math.pow(Pi,4)*(16*math.pow(jc,4)*math.pow(tm,4)+math.pow(1-16*math.pow(tm,2)*math.pow(w,2),2)-8*math.pow(jc,2)*(math.pow(tm,2)+16*math.pow(tm,4)*math.pow(w,2))))*(2*tm*(math.pow(E,R*tm)*R*(4*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(1+4*math.pow(jc,2)*math.pow(tm,2)-48*math.pow(tm,2)*math.pow(w,2)))-4*jc*math.pow(Pi,2)*R*tm*math.pow(math.cos(Pi*tm*w),2)*math.sin(jc*Pi*tm)-4*jc*math.pow(Pi,2)*tm*math.sin(jc*Pi*tm)*math.sin(Pi*tm*w)*(4*Pi*w*math.cos(Pi*tm*w)-R*math.sin(Pi*tm*w)))+Pi*math.cos(jc*Pi*tm)*((4*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(1-4*math.pow(jc,2)*math.pow(tm,2)-16*math.pow(tm,2)*math.pow(w,2)))*math.cos(2*Pi*tm*w)+16*Pi*R*math.pow(tm,2)*w*math.sin(2*Pi*tm*w)))+32*math.pow(Pi,2)*R*math.pow(tm,2)*w*(-4*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(-1-4*math.pow(jc,2)*math.pow(tm,2)+16*math.pow(tm,2)*math.pow(w,2)))*(4*tm*(math.pow(E,R*tm)*w*(-12*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(-1-4*math.pow(jc,2)*math.pow(tm,2)+16*math.pow(tm,2)*math.pow(w,2)))+4*jc*math.pow(Pi,2)*tm*w*math.pow(math.cos(Pi*tm*w),2)*math.sin(jc*Pi*tm)-4*jc*Pi*tm*math.sin(jc*Pi*tm)*math.sin(Pi*tm*w)*(R*math.cos(Pi*tm*w)+Pi*w*math.sin(Pi*tm*w)))+math.cos(jc*Pi*tm)*(-16*Pi*R*math.pow(tm,2)*w*math.cos(2*Pi*tm*w)+(4*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(1-4*math.pow(jc,2)*math.pow(tm,2)-16*math.pow(tm,2)*math.pow(w,2)))*math.sin(2*Pi*tm*w)))))/(math.pow(E,R*tm)*(1024*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,4)*math.pow(w,2)*math.pow(4*math.pow(R,2)*math.pow(tm,2)+math.pow(Pi,2)*(1+4*math.pow(jc,2)*math.pow(tm,2)-16*math.pow(tm,2)*math.pow(w,2)),2)+math.pow(16*math.pow(R,4)*math.pow(tm,4)+8*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,2)*(1+4*math.pow(jc,2)*math.pow(tm,2)-48*math.pow(tm,2)*math.pow(w,2))+math.pow(Pi,4)*(16*math.pow(jc,4)*math.pow(tm,4)+math.pow(1-16*math.pow(tm,2)*math.pow(w,2),2)-8*math.pow(jc,2)*(math.pow(tm,2)+16*math.pow(tm,4)*math.pow(w,2))),2)))
+else
+local sp1 = ((math.pow(Pi,4)-8*math.pow(jc,2)*math.pow(Pi,4)*math.pow(tm,2)+8*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,2)+16*math.pow(jc,4)*math.pow(Pi,4)*math.pow(tm,4)+32*math.pow(jc,2)*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,4)+16*math.pow(R,4)*math.pow(tm,4)-32*math.pow(Pi,4)*math.pow(tm,2)*math.pow(w,2)-128*math.pow(jc,2)*math.pow(Pi,4)*math.pow(tm,4)*math.pow(w,2)-384*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,4)*math.pow(w,2)+256*math.pow(Pi,4)*math.pow(tm,4)*math.pow(w,4))*((32*jc*math.pow(Pi,3)*math.pow(tm,3)*w*math.cos(jc*Pi*tm)*math.cos(2*Pi*tm*w))/math.pow(E,R*tm)+64*jc*math.pow(Pi,2)*R*math.pow(tm,4)*w*math.pow(math.cos(2*Pi*tm*w),2)+(32*math.pow(Pi,2)*R*math.pow(tm,3)*w*math.cos(2*Pi*tm*w)*math.sin(jc*Pi*tm))/math.pow(E,R*tm)-(16*jc*math.pow(Pi,2)*R*math.pow(tm,3)*math.cos(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)-(2*math.pow(Pi,3)*tm*math.sin(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)+(8*math.pow(jc,2)*math.pow(Pi,3)*math.pow(tm,3)*math.sin(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)-(8*Pi*math.pow(R,2)*math.pow(tm,3)*math.sin(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)+(32*math.pow(Pi,3)*math.pow(tm,3)*math.pow(w,2)*math.sin(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)+64*jc*math.pow(Pi,2)*R*math.pow(tm,4)*w*math.pow(math.sin(2*Pi*tm*w),2))-(32*math.pow(Pi,3)*R*math.pow(tm,2)*w+128*math.pow(jc,2)*math.pow(Pi,3)*R*math.pow(tm,4)*w+128*Pi*math.pow(R,3)*math.pow(tm,4)*w-512*math.pow(Pi,3)*R*math.pow(tm,4)*math.pow(w,3))*((16*jc*math.pow(Pi,2)*R*math.pow(tm,3)*math.cos(jc*Pi*tm)*math.cos(2*Pi*tm*w))/math.pow(E,R*tm)-4*jc*math.pow(Pi,3)*math.pow(tm,2)*math.pow(math.cos(2*Pi*tm*w),2)+16*math.pow(jc,3)*math.pow(Pi,3)*math.pow(tm,4)*math.pow(math.cos(2*Pi*tm*w),2)+16*jc*Pi*math.pow(R,2)*math.pow(tm,4)*math.pow(math.cos(2*Pi*tm*w),2)-64*jc*math.pow(Pi,3)*math.pow(tm,4)*math.pow(w,2)*math.pow(math.cos(2*Pi*tm*w),2)+(2*math.pow(Pi,3)*tm*math.cos(2*Pi*tm*w)*math.sin(jc*Pi*tm))/math.pow(E,R*tm)-(8*math.pow(jc,2)*math.pow(Pi,3)*math.pow(tm,3)*math.cos(2*Pi*tm*w)*math.sin(jc*Pi*tm))/math.pow(E,R*tm)+(8*Pi*math.pow(R,2)*math.pow(tm,3)*math.cos(2*Pi*tm*w)*math.sin(jc*Pi*tm))/math.pow(E,R*tm)-(32*math.pow(Pi,3)*math.pow(tm,3)*math.pow(w,2)*math.cos(2*Pi*tm*w)*math.sin(jc*Pi*tm))/math.pow(E,R*tm)+(32*jc*math.pow(Pi,3)*math.pow(tm,3)*w*math.cos(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)+(32*math.pow(Pi,2)*R*math.pow(tm,3)*w*math.sin(jc*Pi*tm)*math.sin(2*Pi*tm*w))/math.pow(E,R*tm)-4*jc*math.pow(Pi,3)*math.pow(tm,2)*math.pow(math.sin(2*Pi*tm*w),2)+16*math.pow(jc,3)*math.pow(Pi,3)*math.pow(tm,4)*math.pow(math.sin(2*Pi*tm*w),2)+16*jc*Pi*math.pow(R,2)*math.pow(tm,4)*math.pow(math.sin(2*Pi*tm*w),2)-64*jc*math.pow(Pi,3)*math.pow(tm,4)*math.pow(w,2)*math.pow(math.sin(2*Pi*tm*w),2)))
+local sp2 = (math.pow(32*math.pow(Pi,3)*R*math.pow(tm,2)*w+128*math.pow(jc,2)*math.pow(Pi,3)*R*math.pow(tm,4)*w+128*Pi*math.pow(R,3)*math.pow(tm,4)*w-512*math.pow(Pi,3)*R*math.pow(tm,4)*math.pow(w,3),2)+math.pow(math.pow(Pi,4)-8*math.pow(jc,2)*math.pow(Pi,4)*math.pow(tm,2)+8*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,2)+16*math.pow(jc,4)*math.pow(Pi,4)*math.pow(tm,4)+32*math.pow(jc,2)*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,4)+16*math.pow(R,4)*math.pow(tm,4)-32*math.pow(Pi,4)*math.pow(tm,2)*math.pow(w,2)-128*math.pow(jc,2)*math.pow(Pi,4)*math.pow(tm,4)*math.pow(w,2)-384*math.pow(Pi,2)*math.pow(R,2)*math.pow(tm,4)*math.pow(w,2)+256*math.pow(Pi,4)*math.pow(tm,4)*math.pow(w,4),2))
+sp = (-1)*sp1/sp2;
+end --if
+return sp;
+end --function spectrumJc(R, w, tm, jc)
+
+
+function maxofspectrumJc(R, tm, jc, stype)
+--local ma = maxofspectrumJc(10., 0.61, 6.0,  0)
+--print( string.format("w: %7.4f  ampl: %7.4f",ma[1] ,ma[2]) )  --w:  2.9890  ampl:  0.0644
+local ret = {}
+local max=-999999999
+local wmax=0
+
+for m = 0, 100 do
+	local ampl = 1.0/math.sqrt(tm)*spectrumJc(R, m*(jc+0.01)/100, tm, jc, stype)
+	if(ampl&gt;max) then 
+		max= ampl 
+		wmax = m*(jc+0.1)/10
+	end
+end --for m = 0, 1000 do
+ret[1] = wmax
+ret[2] = max
+return ret;
+end --
+
+function Optimalt1max(R, jc, stype)  -- as function of  t1max
+local t1mOptim = -1 
+local maxSnt = -1
+local pickhere = 0
+
+local profile = {}
+local Npts = 200
+local t1maxMax = 10/(R*3.14+0.01) -- seconds
+	for m = 1, Npts do
+		profile[m] = {}
+		local t1m = m*t1maxMax/Npts
+		profile[m][1] = t1m	
+		local ma = maxofspectrumJc(R, t1m, jc, stype)
+		profile[m][2] = ma[2]
+		
+			if(ma[2]&gt;maxSnt) then 
+			maxSnt=ma[2] 
+			t1mOptim = profile[m][1]
+			end
+		
+		--print(string.format( " Profile %7.4f  %7.4f ",profile[m][1],profile[m][2]))
+	end --for
+return t1mOptim, profile
+end
+
+local tt = 0 
+local profile  ={}
+local profile2  ={}
+
+tt, profile = Optimalt1max(10., 90.0, 0)
+print(string.format( " Optim %7.4f  s-1",tt))
+print(table.getn(profile)) 
+
+for m = 1, (table.getn(profile) - 10) do
+profile2[m]={}
+--print(string.format( " Profile %7.4f  %7.4f ",profile[m][1],profile[m][2]))
+profile2[m][1]=profile[m][1]*0.9
+profile2[m][2]=profile[m][2]*0.5
+end
+
+function PlotLineTable(tables)
+local NsizePts = 500
+local Margin = 10
+local Nticks = 5
+
+--define minimax for all nested lists
+local minX ={}
+local maxX ={}
+local minY  ={}
+local maxY ={}
+
+local globalminX =999999999
+local globalmaxX =-9999999990
+local globalminY  =9999999999
+local globalmaxY =-999999990
+
+for m = 1, table.getn(tables)  do --go over lists
+minX[m] =9999999999
+maxX[m] =-9999999999
+minY[m]  =9999999999
+maxY[m] =-9999999999
+	for i = 1, table.getn(tables[m])  do --go over long dim on indivisual lists
+		--tables[m][i][1] -- time values
+		--tables[m][i][2] -- amplitude values
+		--print(string.format( " Profile %d %7.4f  %7.4f ",m,tables[m][i][1],tables[m][i][2]))
+		if minX[m] &gt; tables[m][i][1] then minX[m] = tables[m][i][1] end
+		if minY[m] &gt; tables[m][i][2] then minY[m] = tables[m][i][2] end
+		if maxX[m] &lt; tables[m][i][1] then maxX[m] = tables[m][i][1] end
+		if maxY[m] &lt; tables[m][i][2] then maxY[m] = tables[m][i][2] end
+	end 
+    print(string.format( " Profile %d  %7.4f  %7.4f     %7.4f  %7.4f ",m,minX[m],maxX[m],minY[m],maxY[m]))
+end --for m = 1, table.getn(tables)  do
+
+--global minimax
+for m = 1, table.getn(tables)  do 
+if globalminX &gt; minX[m] then globalminX = minX[m] end
+if globalmaxX &lt; maxX[m] then globalmaxX = maxX[m] end
+if globalminY &gt; minY[m] then globalminY = minY[m] end
+if globalmaxY &lt; maxY[m] then globalmaxY = maxY[m] end
+end
+print(string.format( " global minimax %7.4f  %7.4f     %7.4f  %7.4f ",globalminX,globalmaxX,globalminY,globalmaxX))
+
+    cv = dlg.createCanvas()
+	cv:setSize(NsizePts,NsizePts)
+	cv:setCaption("PlotLineTable")
+	cv:setBgColor("white")
+	cv:begin()
+	cv:setPen( "blue", 1 )
+	cv:drawRect( 1, 1, NsizePts, NsizePts )
+	
+	for m = 0, Nticks  do
+	cv:drawLine( 1+NsizePts*m/Nticks, NsizePts, 1+NsizePts*m/Nticks ,NsizePts-Margin )
+	cv:drawLine( NsizePts, 1+NsizePts*m/Nticks, NsizePts-Margin ,1+NsizePts*m/Nticks)
+	end
+	
+	cv:setPen( "red", 1 )
+	cv:drawLine( 1, 1, NsizePts,NsizePts )
+	cv:setPen( "black", 1 )
+	cv:drawText( Margin,NsizePts-Margin,string.format( " global minimax %7.4f  %7.4f     %7.4f  %7.4f ",globalminX,globalmaxX,globalminY,globalmaxX))
+	cv:commit()
+end --function PlotLineTable(tables)
+
+local profiles = {}
+profiles[1] = profile
+profiles[2] = profile2
+
+PlotLineTable(profiles)
+
+
+
+--StartPage()
  
 
 
@@ -22577,99 +22729,823 @@ StartPage()
 <obj oid='1'/>
 <obj oid='2'>
 <fld name='Sample' type='String'>Ubiquitin 2% Glycerol</fld>
-<fld name='Spectrometer' type='String'>A600 TS2.1 @ SBS NTU</fld>
+<fld name='Spectrometer' type='String'>PC datastation</fld>
 <fld name='Type' type='String'>Current Settings</fld>
-<fld name='Macro' type='String'>T1 N15 hsqc-pfg</fld>
+<fld name='Macro' type='String'>pk.trosy</fld>
 <fld name='Output TopSpin macro' type='String'>mm</fld>
-<fld name='Current Directory' type='String'>/opt/topspin2/exp/stan/nmr/lists</fld>
+<fld name='Current Directory' type='String'>C:/Dropbox/My CARA/NMRgenerator/Development/TestDeployment/</fld>
 <fld name='Browser' type='String'>start iexplore.exe</fld>
 <fld name='o1' type='String'> 2819</fld>
 <fld name='pl1' type='Double'>5.200000</fld>
 <fld name='p1' type='String'> 11.00</fld>
 <fld name='Help URL' type='String'>https://github.com/kpervushin/NMRgenerator-new/wiki</fld>
 <fld name='SR' type='String'>-79</fld>
-<fld name='Body' type='Memo'>----Experiment info for lab journal--------
-    Exp  , T1 N15 hsqc-pfg, Ubiquitin 2% Glycerol, o1= 2819, p1@pl1  11.00@5.2, SR=-79 
+<fld name='Body' type='Memo'>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="ngxml.xsl"?&gt;
+&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Wave Form&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Wave Name&lt;nmrname&gt;Q5tr.1000&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;31-3-2015&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Macro&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Macro Name&lt;nmrname&gt;CBCA(CO)NH-pfg&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Author(s)&lt;nmrauthor&gt;Vidhya&lt;/nmrauthor&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;01-4-2015&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Dimension&lt;nmrother&gt;3D&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Group&lt;nmrother&gt;backbone assignment&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Ref Sample&lt;nmrother&gt;Ubiquitin 2% Glycerol&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Exp (CARA)&lt;nmrother&gt;3D CBCA(CO)NH&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;1D Spectrum&lt;nmrother&gt;&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;URL reference&lt;nmrurl&gt;&lt;/nmrurl&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
 
----------Macro listing----------
 
-rpar HNCAGP3D all
-o2p 48.5
-gpz1 50
-pl0 120
-3 ABSF1 12.000
-2 ABSF1 1000.000
-d1 1
-pcpd1 80
-gpnam4 SMSQ10.100
-vd1 relax
-o1 2819
-spoal1 0.5
-cnst22 54
-3 FT_mod fsc
-rg 128
-p1 11
-NBL 16
-2 phc0 0
-vdlist1 relax
-p26 80
-2 BC_mod no
-2 phc1 0
-cnst11 4
-3 phc1 0
-p8 500
-3 ssb 2
-zgoptns -DLABEL_CN
-d16 0.0002
-1 si 16
-2 si 256
-3 si 8192
-2 ABSF2 -1000.000
-3 ABSF2 5.8
-gpz3 16.2
-o4p 3.8
-3 td  1024
-2 td  2
-1 td  16
-1 sw 35
-p11 1000
-3 sw 14.0166
-3 BC_mod qpol
-cnst12 4
-o3p 118
-gpz4 30
-3 phc0 89.7
-p16 1000
-3 stsi 4096
-gpnam3 SMSQ10.100
-2 ssb 2
-cpdprg1 dipsi2
-2 PH_mod pk
-3 PH_mod pk
-2 FT_mod no
-spoffs1 0
-1 mc2 QF
-2 mc2 echo-antiecho
-pulprog pk.hsqct1etf3gpsi3d
-gpnam2 SMSQ10.100
-3 REVERSE FALSE
-cnst4 90
-2 WDW QSINE
-cnst21 172
-spnam1 Squa100.1000
-2 REVERSE FALSE
-gpz2 80
-spnam13 Crp60,0.5,20.1
-1 FnMODE QF
-gpnam1 SMSQ10.100
-pcpd3 320
-3 WDW QSINE
-cpdprg3 garp4
-2 FnMODE Echo-Antiecho
-spoal13 0.5
-getprosol 1H 11 5.2
-2 SF 60.81063558034
-3 SR -79
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.cbcaconhgp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.CaCb.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+
+ cnst21=176.0,
+ cnst23=39.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.50",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -77.397, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= -93.6, -- H dim
+["3 phc1"]= 0, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+&lt;/nmrcode&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Pulse Program&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;PP Name&lt;nmrname&gt;pk.hncocagp3d&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;1-4-2015&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;;hncocagp3d
+;avance-version (07/04/04)
+;HN(CO)CA
+;3D sequence with
+;   inverse correlation for triple resonance using multiple
+;      inept transfer steps
+;
+;      F1(H) -&gt; F3(N) -&gt; F2(C=O) -&gt; F2(Ca,t1) 
+;            -&gt; F2(C=O) -&gt; F3(N,t2) -&gt; F1(H,t3)
+;
+;on/off resonance Ca and C=O pulses using shaped pulse
+;phase sensitive (t1)
+;phase sensitive using Echo/Antiecho gradient selection (t2)
+;using constant time in t2
+;(use parameterset HNCOCAGP3D)
+;
+;S. Grzesiek &amp; A. Bax, J. Magn. Reson. 96, 432 - 440 (1992)
+;(L.E. Kay, G.Y. Xu &amp; T. Yamazaki, J. Magn. Reson. A109, 129-133 (1994))
+;
+;$CLASS=HighRes
+;$DIM=3D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+prosol relations=&lt;triple&gt;
+
+
+#include &lt;Avance.incl&gt;
+#include &lt;Grad.incl&gt;
+#include &lt;Delay.incl&gt;
+
+
+"p2=p1*2"
+"p22=p21*2"
+"d11=30m"
+
+"d21=5.5m"
+"d22=4m"
+"d23=12m"
+"d26=2.3m"
+
+
+"d0=3u"
+"d10=d23/2-p14/2"
+"d29=d23/2-p14/2-p26-d21-4u"
+"d30=d23/2-p14/2"
+
+"in0=inf1/2"
+"in10=inf2/4"
+
+"in29=in10"
+"in30=in10"
+
+
+"DELTA=d0*2+larger(p14,p22)-p14"
+"DELTA1=p16+d16+8u" 
+"DELTA2=d23-d21-p26"
+"DELTA3=d22-p14-4u"
+"DELTA4=d21-p16-d16-4u"
+
+
+"spoff2=0"
+"spoff3=0"
+"spoff5=bf2*((cnst22-cnst21)/1000000)"
+"spoff7=bf2*((cnst21-cnst22)/1000000)"
+"spoff8=0"
+
+
+aqseq 321
+
+
+1 d11 ze
+  d11 pl16:f3 
+2 d11 do:f3
+3 d1 pl1:f1 fq=cnst21(bf ppm):f2
+  p1 ph1
+  d26 pl3:f3
+  (center (p2 ph1) (p22 ph1):f3 )
+  d26 UNBLKGRAD
+  (p1 ph2):f1 
+
+  4u pl0:f1
+  (p11:sp1 ph1:r):f1
+  4u
+  p16:gp1
+  d16
+
+  (p21 ph1):f3
+  d21 pl19:f1
+  (p26 ph2):f1
+  DELTA2 cpds1:f1 ph1
+  (center (p14:sp3 ph1):f2 (p22 ph1):f3 )
+  d23
+  (p21 ph1):f3
+
+  (p13:sp2 ph3):f2
+  4u
+  (p14:sp5 ph1):f2
+  DELTA3
+  (p14:sp3 ph1):f2
+  4u
+  (p14:sp5 ph1):f2
+  DELTA3
+  (p13:sp8 ph2):f2
+
+  4u
+  30u fq=cnst22(bf ppm):f2
+
+  (p13:sp2 ph4):f2
+  d0
+  (center (p14:sp7 ph1):f2 (p22 ph8):f3 )
+  d0
+  4u
+  (p14:sp3 ph1):f2
+  DELTA
+  (p14:sp7 ph1):f2
+  4u
+  (p13:sp8 ph1):f2
+
+  4u
+  30u fq=cnst21(bf ppm):f2
+
+  (p13:sp2 ph2):f2
+  DELTA3
+  (p14:sp5 ph1):f2
+  4u
+  (p14:sp3 ph1):f2
+  DELTA3
+  (p14:sp5 ph1):f2
+  4u
+  (p13:sp8 ph1):f2
+
+  4u do:f1
+  (p26 ph7):f1
+  4u
+  p16:gp4
+  d16
+  (p26 ph2):f1
+  20u cpds1:f1 ph1
+
+  (p21 ph1):f3
+  d30
+  (p14:sp5 ph1):f2
+  d30
+  (center (p14:sp3 ph1):f2 (p22 ph8):f3 )
+  d10
+  (p14:sp5 ph1):f2
+  d29
+  4u do:f1
+  (p26 ph7):f1
+  4u
+  p16:gp2*EA
+  d16 
+  DELTA4 pl1:f1
+
+  (center (p1 ph1) (p21 ph5):f3 )
+  d26
+  (center (p2 ph1) (p22 ph1):f3 )
+  d26
+  (center (p1 ph2) (p21 ph6):f3 )
+  d26
+  (center (p2 ph1) (p22 ph1):f3 )
+  d26
+  (p1 ph1)
+  DELTA1
+  (p2 ph1)
+  4u
+  p16:gp3
+  d16 pl16:f3
+  4u BLKGRAD
+  go=2 ph31 cpd3:f3 
+  d11 do:f3 mc #0 to 2 
+     F1PH(rd10 &amp; rd29 &amp; rd30 &amp; ip4, id0) 
+     F2EA(igrad EA &amp; ip6*2, id10 &amp; id29 &amp; dd30)
+exit
+
+
+ph1=0
+ph2=1 
+ph3=0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2
+ph4=0 2
+ph5=0 0 2 2
+ph6=3 3 1 1
+ph7=3
+ph8=0 0 0 0 2 2 2 2
+ph31=0 2 2 0 0 2 2 0 2 0 0 2 2 0 0 2
+
+
+;pl0 : 120dB
+;pl1 : f1 channel - power level for pulse (default)
+;pl3 : f3 channel - power level for pulse (default)
+;pl16: f3 channel - power level for CPD/BB decoupling
+;pl19: f1 channel - power level for CPD/BB decoupling
+;sp1: f1 channel - shaped pulse  90 degree  (H2O on resonance)
+;sp2: f2 channel - shaped pulse  90 degree  (on resonance)
+;sp3: f2 channel - shaped pulse 180 degree  (on resonance)
+;sp5: f2 channel - shaped pulse 180 degree  (Ca off resonance)
+;sp7: f2 channel - shaped pulse 180 degree  (C=O off resonance)
+;sp8: f2 channel - shaped pulse  90 degree  (on resonance)
+;                  for time reversed pulse
+;p1 : f1 channel -  90 degree high power pulse
+;p2 : f1 channel - 180 degree high power pulse
+;p11: f1 channel -  90 degree shaped pulse             [2 msec]
+;p13: f2 channel -  90 degree shaped pulse
+;p14: f2 channel - 180 degree shaped pulse
+;p16: homospoil/gradient pulse                         [1 msec]
+;p21: f3 channel -  90 degree high power pulse
+;p22: f3 channel - 180 degree high power pulse
+;p26: f1 channel -  90 degree pulse at pl19
+;d0 : incremented delay (F1 in 3D)                     [3 usec]
+;d1 : relaxation delay; 1-5 * T1
+;d10: incremented delay (F2 in 3D) =  d23/2-p14/2
+;d11: delay for disk I/O                               [30 msec]
+;d16: delay for homospoil/gradient recovery
+;d21: 1/(2J(NH)                                        [5.5 msec]
+;d22: 1/(4J(COCa)                                      [4 msec]
+;d23: 1/(4J(NCO)                                       [12 msec]
+;d26: 1/(4J'(NH)                                       [2.3 msec]
+;d29: incremented delay (F2 in 3D) = d23/2-p14/2-p26-d21-4u
+;d30: decremented delay (F2 in 3D) = d23/2-p14/2
+;cnst21: CO chemical shift (offset, in ppm)
+;cnst22: Calpha chemical shift (offset, in ppm)
+;o2p: Calpha chemical shift (cnst22)
+;inf1: 1/SW(Ca) = 2 * DW(Ca)
+;inf2: 1/SW(N) = 2 * DW(N)
+;in0: 1/(2 * SW(Ca)) =  DW(Ca)
+;nd0: 2
+;in10: 1/(4 * SW(N)) = (1/2) DW(N)
+;nd10: 4
+;in29: = in10
+;in30: = in10
+;NS: 8 * n
+;DS: &gt;= 16
+;td1: number of experiments in F1
+;td2: number of experiments in F2       td2 max = 2 * d30 / in30
+;FnMODE: States-TPPI (or TPPI) in F1
+;FnMODE: echo-antiecho in F2
+;cpds1: decoupling according to sequence defined by cpdprg1
+;cpd3: decoupling according to sequence defined by cpdprg3
+;pcpd1: f1 channel - 90 degree pulse for decoupling sequence
+;pcpd3: f3 channel - 90 degree pulse for decoupling sequence
+
+
+;use gradient ratio:    gp 1 : gp 2 : gp 3 : gp 4
+;                         30 :   80 :  8.1 :  -50
+
+;for z-only gradients:
+;gpz1: 30%
+;gpz2: 80%
+;gpz3: 8.1%
+;gpz4: -50
+
+;use gradient files:   
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+;gpnam3: SINE.100
+;gpnam4: SINE.100
+
+
+
+;$Id: hncocagp3d,v 1.14 2007/04/11 13:34:30 ber Exp $
+&lt;/nmrcode&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Pulse Program&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;PP Name&lt;nmrname&gt;pk.cbcaconhgp3d&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;1-4-2015&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;;cbcaconhgp3d
+;avance-version (07/06/20)
+;CBCACONH
+;3D sequence with
+;   inverse correlation for triple resonance using inept transfer steps 
+;
+;      F1(H) -&gt; F2(Caliph.,t1 -&gt; Ca) -&gt; F2(C=O) -&gt; F3(N,t2) -&gt; F1(H,t3)
+;
+;on/off resonance Ca and C=O pulses using shaped pulse
+;phase sensitive (t1)
+;phase sensitive using Echo/Antiecho-TPPI gradient selection (t2)
+;using constant time in t1
+;using constant time in t2
+;(use parameterset CBCACONHGP3D)
+;
+;S. Grzesiek &amp; A. Bax, J. Biomol. NMR 3, 185-204 (1993)
+;(D.R. Muhandiram &amp; L.E. Kay, J. Magn. Reson. B 103, 203-216 (1994))
+;
+;$CLASS=HighRes
+;$DIM=3D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+prosol relations=&lt;triple&gt;
+
+
+#include&lt;Avance.incl&gt;
+#include&lt;Grad.incl&gt;
+#include&lt;Delay.incl&gt;
+
+
+"p2=p1*2"
+"p22=p21*2"
+"d11=30m"
+"d12=20u"
+
+"d3=1.1m-larger(p14,p22)"	;tau b
+"d4=1.7m"			;tau a
+"d21=12.4m"			;T N
+"d22=3.6m"			;T C
+"d23=3.6m"			;tau c
+"d24=4.4m"			;tau d
+"d25=5.5m"			;tau f
+"d26=2.3m"			;tau g
+"d27=12.4m"			;tau e
+
+
+"d0=3u"
+"d10=d21/2-p14/2"
+"d20=d22+d0-p14-4u"
+"d29=d21/2-p14/2-p26-d25-4u"
+"d30=d21/2-p14/2"
+
+"in0=inf1/2"
+"in10=inf2/4"
+
+"in20=in0"
+"in29=in10"
+"in30=in10"
+
+
+"DELTA1=d22-d3-larger(p14,p22)-p2"
+"DELTA2=d23-p14"
+"DELTA3=d27-d24+4u"
+"DELTA4=d25-p16-d16-4u"
+"DELTA5=p16+d16+8u"
+
+
+"spoff2=0"
+"spoff3=0"
+"spoff5=bf2*((cnst21-cnst23)/1000000)"
+"spoff7=bf2*((cnst22-cnst21)/1000000)"
+"spoff8=0"
+
+
+aqseq 321
+
+
+1 ze
+  d11 pl16:f3
+2 d11 do:f3
+3 d11 fq=cnst23(bf ppm):f2
+  d1
+  50u UNBLKGRAD
+  d12 pl1:f1 pl0:f2 pl3:f3
+
+  (p1 ph1):f1
+  d4
+  (center (p2 ph1):f1 (p14:sp3 ph1):f2 )
+  d4
+  (p1 ph2):f1
+
+  (p13:sp2 ph3):f2
+  d0
+  (center (p14:sp5 ph1):f2 (p22 ph1):f3 )
+  d3
+  (p2 ph10)
+  DELTA1 pl19:f1
+  (p14:sp3 ph1):f2
+  d20
+  (p14:sp5 ph1):f2
+  4u
+  (p13:sp8 ph1):f2
+
+  4u cpds1:f1 ph2
+  (p14:sp5 ph1):f2
+  DELTA2
+  (p14:sp3 ph1):f2
+  4u
+  (p14:sp5 ph1):f2
+  DELTA2
+  (p13:sp2 ph1):f2
+
+  4u do:f1
+  (p26 ph9):f1
+  p16:gp1
+  d16 fq=cnst21(bf ppm):f2
+  (p26 ph2):f1
+  20u cpds1:f1 ph1
+
+  (p13:sp2 ph4):f2
+  d24
+  (p14:sp7 ph1):f2
+  DELTA3
+  (center (p14:sp3 ph1):f2 (p22 ph1):f3 )
+  d27
+  (p14:sp7 ph1):f2
+  4u
+  (p13:sp8 ph1):f2
+
+  (p21 ph11):f3
+  d30
+  (p14:sp7 ph1):f2
+  d30
+  (center (p14:sp3 ph1):f2 (p22 ph8):f3 )
+  d10
+  (p14:sp7 ph1):f2
+  d29
+  4u do:f1
+  (p26 ph7):f1
+  4u
+  p16:gp2*EA
+  d16 
+  DELTA4 pl1:f1
+
+  (center (p1 ph1):f1 (p21 ph5):f3 )
+  d26
+  (center (p2 ph1):f1 (p22 ph1):f3 )
+  d26
+  (center (p1 ph2):f1 (p21 ph6):f3 )
+  d26
+  (center (p2 ph1):f1 (p22 ph1):f3 )
+  d26
+  (p1 ph1):f1
+
+  DELTA5
+  (p2 ph1):f1
+  4u
+  p16:gp3
+  d16 pl16:f3
+  4u BLKGRAD
+  go=2 ph31 cpd3:f3
+  d11 do:f3 mc #0 to 2 
+     F1PH(rd10 &amp; rd29 &amp; rd30 &amp; rp11 &amp; rp31 &amp; ip3, id0 &amp; dd20) 
+     F2EA(igrad EA &amp; ip5*2, id10 &amp; id29 &amp; dd30 &amp; ip11*2 &amp; ip31*2)
+exit
+
+
+ph1=0
+ph2=1
+ph3=0 2
+ph4=0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2
+ph5=0 0 2 2
+ph6=3 3 1 1
+ph7=3
+ph8=0 0 0 0 2 2 2 2
+ph9=2
+ph10=0 0 2 2
+ph11=0
+ph31=0 2 2 0 0 2 2 0 2 0 0 2 2 0 0 2
+
+
+;pl0 : 120dB
+;pl1 : f1 channel - power level for pulse (default)
+;pl3 : f3 channel - power level for pulse (default)
+;pl16: f3 channel - power level for CPD/BB decoupling
+;pl19: f1 channel - power level for CPD/BB decoupling
+;sp2: f2 channel - shaped pulse  90 degree  (on resonance)
+;sp3: f2 channel - shaped pulse 180 degree  (on resonance)
+;sp5: f2 channel - shaped pulse 180 degree  (C=O off resonance)
+;sp7: f2 channel - shaped pulse 180 degree  (Ca off resonance)
+;sp8: f2 channel - shaped pulse  90 degree  (on resonance)
+;                  for time reversed pulse
+;p1 : f1 channel -  90 degree high power pulse
+;p2 : f1 channel - 180 degree high power pulse
+;p13: f2 channel -  90 degree shaped pulse
+;p14: f2 channel - 180 degree shaped pulse
+;p16: homospoil/gradient pulse                         [1 msec]
+;p21: f3 channel -  90 degree high power pulse
+;p22: f3 channel - 180 degree high power pulse
+;p26: f1 channel -  90 degree pulse at pl19
+;d0 : incremented delay (F1 in 3D)                     [3 usec]
+;d1 : relaxation delay; 1-5 * T1
+;d3 : tau b : 1.1m-p14
+;d4 : 1/(4J(CH)) - tau a                               [1.7 msec]
+;d10: incremented delay (F2 in 3D) =  d21/2-p14/2
+;d11: delay for disk I/O                               [30 msec]
+;d12: delay for power switching                        [20 usec]
+;d16: delay for homospoil/gradient recovery
+;d20: decremented delay (F1 in 3D) = d22+d0-p14-4u
+;d21: T(N)                                             [12.4 msec]
+;d22: T(C)                                             [3.6 msec]
+;d23: tau c                                            [3.6 msec]
+;d24: tau d                                            [4.4 msec]
+;d25: tau f                                            [5.5 msec]
+;d26: 1/(4J(NH)) - tau g                               [2.3 msec]
+;d27: tau e                                            [12.4 msec]
+;d29: incremented delay (F2 in 3D) = d21/2-p14/2-p26-d25-4u
+;d30: decremented delay (F2 in 3D) = d21/2-p14/2
+;cnst21: CO chemical shift (offset, in ppm)
+;cnst22: Calpha chemical shift (offset, in ppm)
+;cnst23: Caliphatic chemical shift (offset, in ppm)
+;o2p: Caliphatic chemical shift (cnst23)
+;inf1: 1/SW(Cali) = 2 * DW(Cali)
+;inf2: 1/SW(N) = 2 * DW(N)
+;in0: 1/(2 * SW(Cali)) =  DW(Cali)
+;nd0: 2
+;in10: 1/(4 * SW(N)) = (1/2) DW(N)
+;nd10: 4
+;in20: = in0
+;in29: = in10
+;in30: = in10
+;NS: 4 * n
+;DS: &gt;= 16
+;td1: number of experiments in F1       td1 max = 2 * d20 / in20
+;td2: number of experiments in F2       td2 max = 2 * d30 / in30
+;FnMODE: States-TPPI (or TPPI) in F1
+;FnMODE: echo-antiecho in F2
+;cpds1: decoupling according to sequence defined by cpdprg1
+;cpd3: decoupling according to sequence defined by cpdprg3
+;pcpd1: f1 channel - 90 degree pulse for decoupling sequence
+;pcpd3: f3 channel - 90 degree pulse for decoupling sequence
+
+
+;use gradient ratio:    	gp 1 : gp 2 : gp 3
+;				  30 :   80 :  8.1
+
+;for z-only gradients
+;gpz1: 30%
+;gpz2: 80%
+;gpz3: 8.1%
+
+;use gradient files:
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+;gpnam3: SINE.100
+
+
+
+;$Id: cbcaconhgp3d,v 1.13.2.1 2007/07/04 13:41:19 ber Exp $
+&lt;/nmrcode&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;nmritems&gt; &lt;nmrrecord&gt;&lt;nmrattr&gt;Type&lt;nmrtype&gt;Macro&lt;/nmrtype&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Macro Name&lt;nmrname&gt;HN(CO)CA-pfg&lt;/nmrname&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Author(s)&lt;nmrauthor&gt;Margaret Phillips&lt;/nmrauthor&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Datum&lt;nmrother&gt;01-4-2015&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Dimension&lt;nmrother&gt;3D&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Group&lt;nmrother&gt;backbone assignment&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Ref Sample&lt;nmrother&gt;Ubiquitin 2% Glycerol&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Exp (CARA)&lt;nmrother&gt;3D HN(CO)CA&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;1D Spectrum&lt;nmrother&gt;hncoca_1d&lt;/nmrother&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;URL reference&lt;nmrurl&gt;&lt;/nmrurl&gt;&lt;/nmrattr&gt;&lt;nmrattr&gt;Body&lt;nmrcode&gt;-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.Ca.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hncocagp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.Ca.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+["p11"] = 1000, --1 ms, water flip bacl pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+ sp1= 47.58,
+ sp2= 0.03,
+ 
+ cnst21=176.0,
+ cnst22=54.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpnam4 ="SINE.100",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+gpz4=0,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -70.099, -- N dim
+["2 phc1"]= 127.149, -- N dim 
+["3 phc0"]= -38.756, -- H dim
+["3 phc1"]= -28.600, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+&lt;/nmrcode&gt;&lt;/nmrattr&gt;&lt;/nmrrecord&gt;&lt;/nmritems&gt;
 </fld>
 <fld name='Pulse Program' type='String'>pk.hncagp3d</fld>
 <fld name='VariableDelay' type='String'>relax</fld>
@@ -22740,6 +23616,11 @@ exp_environment = {
 <fld name='65' type='OID'>65</fld>
 <fld name='71' type='OID'>71</fld>
 <fld name='83' type='OID'>83</fld>
+<fld name='86' type='OID'>86</fld>
+<fld name='90' type='OID'>90</fld>
+<fld name='92' type='OID'>92</fld>
+<fld name='95' type='OID'>95</fld>
+<fld name='98' type='OID'>98</fld>
 </obj>
 <obj oid='13'/>
 <obj oid='14'>
@@ -22761,6 +23642,11 @@ exp_environment = {
 <fld name='66' type='OID'>66</fld>
 <fld name='70' type='OID'>70</fld>
 <fld name='80' type='OID'>80</fld>
+<fld name='88' type='OID'>88</fld>
+<fld name='91' type='OID'>91</fld>
+<fld name='93' type='OID'>93</fld>
+<fld name='96' type='OID'>96</fld>
+<fld name='97' type='OID'>97</fld>
 </obj>
 <obj oid='16'/>
 <obj oid='17'>
@@ -22810,6 +23696,7 @@ exp_environment = {
 <fld name='79' type='OID'>79</fld>
 <fld name='82' type='OID'>82</fld>
 <fld name='84' type='OID'>84</fld>
+<fld name='94' type='OID'>94</fld>
 </obj>
 <obj oid='25'/>
 <obj oid='26'>
@@ -22822,6 +23709,7 @@ exp_environment = {
 <fld name='38' type='OID'>38</fld>
 <fld name='67' type='OID'>67</fld>
 <fld name='85' type='OID'>85</fld>
+<fld name='87' type='OID'>87</fld>
 </obj>
 <obj oid='28'/>
 <obj oid='29'>
@@ -22831,6 +23719,7 @@ exp_environment = {
 </obj>
 <obj oid='30'>
 <fld name='29' type='OID'>29</fld>
+<fld name='89' type='OID'>89</fld>
 </obj>
 <obj oid='33'>
 <fld name='Type' type='String'>Wave Form</fld>
@@ -24407,7 +25296,7 @@ InternetBrowser="start iexplore.exe"
 <fld name='Contact Person' type='String'>K.Pervushin</fld>
 <fld name='Location' type='String'>SBS NTU</fld>
 <fld name='Spec Name' type='String'>PC datastation</fld>
-<fld name='Memo' type='String'>C:\Dropbox\NMRGenerator suggested</fld>
+<fld name='Memo' type='String'>C:\Dropbox\NMRGenerator --suggested</fld>
 </obj>
 <obj oid='42'>
 <fld name='Author(s)' type='String'>Margaret Phillips</fld>
@@ -27299,7 +28188,7 @@ exp_environment_afterGetprosol={
 
 -- all other needed parameters
 exp_environment = {
-["rpar"]="HSQCETF3GP", --read a standard par to set 15N and 13C channels
+["rpar"]="HSQCETF3GP all", --read a standard par to set 15N and 13C channels
 --["xcpr"]="parmode 2D",
 
 
@@ -29079,143 +29968,6 @@ ph10 =1
 
 ;$Id: noesyesgpph,v 1.8.2.1 2007/10/04 16:52:07 ber Exp $
 </fld>
-</obj>
-<obj oid='65'>
-<fld name='Author(s)' type='String'>Bruker</fld>
-<fld name='Group' type='String'>relaxation</fld>
-<fld name='URL reference' type='String'></fld>
-<fld name='Macro Name' type='String'>T1 N15 hsqc-pfg</fld>
-<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
--- since getprosol missets some pulses, e.g. in roesy p15 is misset
-exp_environment_afterGetprosol={
-["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
-["3 SR"] = (spectrometer[now].SR),
-}
-
--- all other needed parameters
-exp_environment = {
-["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
---["xcpr"]="parmode 3D",
-
-
-["getprosol"]="1H",
-["pulprog"]= "pk.hsqct1etf3gpsi3d",
-["3 sw"]=spectrum.H.sw, 
-["1 sw"]=spectrum.N.sw, 
-["rg"]=128, -- rga or just above 100
-
-  --set number of sampled points
- ["1 td "]=(16), --relaxation dimension
- ["2 td "]=(2), --N direction
- ["3 td "]=(1024), --H direction
- 
-["3 stsi"]= 1024*4,
-["3 si"]= 2048*4, 
-["1 si"]= 16, -- N dim
-["2 si"]= 256,
-
-["vdlist"] = "relax", -- relaxation delays list, --vdlist
-
-["cnst4"] = 90, --Hz J(H, N) coupling
-["cnst11"] = 4, --4 for NH
-["cnst12"] = 4, --4 for NH
-["cnst21"] = 172, --ppm, CO chem shift
-["cnst22"] = 54, --ppm, Calpha chem shift
-
-NBL = 16, --the same as 1 td
-
-["d1"]=1, --s  interscan delay will be 2*d1
-["d16"]=0.0002, --s, gradient recovery
-["zgoptns"]="-DLABEL_CN", --decouple 13C
-
-p26 = 80, --1H decoupling pulse during T1 15N relax delay
-pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
--- set by getprosol pl19 = 22.6, 
-
-o1 = spectrometer[now].proton_carrier_298k, 
-o2p=spectrum.CaCb.carrier,
-o3p=spectrum.N.carrier,
-o4p=spectrum.D.carrier,
-
-p1=spectrometer[now].calibration_pulse90_f1,
-["pl0"]=120, --set to no power
-
-
---set soft powers and pulses
-["p11"] = 1000, --1 ms, water flip bacl pulse
-["spnam1"]= "Squa100.1000", -- integral factor 0.5
- --sp1 is calculated by getprosol
- --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
- spoal1 =0.5, -- have to check what's that
- spoffs1=0,
-p8=500, --mks, Adiabatic pulse for 13C inversion
-["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
- --sp13 is set by getprosol
- spoal13 =0.5, -- have to check what's that
- 
-
--- N decoupling
-pcpd3 = pulses.Ncpd90, 
---pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
-["cpdprg1"]= "dipsi2",
-["cpdprg3"]= "garp4", 
---pl16 is calculated by getprosol
-
-
-
---set gradients
-gpnam1 ="SMSQ10.100",
-gpnam2 ="SMSQ10.100",
-gpnam3 ="SMSQ10.100",
-gpnam4 ="SMSQ10.100",
-gpz1 =50,
-gpz2=80,
-gpz3=16.2,
-gpz4=30,
-p16=1000.0, -- 1ms for gradient
-
---acqu modes
-["2 FnMODE"]= "Echo-Antiecho",
-["1 FnMODE"]= "QF",
---processing
-["2 mc2"]= "echo-antiecho",
-["1 mc2"]= "QF",
-["2 FT_mod"]= "no",
-["3 FT_mod"]= "fsc",
-
-
-["2 phc0"]= 0, -- N dim
-["2 phc1"]= 0, -- N dim 
-["3 phc0"]= 89.7, -- N dim
-["3 phc1"]= 0.0, -- N dim 
-["2 WDW"]=  "QSINE", -- n dim
-["3 WDW"]=  "QSINE", -- H dim
-
-["2 ssb"]=  2, -- n dim
-["3 ssb"]=  2, -- H dim
-["2 PH_mod"]=  "pk", -- n dim
-["3 PH_mod"]=  "pk", -- n dim 
-["2 REVERSE"]="FALSE",
-["3 REVERSE"]="FALSE",
-["3 BC_mod"]="qpol",
-["2 BC_mod"]="no",
-["3 ABSF1"]="12.000",
-["3 ABSF2"]="5.8",
-["2 ABSF1"]="1000.000",
-["2 ABSF2"]="-1000.000",
-
-
-}
-
-
-
-</fld>
-<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
-<fld name='Datum' type='String'>27-3-2015</fld>
-<fld name='1D Spectrum' type='String'></fld>
-<fld name='Type' type='String'>Macro</fld>
-<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
-<fld name='Dimension' type='String'>2D</fld>
 </obj>
 <obj oid='66'>
 <fld name='Type' type='String'>Pulse Program</fld>
@@ -31792,6 +32544,1797 @@ p16=1000.0, -- 1ms for gradient
 2.1
 2.2
 2.5</fld>
+</obj>
+<obj oid='86'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>T1rho CPMG N15 hsqc-pfg</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct2etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vclist"] = "pk.t1rho", -- relaxation counter list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+d12=0.00002, --s delay for power switching
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+pl0=120, --set to no power
+
+
+--set soft powers and pulses
+p11 = 1000, --1 ms, water flip back pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpz1 =30,
+gpz2=80,
+gpz3=16.2,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='1D Spectrum' type='String'>T2_15N_1d</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='87'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>T1rho CPMG N15 hsqc-pfg</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct2etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vclist"] = "pk.t1rho", -- relaxation counter list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+d12=0.00002, --s delay for power switching
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+pl0=120, --set to no power
+
+
+--set soft powers and pulses
+p11 = 1000, --1 ms, water flip back pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpz1 =30,
+gpz2=80,
+gpz3=16.2,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='1D Spectrum' type='String'>T2_15N_1d</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Type' type='String'>VariableDelay</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='88'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='PP Name' type='String'>pk.hsqct1etf3gpsi3d</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>T1rho CPMG N15 hsqc-pfg</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct2etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vclist"] = "pk.t1rho", -- relaxation counter list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+d12=0.00002, --s delay for power switching
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+pl0=120, --set to no power
+
+
+--set soft powers and pulses
+p11 = 1000, --1 ms, water flip back pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpz1 =30,
+gpz2=80,
+gpz3=16.2,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='1D Spectrum' type='String'>T2_15N_1d</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='89'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Description' type='String'>---</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'>---</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct2etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vclist"] = "pk.t1rho", -- relaxation counter list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+d12=0.00002, --s delay for power switching
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+pl0=120, --set to no power
+
+
+--set soft powers and pulses
+p11 = 1000, --1 ms, water flip back pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpz1 =30,
+gpz2=80,
+gpz3=16.2,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Contact Person' type='String'>---</fld>
+<fld name='Type' type='String'>VariableCounter</fld>
+<fld name='PP Name' type='String'>pk.hsqct1etf3gpsi3d</fld>
+<fld name='Macro Name' type='String'>T1rho CPMG N15 hsqc-pfg</fld>
+<fld name='Memo' type='String'>---</fld>
+<fld name='vclist' type='String'>pk.t1rho</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='1D Spectrum' type='String'>T2_15N_1d</fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Location' type='String'>---</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='90'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Description' type='String'>---</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct1etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vdlist"] = "relax", -- relaxation delays list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+["p11"] = 1000, --1 ms, water flip bacl pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SMSQ10.100",
+gpnam2 ="SMSQ10.100",
+gpnam3 ="SMSQ10.100",
+gpnam4 ="SMSQ10.100",
+gpz1 =50,
+gpz2=80,
+gpz3=16.2,
+gpz4=30,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Contact Person' type='String'>---</fld>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='PP Name' type='String'>pk.hsqct1etf3gpsi3d</fld>
+<fld name='Macro Name' type='String'>T1 N15 hsqc-pfg</fld>
+<fld name='Memo' type='String'>---</fld>
+<fld name='vclist' type='String'>pk.t1rho</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='1D Spectrum' type='String'></fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Location' type='String'>---</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='91'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Description' type='String'>---</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqct1etf3gpsi3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+
+  --set number of sampled points
+ ["1 td "]=(16), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*4,
+["3 si"]= 2048*4, 
+["1 si"]= 16, -- N dim
+["2 si"]= 256,
+
+["vdlist"] = "relax", -- relaxation delays list, --vdlist
+
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --4 for NH
+["cnst12"] = 4, --4 for NH
+["cnst21"] = 172, --ppm, CO chem shift
+["cnst22"] = 54, --ppm, Calpha chem shift
+
+NBL = 16, --the same as 1 td
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+["zgoptns"]="-DLABEL_CN", --decouple 13C
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+["p11"] = 1000, --1 ms, water flip bacl pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- integral factor 0.5
+ --sp13 is set by getprosol
+ spoal13 =0.5, -- have to check what's that
+ 
+
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+
+
+--set gradients
+gpnam1 ="SMSQ10.100",
+gpnam2 ="SMSQ10.100",
+gpnam3 ="SMSQ10.100",
+gpnam4 ="SMSQ10.100",
+gpz1 =50,
+gpz2=80,
+gpz3=16.2,
+gpz4=30,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "QF",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "QF",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "fsc",
+
+
+["2 phc0"]= 0, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= 89.7, -- N dim
+["3 phc1"]= 0.0, -- N dim 
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- n dim 
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["3 ABSF1"]="12.000",
+["3 ABSF2"]="5.8",
+["2 ABSF1"]="1000.000",
+["2 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Contact Person' type='String'>---</fld>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='PP Name' type='String'>pk.hsqct2etf3gpsi3d</fld>
+<fld name='Macro Name' type='String'>T1 N15 hsqc-pfg</fld>
+<fld name='Memo' type='String'>---</fld>
+<fld name='vclist' type='String'>pk.t1rho</fld>
+<fld name='vdlist' type='String'>relax</fld>
+<fld name='1D Spectrum' type='String'></fld>
+<fld name='Exp (CARA)' type='String'>hsqc15N</fld>
+<fld name='Location' type='String'>---</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Dimension' type='String'>2D</fld>
+</obj>
+<obj oid='92'>
+<fld name='Author(s)' type='String'>Bruker</fld>
+<fld name='Group' type='String'>relaxation</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>HNOE hsqc</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+-- use AU split to parse into NOE and noNOE 2D spectra 
+
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["2 SR"] = (spectrometer[now].SR),
+}
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HSQCETF3GP all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 2D",
+
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hsqcnoef3gpsi",
+["2 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+["cnst4"] = 90, --Hz J(H, N) coupling
+["cnst11"] = 4, --Hz J(H, N) coupling
+["cnst12"] = 4,
+["cnst21"] = 173,
+["cnst22"] = 54,
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=50, --set to no power
+
+
+--set soft powers and pulses
+["p11"] = 1000, --1 ms, water flip bacl pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+p8=500, --mks, Adiabatic pulse for 13C inversion
+["spnam13"]= "Crp60,0.5,20.1", -- 
+ --sp13 is set by getprosol
+ spoal3 =0.5, -- have to check what's that
+ 
+-- N decoupling
+pcpd3 = pulses.Ncpd90, 
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg3"]= "garp4", 
+--pl16 is calculated by getprosol
+
+  --set number of sampled points
+ ["1 td "]=(320), --N direction
+ ["2 td "]=(1024), --H direction
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpz1 =50,
+gpz2=80,
+gpz3=16.2,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["1 FnMODE"]= "Echo-Antiecho",
+--processing
+["1 mc2"]= "echo-antiecho",
+["1 FT_mod"]= "no",
+["2 FT_mod"]= "fsc",
+
+["2 stsi"]= 1024*4,
+["2 si"]= 2048*4, 
+["1 si"]= 512, -- N dim
+["1 phc0"]= 0, -- N dim
+["1 phc1"]= 0, -- N dim 
+["2 phc0"]= 176.5, -- N dim
+["2 phc1"]= 36.2, -- N dim 
+["1 WDW"]=  "QSINE", -- n dim
+["2 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- n dim
+["2 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- n dim
+["2 PH_mod"]=  "pk", -- n dim 
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["2 BC_mod"]="qpol",
+["1 BC_mod"]="no",
+["2 ABSF1"]="12.000",
+["2 ABSF2"]="5.8",
+["1 ABSF1"]="1000.000",
+["1 ABSF2"]="-1000.000",
+
+
+}
+
+
+
+</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='1D Spectrum' type='String'>HNOE_1d</fld>
+<fld name='Exp (CARA)' type='String'>2D HSQC15N</fld>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Dimension' type='String'>2Dp</fld>
+</obj>
+<obj oid='93'>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='PP Name' type='String'>pk.hsqcnoef3gpsi</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Author(s)' type='String'>---</fld>
+<fld name='Dimension' type='String'>---</fld>
+<fld name='Group' type='String'>---</fld>
+<fld name='Subgroup' type='String'>---</fld>
+<fld name='Memo' type='String'>---</fld>
+<fld name='URL reference' type='String'>---</fld>
+<fld name='Body' type='Memo'>;hsqcnoef3gpsi
+;avance-version (07/04/04)
+;2D H-1/X correlation via double inept transfer
+;   using sensitivity improvement
+;for measuring H1-N15 NOEs
+;phase sensitive using Echo/Antiecho-TPPI gradient selection
+;with decoupling during acquisition
+;using f3 - channel
+;recording NONOE and NOE interleaved
+;(use parameterset HSQCNOEF3GPSI)
+;
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+prosol relations=&lt;triple&gt;
+
+
+#include &lt;Avance.incl&gt;
+#include &lt;Grad.incl&gt;
+#include &lt;Delay.incl&gt;
+
+
+
+"p2=p1*2"
+"p22=p21*2"
+"d11=30m"
+"d12=20u"
+"d24=1s/(cnst4*cnst11)"
+"d25=1s/(cnst4*cnst12)"
+"d26=1s/(cnst4*4)"
+
+"p0=p1*4/3"
+
+
+"d0=3u"
+
+"in0=inf1/2"
+
+		
+"DELTA2=p16+d16+8u"
+"DELTA3=d25-p16-d16-4u"
+
+#   ifdef LABEL_CN
+"DELTA1=d25-p16-d16-larger(p2,p8)-d0*2"
+#   else
+"DELTA1=d25-p16-d16-p2-d0*2"
+#   endif /*LABEL_CN*/
+
+
+"l0=1"
+"l4=d1/(p0+5m)"
+
+
+"spoff1=0"
+"spoff13=bf2*((cnst21+cnst22)/2000000)-o2"
+
+		
+1 ze
+  d11 pl16:f3
+2 d11 do:f3 
+3 d12
+
+  if "l0 %2 == 1"
+     {
+     d1
+     50u UNBLKGRAD
+     4u pl0:f1
+     (p11:sp1 ph1:r):f1
+     4u
+     4u pl1:f1
+     }
+  else
+     {
+4    (p0 ph1)
+     5m
+     lo to 4 times l4
+     4u
+     50u UNBLKGRAD
+     }
+
+  (p1 ph1)
+  p16:gp1
+  d16 pl3:f3
+
+  (p21 ph8):f3
+  4u
+  p16:gp2*-1*EA
+  d16
+  DELTA3
+  (p22 ph6):f3
+  d0 
+
+;#   ifdef LABEL_CN
+  (center (p2 ph9) (p8:sp13 ph1):f2 )
+;#   else
+;  (p2 ph9)
+;#   endif /*LABEL_CN*/
+
+  d0
+  p16:gp2*EA
+  d16
+  DELTA1
+
+  (center (p1 ph1) (p21 ph4):f3 )
+  d24
+  (center (p2 ph1) (p22 ph1):f3 )
+  d24
+  (center (p1 ph2) (p21 ph5):f3 )
+  d26
+  (center (p2 ph1) (p22 ph1):f3 )
+  d26
+  (p1 ph1)
+  DELTA2
+  (p2 ph1)
+  4u
+  p16:gp3
+  d16 pl16:f3
+  4u  BLKGRAD
+  go=2 ph31 cpd3:f3
+  d11 do:f3 mc #0 to 2
+     F1I(iu0, 2)
+     F1EA(igrad EA &amp; ip5*2, id0 &amp; ip6*2 &amp; ip8*2 &amp; ip31*2)
+exit
+   
+
+ph1=0 
+ph2=1
+ph4=0 0 2 2
+ph5=3 3 1 1
+ph6=0
+ph7=3
+ph8=1 3 
+ph9=0 0 2 2
+ph31=0 2 2 0 
+  
+
+;pl0 : 120dB
+;pl1 : f1 channel - power level for pulse (default)
+;pl3 : f3 channel - power level for pulse (default)
+;pl16: f3 channel - power level for CPD/BB decoupling
+;sp1 : f1 channel - shaped pulse  90 degree  (H2O on resonance)
+;sp13: f2 channel - shaped pulse 180 degree  (Ca and C=O, adiabatic)
+;p0 : f1 channel - 120 degree high power pulse
+;p1 : f1 channel -  90 degree high power pulse
+;p2 : f1 channel - 180 degree high power pulse
+;p8 : f2 channel - 180 degree shaped pulse for inversion (adiabatic)
+;p11: f1 channel -  90 degree shaped pulse           [1 msec]
+;p16: homospoil/gradient pulse
+;p21: f3 channel -  90 degree high power pulse
+;p22: f3 channel - 180 degree high power pulse
+;d0 : incremented delay (2D)                         [3 usec]
+;d1 : relaxation delay; 1-5 * T1
+;d11: delay for disk I/O                             [30 msec]
+;d12: delay for power switching                      [20 usec]
+;d16: delay for homospoil/gradient recovery
+;d24: 1/(4J)YH for YH
+;     1/(8J)YH for all multiplicities
+;d25: 1/(4J)YH for YH
+;     1/(8J)YH for all multiplicities
+;d26: 1/(4J(YH))
+;cnst4: = J(YH)
+;cnst11: for multiplicity selection = 4 for NH, 8 for all multiplicities
+;cnst12: for multiplicity selection = 4 for NH, 8 for all multiplicities
+;cnst21: CO chemical shift (offset, in ppm)
+;cnst22: Calpha chemical shift (offset, in ppm)
+;l0: flag to switch between NOE and NONOE
+;l4: loop for saturation sequence: = d1 / (p0 + 5m)
+;inf1: 1/SW(X) = 2 * DW(X)
+;in0: 1/(2 * SW(X)) = DW(X)
+;nd0: 2
+;NS: 1 * n
+;DS: &gt;= 16
+;td1: total number of experiments
+;        = number of experiments for each 2D * 2
+;FnMODE: echo-antiecho
+;cpd3: decoupling according to sequence defined by cpdprg3
+;pcpd3: f3 channel - 90 degree pulse for decoupling sequence
+
+
+;use gradient ratio:	gp 1 : gp 2 : gp 3
+;			  50 :   80 : 16.2      for N-15
+
+;for z-only gradients:
+;gpz1: 50%
+;gpz2: 80%
+;gpz3: 16.2%
+
+;use gradient files:
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+;gpnam3: SINE.100
+
+
+                                          ;preprocessor-flags-start
+;LABEL_CN: for C-13 and N-15 labeled samples start experiment with 
+;             option -DLABEL_CN (eda: ZGOPTNS)
+                                          ;preprocessor-flags-end
+
+
+;use AU-program split [2] to separate NOE and NONOE data into
+;   different datasets
+
+
+
+;$Id: hsqcnoef3gpsi,v 1.6 2007/04/11 13:34:30 ber Exp $
+</fld>
+</obj>
+<obj oid='94'>
+<fld name='Type' type='String'>Wave Form</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='Wave Name' type='String'>Q5tr.1000</fld>
+</obj>
+<obj oid='95'>
+<fld name='Author(s)' type='String'>Vidhya</fld>
+<fld name='Group' type='String'>backbone assignment</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>CBCA(CO)NH-pfg</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.cbcaconhgp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.CaCb.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+
+ cnst21=176.0,
+ cnst23=39.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.50",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -77.397, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= -93.6, -- H dim
+["3 phc1"]= 0, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+</fld>
+<fld name='Wave Name' type='String'>Q5tr.1000</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='1D Spectrum' type='String'></fld>
+<fld name='Exp (CARA)' type='String'>3D CBCA(CO)NH</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='Dimension' type='String'>3D</fld>
+</obj>
+<obj oid='96'>
+<fld name='Author(s)' type='String'>Vidhya</fld>
+<fld name='PP Name' type='String'>pk.hncocagp3d</fld>
+<fld name='Group' type='String'>backbone assignment</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>CBCA(CO)NH-pfg</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.cbcaconhgp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.CaCb.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+
+ cnst21=176.0,
+ cnst23=39.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.50",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -77.397, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= -93.6, -- H dim
+["3 phc1"]= 0, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+</fld>
+<fld name='Wave Name' type='String'>Q5tr.1000</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='1D Spectrum' type='String'></fld>
+<fld name='Exp (CARA)' type='String'>3D CBCA(CO)NH</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='Dimension' type='String'>3D</fld>
+</obj>
+<obj oid='97'>
+<fld name='Author(s)' type='String'>Vidhya</fld>
+<fld name='PP Name' type='String'>pk.cbcaconhgp3d</fld>
+<fld name='Group' type='String'>backbone assignment</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>CBCA(CO)NH-pfg</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.CaCb.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.cbcaconhgp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.CaCb.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+
+ cnst21=176.0,
+ cnst23=39.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.50",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -77.397, -- N dim
+["2 phc1"]= 0, -- N dim 
+["3 phc0"]= -93.6, -- H dim
+["3 phc1"]= 0, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+</fld>
+<fld name='Wave Name' type='String'>Q5tr.1000</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='1D Spectrum' type='String'></fld>
+<fld name='Exp (CARA)' type='String'>3D CBCA(CO)NH</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Type' type='String'>Pulse Program</fld>
+<fld name='Dimension' type='String'>3D</fld>
+</obj>
+<obj oid='98'>
+<fld name='Author(s)' type='String'>Margaret Phillips</fld>
+<fld name='PP Name' type='String'>pk.cbcaconhgp3d</fld>
+<fld name='Group' type='String'>backbone assignment</fld>
+<fld name='URL reference' type='String'></fld>
+<fld name='Macro Name' type='String'>HN(CO)CA-pfg</fld>
+<fld name='Body' type='Memo'>-- params to be setup after execution of getprosol. This is needed  
+-- since getprosol missets some pulses, e.g. in roesy p15 is misset
+exp_environment_afterGetprosol={
+["1 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.C13/1e6,
+["2 SF"] = (spectrometer[now].B_field*1e6+spectrometer[now].SR)*IndirectChemicalShiftReferences.N15/1e6,
+["3 SR"] = (spectrometer[now].SR),
+}
+
+
+-- all other needed parameters
+exp_environment = {
+["rpar"]="HNCAGP3D all", --read a standard par to set 15N and 13C channels
+--["xcpr"]="parmode 3D",
+
+o1 = spectrometer[now].proton_carrier_298k, 
+o2p=spectrum.Ca.carrier,
+o3p=spectrum.N.carrier,
+o4p=spectrum.D.carrier,
+
+["getprosol"]="1H",
+["pulprog"]= "pk.hncocagp3d",
+["3 sw"]=spectrum.H.sw, 
+["1 sw"]=spectrum.Ca.sw, 
+["2 sw"]=spectrum.N.sw, 
+["rg"]=128, -- rga or just above 100
+ns=8,
+ds=16,
+
+  --set number of sampled points
+ ["1 td "]=(2), --relaxation dimension
+ ["2 td "]=(2), --N direction
+ ["3 td "]=(1024), --H direction
+ 
+["3 stsi"]= 1024*1,
+["3 si"]= 2048, 
+["1 si"]= 8, -- C dim
+["2 si"]= 8, -- N dim
+
+
+["d1"]=1, --s  interscan delay will be 2*d1
+["d16"]=0.0002, --s, gradient recovery
+
+p26 = 80, --1H decoupling pulse during T1 15N relax delay
+pcpd1 = 80, -- 1H decoupling pulse during T1 15N relax delay
+-- set by getprosol pl19 = 22.6, 
+
+p1=spectrometer[now].calibration_pulse90_f1,
+["pl0"]=120, --set to no power
+
+
+--set soft powers and pulses
+["p11"] = 1000, --1 ms, water flip bacl pulse
+["spnam1"]= "Squa100.1000", -- integral factor 0.5
+ --sp1 is calculated by getprosol
+ --sp1= calc_power_set(0.5*2000,0.5,spectrometer[now].calibration_pulse90_f1,spectrometer[now].calibration_power_db_f1),
+ spoal1 =0.5, -- have to check what's that
+ spoffs1=0,
+ sp1= 47.58,
+ sp2= 0.03,
+ 
+ cnst21=176.0,
+ cnst22=54.0,
+ 
+["spnam2"]= "Q5.1000", -- integral factor 0.5
+["spnam3"]= "Q3.1000",
+["spnam5"]= "Q3.1000",
+["spnam7"]= "Q3.1000",
+["spnam8"]= "Q5tr.1000",
+ --sp13 is set by getprosol
+ 
+ spoal2 =0.5, -- have to check what's that
+ spoal3 =0.5,
+ spoal5 =0.5,
+ spoal7 =0.5,
+ spoal8 =0.5,
+ 
+-- N decoupling
+pcpd3 = 320.0, 
+p21= 35.0,
+pl16= 15.22,
+--pl16 = calc_power_set(pulses.Ncpd90,1.0,spectrometer[now].calibration_pulse90_f3,spectrometer[now].calibration_power_db_f3),
+["cpdprg1"]= "dipsi2",
+["cpdprg3"]= "garp", 
+--pl16 is calculated by getprosol
+
+
+--set gradients
+gpnam1 ="SINE.100",
+gpnam2 ="SINE.100",
+gpnam3 ="SINE.100",
+gpnam4 ="SINE.100",
+gpz1=30,
+gpz2=80,
+gpz3=8.1,
+gpz4=0,
+p16=1000.0, -- 1ms for gradient
+
+--acqu modes
+["2 FnMODE"]= "Echo-Antiecho",
+["1 FnMODE"]= "States-TPPI",
+--processing
+["2 mc2"]= "echo-antiecho",
+["1 mc2"]= "States-TPPI",
+["2 FT_mod"]= "no",
+["3 FT_mod"]= "no",
+
+["1 phc0"]= 0, -- C dim
+["1 phc1"]= 0, -- C dim 
+["2 phc0"]= -70.099, -- N dim
+["2 phc1"]= 127.149, -- N dim 
+["3 phc0"]= -38.756, -- H dim
+["3 phc1"]= -28.600, -- H dim 
+
+["1 WDW"]=  "QSINE", -- C dim
+["2 WDW"]=  "QSINE", -- n dim
+["3 WDW"]=  "QSINE", -- H dim
+
+["1 ssb"]=  2, -- C dim
+["2 ssb"]=  2, -- n dim
+["3 ssb"]=  2, -- H dim
+["1 PH_mod"]=  "pk", -- C dim
+["2 PH_mod"]=  "pk", -- n dim
+["3 PH_mod"]=  "pk", -- H dim 
+
+["1 REVERSE"]="FALSE",
+["2 REVERSE"]="FALSE",
+["3 REVERSE"]="FALSE",
+
+["3 BC_mod"]="qpol",
+["2 BC_mod"]="no",
+["1 BC_mod"]="no",
+
+["3 ABSF1"]= 4.7,
+["3 ABSF2"]= -100.0,
+["2 ABSF1"]= 1000.000,
+["2 ABSF2"]= -1000.000,
+["1 ABSF1"]= 1000.000,
+["1 ABSF2"]= -1000.000,
+
+
+}
+
+
+
+</fld>
+<fld name='Wave Name' type='String'>Q5tr.1000</fld>
+<fld name='Datum' type='String'>1-4-2015</fld>
+<fld name='1D Spectrum' type='String'>hncoca_1d</fld>
+<fld name='Exp (CARA)' type='String'>3D HN(CO)CA</fld>
+<fld name='Ref Sample' type='String'>Ubiquitin 2% Glycerol</fld>
+<fld name='Type' type='String'>Macro</fld>
+<fld name='Dimension' type='String'>3D</fld>
 </obj>
 </database>
 <fld name='Creation Date' type='Date'>2013-10-1</fld>
