@@ -1,4 +1,4 @@
-function [resolution, snt, t1max] =calc_sn_resolution(filename, td, in0, R2eff, Jc)
+function [resolution, snt, t1max] =calc_sn_resolution(filename, td, in0, R2eff)
 %% calculate Signal to noise and resolution (digital resolution) for
 %% indirectly sampled dimension
 % filename - the name of txt file with the precomputed chem shift evolution function
@@ -58,7 +58,7 @@ noise_rmsd=norm(rn)/sqrt(td); %/sqrt(2)
 % fid
 fid=zeros(1,1024*32);
 for k=1:td
-    fid(k)=(func_points(k)*exp(-R2eff*k*in0)*Cos(Pi*Jc*k*in0)+rn(k))*ssb(k);
+    fid(k)=(func_points(k)*exp(-R2eff*k*in0)+rn(k))*ssb(k);
 end %for k=1:td
 %plot(timepoints,fid)
 %1/a
@@ -72,7 +72,7 @@ freq=1:SI;
 %plot(freq,spec)
 
 
-peak_hight(m)=max(real(spec(1:SI/2)));
+peak_hight(m)=max(real(spec(1:SI/4));
 baseline_in_spectrum(m)=sum(spec(1:SI/4))/(SI/4);
 %disp(['baseline_in_spectrum ' num2str(real(baseline_in_spectrum(m)))])
 spec=spec-sum(spec(1:SI/4))/(SI/4);
@@ -95,7 +95,7 @@ p3_av=sum(spec_width)/MI; p3_rmsd = norm(spec_width-p3_av)/sqrt(MI);
 p4_av=sum(sig_to_noise)/MI; p4_rmsd = norm(sig_to_noise-p4_av)/sqrt(MI);
 
 %plot(timepoints,real(fid))
-plot(freq/in0/SI-0.5/in0,real(spec));
+%plot(freq/in0/SI-0.5/in0,real(spec));
 
 resolution=p3_av;
 snt=p4_av/sqrt(td);
