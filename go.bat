@@ -1,0 +1,1 @@
+C:/Dropbox/MyCARA/NMRgenerator/CARA_1.9.1b12_win32/CARA.exe -r nmr NMRgenUBL.cara
